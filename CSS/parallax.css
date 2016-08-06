@@ -61,6 +61,8 @@
 
   body {
     font: 100% / 1.5 Arial;
+    background-color: #222222;
+    color:#aaaaaa;
   }
 
   .parallax {
@@ -79,6 +81,15 @@
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+  }
+
+  .parallax__layer--main .title{
+    border-style: solid;
+    border-color: #ffffff;
+    width:50%;
+    height:100px;
+    text-align: center;
+
   }
 
 
