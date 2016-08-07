@@ -27,12 +27,6 @@ h1 {
     color: #EEE;
 }
 
-#main{
-
-z-index: 0;
-
-}
-
 #parallaxFar {
     left: 0;
     position: fixed;
@@ -44,7 +38,7 @@ z-index: 0;
     width: 100%;
     height: auto;
 }
-
+/*
 #parallaxMid {
     left: 0;
     position: fixed;
@@ -61,4 +55,4 @@ z-index: 0;
     z-index: 1;
     color: #EEE;
 }
-
+*/
