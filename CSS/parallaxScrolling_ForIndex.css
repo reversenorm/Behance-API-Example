@@ -1,0 +1,50 @@
+body {
+    padding: 45px;
+    background-color: #000000;
+}
+
+
+h1 {
+    text-transform: capitalize;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    margin: 0px;
+    background-color: rgba(178, 45, 0, .50);
+    color: #EEE;
+}
+#parallaxFar {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+#parallaxFar img {
+    width: 100%;
+    height: auto;
+}
+
+#parallaxMid {
+    left: 0;
+    position: fixed;
+    top: 200px;
+    z-index: -1;
+}
+
+#main{
+	display:block;
+	height:1000px;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#parallaxNear {
+    position: fixed;
+    display:block;
+	height:2000px;
+    top: 1000px;
+    width: 100%;
+    z-index: 1;
+}
+
