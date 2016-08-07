@@ -59,9 +59,9 @@ function mouseScroll(e) {
      
     // deal with different browsers calculating the delta differently
     if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 50;
+        mouseDelta = e.wheelDelta / 80;
     } else if (e.detail) {
-        mouseDelta = -e.detail / 8;
+        mouseDelta = -e.detail / 6;
     }
 }
  
