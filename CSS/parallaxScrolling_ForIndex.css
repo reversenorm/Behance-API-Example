@@ -2,7 +2,7 @@
 body {
     padding: 45px;
     background-color: #000000;
-    color:#ffffff;
+    color:#222222;
      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -56,6 +56,7 @@ Also has nerest ground element. Cloud whisps and will contain footer menu*/
 
 
 .movingBox{
+	background-color: rgba(255, 255, 255, .5);
 	border: solid rgba(30, 215, 230, .75);
 	/*call out border individually for easy element grab from javascript*/
 	border-top-width: 5px;
