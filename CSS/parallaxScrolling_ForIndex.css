@@ -25,11 +25,10 @@ Not adding image on css to allow for easier changes*/
 #parallaxMid {
     left: 0;
     position: fixed;
-    top: 200px;
     z-index: -1;
 }
 /* image settings for parallax mid*/
-#parallaxFar img {
+#parallaxMid img {
     width: 100%;
     height: auto;
 }
@@ -40,8 +39,13 @@ ported from other sites. Also will have near clouds image at base */
 	display:block;
     width:100%;
 	height:4500px;
-    z-index: 0;
+    z-index: 1;
     /*background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
+}
+
+#mainImageLayer{
+	left: 0;
+    z-index: 0;
 }
 
 /*This carries fast moving flashy elements. Moves faster than #main.
@@ -52,7 +56,7 @@ Also has nerest ground element. Cloud whisps and will contain footer menu*/
 	height:2000px;
     top: 600px;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 
