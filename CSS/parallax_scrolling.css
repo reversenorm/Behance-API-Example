@@ -27,14 +27,14 @@ h1 {
     color: #EEE;
 }
 
-#parallaxFar {
+#parallaxContainer {
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: -2;
 }
-#parallaxFar img {
+#parallaxContainer img {
     width: 100%;
     height: auto;
 }
