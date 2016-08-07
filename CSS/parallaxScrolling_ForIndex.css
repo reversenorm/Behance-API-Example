@@ -38,9 +38,11 @@ Not adding image on css to allow for easier changes*/
 ported from other sites. Also will have near clouds image at base */
 #main{
 	display:block;
+    width:100%;
 	height:1000px;
     z-index: 0;
-    background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
+    /*background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
+    background-image: url("Images/Main.png");
 }
 
 /*This carries fast moving flashy elements. Moves faster than #main.
