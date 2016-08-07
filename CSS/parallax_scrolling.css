@@ -26,6 +26,13 @@ h1 {
     background-color: rgba(178, 45, 0, .75);
     color: #EEE;
 }
+
+#main{
+
+z-index: 0;
+
+}
+
 #parallaxFar {
     left: 0;
     position: fixed;
@@ -41,7 +48,17 @@ h1 {
 #parallaxMid {
     left: 0;
     position: fixed;
-    top: 0;
+    top: 200;
     width: 50%;
     z-index: -1;
 }
+
+#parallaxNear {
+    left: 50%;
+    position: fixed;
+    top: 300px;
+    width: 50%;
+    z-index: 1;
+    color: #EEE;
+}
+

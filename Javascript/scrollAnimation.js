@@ -13,13 +13,21 @@ var transforms = ["transform",
                    
 var transformProperty = getSupportedPropertyName(transforms);
  
-var imageContainer = document.querySelector("#parallaxFar");
+var Layer_far = document.querySelector("#parallaxFar");
+var Rate_far = 0.5;
+var Layer_mid = document.querySelector("#parallaxMid");
+var Rate_mid = 0.75;
+var Layer_near = document.querySelector("#parallaxNear");
+var Rate_near = 1.75;
+
  
 var scrolling = false;
 var mouseWheelActive = false;
  
 var count = 0;
 var mouseDelta = 0;
+
+setup();
  
 //
 // vendor prefix management
@@ -42,7 +50,6 @@ function setup() {
      
     animationLoop();
 }
-setup();
  
 function mouseScroll(e) {
     mouseWheelActive = true;
@@ -89,8 +96,12 @@ function setTranslate3DTransform(element, yPosition) {
 function animationLoop() {
     // adjust the image's position when scrolling
     if (scrolling) {
-        setTranslate3DTransform(imageContainer, 
-                                -1 * getScrollPosition() / 2);
+        setTranslate3DTransform(Layer_far, 
+                                -1 * getScrollPosition() * Rate_far);
+        setTranslate3DTransform(Layer_mid, 
+                                -1 * getScrollPosition() * Rate_mid);
+                setTranslate3DTransform(Layer_near, 
+                                -1 * getScrollPosition() * Rate_near);
         scrolling = false;
     }
      
