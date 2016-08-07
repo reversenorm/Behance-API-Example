@@ -19,7 +19,7 @@ var mouseWheelActive = false;
 var count = 0;
 var mouseDelta = 0;
 
-setup(); //Initial load
+
  
 //
 // vendor prefix management
@@ -42,6 +42,8 @@ function setup() {
      
     animationLoop();
 }
+
+setup(); 
  
 function mouseScroll(e) {
     mouseWheelActive = true;
