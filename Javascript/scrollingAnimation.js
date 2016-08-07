@@ -11,7 +11,7 @@ var transforms = ["transform",
                    
 var transformProperty = getSupportedPropertyName(transforms);
  
-var imageContainer = document.querySelector("#parallaxFar");
+var imageContainer = document.querySelector("#parallaxContainer");
  
 var scrolling = false;
 var mouseWheelActive = false;
@@ -19,7 +19,7 @@ var mouseWheelActive = false;
 var count = 0;
 var mouseDelta = 0;
 
-setup(); //Initial load call
+setup(); //Initial load
  
 //
 // vendor prefix management
@@ -53,9 +53,9 @@ function mouseScroll(e) {
      
     // deal with different browsers calculating the delta differently
     if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 50;
+        mouseDelta = e.wheelDelta / 120;
     } else if (e.detail) {
-        mouseDelta = -e.detail / 10;
+        mouseDelta = -e.detail / 3;
     }
 }
  
