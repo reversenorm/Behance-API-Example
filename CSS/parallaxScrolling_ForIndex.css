@@ -71,6 +71,9 @@ Also has nerest ground element. Cloud whisps and will contain footer menu*/
 	display:block;
 	height:450px;
 	border: solid rgba(30, 215, 230, .75);
+	background-color: rgba(255, 255, 255, .10);
+	padding: 15px;
+	margin:20px;
 	/*call out border individually for easy element grab from javascript*/
 	border-top-width: 5px;
 	border-bottom-width: 1px;
