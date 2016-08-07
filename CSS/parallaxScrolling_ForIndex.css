@@ -2,7 +2,6 @@
 body {
     padding: 45px;
     background-color: #000000;
-    color:#ffffff;
      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -40,7 +39,7 @@ ported from other sites. Also will have near clouds image at base */
 	display:block;
 	height:1000px;
     z-index: 0;
-    background-color: rgba(0, 0, 0, .25); /*alpha 50% for testing*/
+    background-color: rgba(0, 0, 0, .5); /*alpha 50% for testing*/
 }
 
 /*This carries fast moving flashy elements. Moves faster than #main.
@@ -49,14 +48,14 @@ Also has nerest ground element. Cloud whisps and will contain footer menu*/
     position: fixed;
     display:block;
 	height:2000px;
-    top: 600px;
+    top: 1000px;
     width: 100%;
     z-index: 1;
 }
 
 
 .movingBox{
-	border: solid rgba(100, 150, 255, .75);
+	border: solid rgba(100, 100, 200, .5);
 	/*call out border individually for easy element grab from javascript*/
 	border-top-width: 5px;
 	border-bottom-width: 1px;
