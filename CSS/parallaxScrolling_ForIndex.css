@@ -49,7 +49,7 @@ ported from other sites. Also will have near clouds image at base */
 #main{
 	display:block;
     width:100%;
-	height:4500px;
+	height:1500px;
     z-index: 1;
     /*background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
 }
