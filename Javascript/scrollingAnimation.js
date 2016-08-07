@@ -19,6 +19,7 @@ var mouseWheelActive = false;
 var count = 0;
 var mouseDelta = 0;
  
+setup(); 
 //
 // vendor prefix management
 //
@@ -40,7 +41,6 @@ function setup() {
      
     animationLoop();
 }
-setup();
  
 function mouseScroll(e) {
     mouseWheelActive = true;
@@ -52,9 +52,9 @@ function mouseScroll(e) {
      
     // deal with different browsers calculating the delta differently
     if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 120;
+        mouseDelta = e.wheelDelta / 50;
     } else if (e.detail) {
-        mouseDelta = -e.detail / 3;
+        mouseDelta = -e.detail / 8;
     }
 }
  
@@ -88,7 +88,7 @@ function animationLoop() {
     // adjust the image's position when scrolling
     if (scrolling) {
         setTranslate3DTransform(imageContainer, 
-                                -1 * getScrollPosition() / 2);
+                                -1 * getScrollPosition() * 0.5);
         scrolling = false;
     }
      
