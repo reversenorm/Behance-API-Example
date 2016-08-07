@@ -65,9 +65,9 @@ function mouseScroll(e) {
      
     // deal with different browsers calculating the delta differently
     if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 120;
+        mouseDelta = e.wheelDelta / 50;
     } else if (e.detail) {
-        mouseDelta = -e.detail / 3;
+        mouseDelta = -e.detail / 10;
     }
 }
  
@@ -124,7 +124,7 @@ function animationLoop() {
 </script>
 </head>
 <body>
-<div id="parallaxFar">
+<div id="parallaxContainer">
     <img src="Images/Parallax test/dawn-sunset-flying-clouds.jpg">
 </div>
 <h1>Some Random Content</h1>
