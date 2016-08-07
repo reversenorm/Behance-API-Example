@@ -33,6 +33,17 @@ Not adding image on css to allow for easier changes*/
     height: auto;
 }
 
+#parallaxMain{
+   left: 0;
+    position: fixed;
+    z-index: 0;
+}
+
+#parallaxMain img {
+    width: 100%;
+    height: auto;
+}
+
 /*ultimatelly totally transparent, this section houses the blocks of content 
 ported from other sites. Also will have near clouds image at base */
 #main{
@@ -43,10 +54,6 @@ ported from other sites. Also will have near clouds image at base */
     /*background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
 }
 
-#mainImageLayer{
-	left: 0;
-    z-index: 0;
-}
 
 /*This carries fast moving flashy elements. Moves faster than #main.
 Also has nerest ground element. Cloud whisps and will contain footer menu*/
