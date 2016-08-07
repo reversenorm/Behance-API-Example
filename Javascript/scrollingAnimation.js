@@ -11,13 +11,16 @@ var transforms = ["transform",
                    
 var transformProperty = getSupportedPropertyName(transforms);
  
-var imageContainer = document.querySelector("#parallaxContainer");
+var Layer_Far = document.querySelector("#parallaxFar");
+var Rate_Far = 0.5;
  
 var scrolling = false;
 var mouseWheelActive = false;
  
 var count = 0;
 var mouseDelta = 0;
+
+setup(); //Initial load call
  
 //
 // vendor prefix management
@@ -40,7 +43,6 @@ function setup() {
      
     animationLoop();
 }
-setup();
  
 function mouseScroll(e) {
     mouseWheelActive = true;
@@ -52,9 +54,9 @@ function mouseScroll(e) {
      
     // deal with different browsers calculating the delta differently
     if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 120;
+        mouseDelta = e.wheelDelta / 50;
     } else if (e.detail) {
-        mouseDelta = -e.detail / 3;
+        mouseDelta = -e.detail / 10;
     }
 }
  
@@ -87,8 +89,8 @@ function setTranslate3DTransform(element, yPosition) {
 function animationLoop() {
     // adjust the image's position when scrolling
     if (scrolling) {
-        setTranslate3DTransform(imageContainer, 
-                                -1 * getScrollPosition() / 2);
+        setTranslate3DTransform(Layer_Far, 
+                                -1 * getScrollPosition() * Rate_Far);
         scrolling = false;
     }
      
