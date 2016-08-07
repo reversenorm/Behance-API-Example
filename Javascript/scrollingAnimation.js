@@ -11,7 +11,12 @@ var transforms = ["transform",
                    
 var transformProperty = getSupportedPropertyName(transforms);
  
-var imageContainer = document.querySelector("#parallaxContainer");
+var Layer_Far = document.querySelector("#parallaxFar");
+var Rate_Far = 0.5;
+var Layer_Mid = document.querySelector("#parallaxMid");
+var Rate_Mid = 0.75;
+var Layer_Near = document.querySelector("#parallaxNear");
+var Rate_Near = 1.75;
  
 var scrolling = false;
 var mouseWheelActive = false;
@@ -87,8 +92,12 @@ function setTranslate3DTransform(element, yPosition) {
 function animationLoop() {
     // adjust the image's position when scrolling
     if (scrolling) {
-        setTranslate3DTransform(imageContainer, 
-                                -1 * getScrollPosition() * 0.5);
+        setTranslate3DTransform(Layer_Far, 
+                                -1 * getScrollPosition() * Rate_Far);
+        setTranslate3DTransform(Layer_Mid, 
+                                -1 * getScrollPosition() * Rate_Mid);
+        setTranslate3DTransform(Layer_Near, 
+                                -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
     }
      

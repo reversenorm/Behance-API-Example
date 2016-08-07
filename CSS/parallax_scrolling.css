@@ -25,14 +25,38 @@ h1 {
     background-color: rgba(178, 45, 0, .75);
     color: #EEE;
 }
-#parallaxContainer {
+#parallaxFar {
     left: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: -1;
+    z-index: -2;
 }
-#parallaxContainer img {
+#parallaxFar img {
     width: 100%;
     height: auto;
+}
+
+#parallaxMid {
+    left: 0;
+    position: fixed;
+    width:50%;
+    top: 200px;
+    height:300px;
+    width: 100%;
+    z-index: -1;
+}
+
+#main{
+    z-index: 0;
+}
+
+#parallaxNear {
+    left: 50%;
+    width:50%;
+    height:600px;
+    position: fixed;
+    top: 1000;
+    width: 100%;
+    z-index: 1;
 }
