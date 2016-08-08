@@ -35,7 +35,7 @@ Not adding image on css to allow for easier changes*/
 
 #parallaxMain{
    left: 0;
-   top:1250px;
+   top:2250px;
     position: fixed;
     z-index: 0;
 }
@@ -59,7 +59,7 @@ ported from other sites. Also will have near clouds image at base */
 #parallaxNear {
     position: fixed;
     left: 0;
-    top:2150px;
+    top:3200px;
     width: 100%;
     z-index: 2;
 }
