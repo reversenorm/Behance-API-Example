@@ -135,7 +135,7 @@ function animationLoop() {
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
     for (i = 0; i < MovingBoxElement.length; i++) {
-        
+
            UpdateBoxes(MovingBoxElement[i]);
         }
     
@@ -149,8 +149,10 @@ function updateboxes(ThisBox){
     var Bottom=Top-Height;
     var WindowHeight=window.innerHeight;
 
+    ThisBox.style.borderTopWidth=1//just set all to 1 to confirm function
+
 //check top location
-    if (Top>(WindowHeight*.5)){
+   /* if (Top>(WindowHeight*.5)){
         //above half way set to minimum
         ThisBox.style.borderTopWidth=1
 
@@ -170,6 +172,6 @@ function updateboxes(ThisBox){
        ThisBox.style.borderTopWidth=1
         
     }
-
+*/
 
 }
