@@ -105,7 +105,6 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();//Also Call the border animation
         
     }
      
