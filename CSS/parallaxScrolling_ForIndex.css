@@ -36,7 +36,7 @@ Not adding image on css to allow for easier changes*/
 #Sunrise {
     left: 0;
     position: fixed;
-    top:500px;
+    top:1000px;
     z-index: -2;
 }
 /* image settings for parallax mid*/
