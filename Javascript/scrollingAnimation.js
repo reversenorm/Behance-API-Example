@@ -139,6 +139,8 @@ function CheckEachBox(){
     MidElements[1].className="movingBoxLow";
      MidElements[2].className="movingBoxLow";
       MidElements[3].className="movingBoxLow";
+
+      alert("I did it?");
 /*
     for (var i = 0; i < MidElements.length; i++) {
 
