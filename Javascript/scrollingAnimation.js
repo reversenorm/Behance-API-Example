@@ -143,13 +143,14 @@ function CheckEachBox(){
 
 
 function updateboxes(ThisBox){
+    alert("We Made it!");
 
     var Top=ThisBox.offsetTop;
     var Height=ThisBox.height;
     var Bottom=Top-Height;
     var WindowHeight=window.innerHeight;
 
-    ThisBox.style.borderTopWidth=1//just set all to 1 to confirm function
+    alert(ThisBox.style.borderTopWidth);
 
 //check top location
    /* if (Top>(WindowHeight*.5)){
