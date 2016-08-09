@@ -138,10 +138,11 @@ function CheckEachBox(){
     
     for (i = 0; i < MovingBoxElement.length; i++) {
 
+alert("Got to before Box Update");
+
            UpdateBoxes(MovingBoxElement[i]);
+           alert("Got to after Box Update");
     }
-    alert("Checked Boxes");
-}
 
 
 function updateboxes(ThisBox){
