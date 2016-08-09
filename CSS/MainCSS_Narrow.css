@@ -75,7 +75,7 @@ ported from other sites. Also will have near clouds image at base */
 #parallaxNear {
     position: fixed;
     left: 0;
-    top:2850px;
+    top:2900px;
     width: 100%;
     z-index: 1;
 }
