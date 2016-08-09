@@ -98,16 +98,11 @@ function animationLoop() {
 
     // adjust the image's position when scrolling
     if (scrolling) {
-        setTranslate3DTransform(Layer_Far, 
-                                -1 * getScrollPosition() * Rate_Far);
-        setTranslate3DTransform(Layer_Mid_Sunrise, 
-                                -1 * getScrollPosition() * Rate_Mid_Sunrise);
-         setTranslate3DTransform(Layer_Mid_Satellite, 
-                                -1 * getScrollPosition() * Rate_Mid_Satellite);
-                setTranslate3DTransform(Layer_Main, 
-                                -1 * getScrollPosition() * Rate_Main);
-        setTranslate3DTransform(Layer_Near, 
-                                -1 * getScrollPosition() * Rate_Near);
+        setTranslate3DTransform(Layer_Far, -1 * getScrollPosition() * Rate_Far);
+        setTranslate3DTransform(Layer_Mid_Sunrise, -1 * getScrollPosition() * Rate_Mid_Sunrise);
+        setTranslate3DTransform(Layer_Mid_Satellite, -1 * getScrollPosition() * Rate_Mid_Satellite);
+        setTranslate3DTransform(Layer_Main, -1 * getScrollPosition() * Rate_Main);
+        setTranslate3DTransform(Layer_Near,  -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
         
     }
