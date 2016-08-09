@@ -148,6 +148,10 @@ function CheckEachBox(){
            MidElements[i].className="movingBoxHigh"
             }
 
+        }else{
+
+            return;
+
         }
 
     }
