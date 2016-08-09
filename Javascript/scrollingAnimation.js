@@ -141,7 +141,10 @@ function CheckEachBox(){
     for (var i = 0; i < MidElements.length; i++) {
 
 
-        if(MidElements[i]==null){return;}else{
+        if(MidElements[i]==null){
+        //do nothing
+        }else{
+
             if(MidElements[i].offsetTop>window.innerHeight*.5){
            MidElements[i].className="movingBoxLow"
            i=0
