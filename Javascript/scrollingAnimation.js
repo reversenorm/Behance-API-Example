@@ -142,34 +142,14 @@ function CheckEachBox(){
 
         if(MidElements[i] && MidElements[i].offsetTop>window.innerHeight*.5){
            MidElements[i].className="movingBoxLow";
-           break;
         }
 
         if(MidElements[i] && MidElements[i].offsetTop<0){
            MidElements[i].className="movingBoxHigh";
-           break;
         }
 
     }
 
-    for (var i = 0; i < LowElements.length; i++) {
-
-
-        if(LowElements[i] && LowElements[i].offsetTop<window.innerHeight*.5){
-           LowElements[i].className="movingBoxMid";
-           break;
-        }
-
-    }
-
-    for (var i = 0; i < HighElements.length; i++) {
-
-        if(HighElements[i] && HighElements[i].offsetTop>0){
-           HighElements[i].className="movingBoxMid";
-           break;
-        }
-
-    }
 }
 
 
