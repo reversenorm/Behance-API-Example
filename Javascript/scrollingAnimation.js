@@ -28,6 +28,7 @@ var mouseDelta = 0;
 
 
 var MovingBoxElement = document.getElementsByClassName("movingBox");
+var i =0 //variable for counting through number of movingBox Class objects
 
 setup(); 
 //
@@ -135,6 +136,7 @@ function animationLoop() {
 function CheckEachBox(){
     for (i = 0; i < MovingBoxElement.length; i++) {
 
+             alert("Moving Box Element: "+MovingBoxElement[i]);
            UpdateBoxes(MovingBoxElement[i]);
         }
     
@@ -148,7 +150,6 @@ function updateboxes(ThisBox){
     var Bottom=Top-Height;
     var WindowHeight=window.innerHeight;
 
-    alert("Top of box is: "+Top);
 //check top location
     if (Top>(WindowHeight*.5)){
         //above half way set to minimum
