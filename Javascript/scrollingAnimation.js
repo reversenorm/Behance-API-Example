@@ -13,8 +13,10 @@ var transformProperty = getSupportedPropertyName(transforms);
  
 var Layer_Far = document.querySelector("#parallaxFar");
 var Rate_Far = 0.5;
-var Layer_Mid = document.querySelector("#parallaxMid");
-var Rate_Mid = 0.75;
+var Layer_Mid_Sunrise = document.querySelector("#parallaxMid_Sunrise");
+var Rate_Mid_Sunrise = 0.75;
+var Layer_Mid_Satellite = document.querySelector("#parallaxMid_Satellite");
+var Rate_Mid_Satellite = 0.75;
 var Layer_Main = document.querySelector("#parallaxMain");
 var Rate_Main = 1;
 var Layer_Near = document.querySelector("#parallaxNear");
@@ -98,8 +100,10 @@ function animationLoop() {
     if (scrolling) {
         setTranslate3DTransform(Layer_Far, 
                                 -1 * getScrollPosition() * Rate_Far);
-        setTranslate3DTransform(Layer_Mid, 
-                                -1 * getScrollPosition() * Rate_Mid);
+        setTranslate3DTransform(Layer_Mid_Sunrise, 
+                                -1 * getScrollPosition() * Rate_Mid_Sunrise);
+         setTranslate3DTransform(Layer_Mid_Satellite, 
+                                -1 * getScrollPosition() * Rate_Mid_Satellite);
                 setTranslate3DTransform(Layer_Main, 
                                 -1 * getScrollPosition() * Rate_Main);
         setTranslate3DTransform(Layer_Near, 

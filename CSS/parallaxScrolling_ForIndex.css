@@ -22,13 +22,25 @@ Not adding image on css to allow for easier changes*/
     height: auto;
 }
 /*carries slowly moving elements Like middle cloud layer and satellite or spaceship graphic*/
-#parallaxMid {
+#parallaxMid_Satellite {
     left: 0;
     position: fixed;
     z-index: -1;
 }
 /* image settings for parallax mid*/
-#parallaxMid img {
+#parallaxMid_Sattelite img {
+    width: 100%;
+    height: auto;
+}
+
+#parallaxMid_Sunrise {
+    left: 0;
+    position: fixed;
+    top:1500px;
+    z-index: -1;
+}
+/* image settings for parallax mid*/
+#parallaxMid_Sunrise img {
     width: 100%;
     height: auto;
 }
