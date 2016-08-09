@@ -143,6 +143,8 @@ function CheckEachBox(){
 
 function UpdateBoxes(ThisBox){
 
+    alert(ThisBox.style.borderTopWidth);//are we getting this?
+
     var Top=ThisBox.offsetTop;
     var Height=ThisBox.height;
     var Bottom=Top-Height;
