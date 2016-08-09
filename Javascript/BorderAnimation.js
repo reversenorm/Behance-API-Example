@@ -31,11 +31,17 @@ function updateboxes(ThisBox){
 	var Height=ThisBox.height;
 	var Bottom=Top-Height;
 //check top location
-	if (Top>(WindowHeight*.5)){
+	if (Top>(WindowHeight*.5-20)){
 		//above half way set to minimum
 		ThisBox.className="movingBoxLow";
 
-	}else if (Bottom<(WindowHeight*.5)){
+	}else{
+       //Below half way set to minimum
+       ThisBox.className="movingBoxMid";
+		
+	}
+
+	if (Bottom>(WindowHeight*.5)){
 
 		//adjust Thickness
 		ThisBox.className="movingBoxHigh";
