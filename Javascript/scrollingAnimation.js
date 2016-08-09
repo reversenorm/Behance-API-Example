@@ -110,7 +110,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();//Also Call the border animation
+        
     }
      
     // scroll up or down by 10 pixels when the mousewheel is used
@@ -123,6 +123,7 @@ function animationLoop() {
             count = 0;
             mouseWheelActive = false;
             mouseDelta = 0;
+            CheckEachBox();//Also Call the border animation
         }
     }
          
@@ -138,7 +139,6 @@ function CheckEachBox(){
     MidElements[2].className="movingBoxHigh";
     MidElements[3].className="movingBoxHigh";
 
-    alert("I did it");
 
 
     /*
