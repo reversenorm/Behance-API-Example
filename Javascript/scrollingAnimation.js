@@ -135,13 +135,6 @@ function animationLoop() {
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
 
-    MidElements[1].className="movingBoxHigh";
-
-
-
-
-    /*
-
     for (var i = 0; i < MidElements.length; i++) {
 
         var $Top=MidElements[i].offsetTop;
@@ -165,6 +158,8 @@ function CheckEachBox(){
         }
 
     }
+
+     /*
 
     }
 
