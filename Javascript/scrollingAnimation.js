@@ -28,7 +28,8 @@ var mouseDelta = 0;
 
 
 
-var MovingBoxElement = document.getElementsByClassName('movingBox')
+var MovingBoxElement = document.getElementsByClassName('movingBox');
+
 alert(MovingBoxElement);
 
  
