@@ -133,12 +133,12 @@ function animationLoop() {
 //
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
-    if(scrolling){
+    alert(MovingBoxElement);
     for (i = 0; i < MovingBoxElement.length; i++) {
 
            UpdateBoxes(MovingBoxElement[i]);
         }
-    }
+    
 }
 
 
