@@ -29,6 +29,8 @@ var mouseDelta = 0;
 
 var MovingBoxElement = document.getElementsByClassName("movingBox");
 
+alert(MovingBoxElement[1].style.borderTopWidth);
+
 setup(); 
 //
 // vendor prefix management
@@ -135,7 +137,6 @@ function animationLoop() {
 function CheckEachBox(){
 
     for (var i = 0; i < MovingBoxElement.length; i++) {
-        alert(MovingBoxElement[i].style.borderTopWidth);
 
            UpdateBoxes(MovingBoxElement[i]);
         }
