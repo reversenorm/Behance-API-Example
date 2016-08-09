@@ -27,12 +27,8 @@ var count = 0;
 var mouseDelta = 0;
 
 
+var MovingBoxElement = document.getElementsByClassName("movingBox");
 
-var MovingBoxElement = document.getElementsByClassName('movingBox');
-
-alert(MovingBoxElement);
-
- 
 setup(); 
 //
 // vendor prefix management
@@ -54,6 +50,7 @@ function setup() {
     window.addEventListener("DOMMouseScroll", mouseScroll, false);
      
     animationLoop();
+    CheckEachBox();
 
 }
  
@@ -112,7 +109,6 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();
 
     }
      
@@ -137,11 +133,13 @@ function animationLoop() {
 //
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
-    
+    if(scrolling){
     for (i = 0; i < MovingBoxElement.length; i++) {
 
            UpdateBoxes(MovingBoxElement[i]);
+        }
     }
+}
 
 
 function updateboxes(ThisBox){
