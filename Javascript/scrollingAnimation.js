@@ -51,7 +51,6 @@ function setup() {
     window.addEventListener("DOMMouseScroll", mouseScroll, false);
      
     animationLoop();
-    CheckEachBox();
 
 }
  
@@ -110,6 +109,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
+        CheckEachBox();//also update the movingBox boarders
 
     }
      
