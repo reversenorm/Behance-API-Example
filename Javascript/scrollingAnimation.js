@@ -29,7 +29,8 @@ var mouseDelta = 0;
 
 var MovingBoxElement = document.getElementsByClassName("movingBox");
 
-alert("First Element Style"+MovingBoxElement[1].style.border);
+alert("First Element Top "+MovingBoxElement[1].style.borderTopWidth);
+alert("First Element bottom"+MovingBoxElement[1].style.borderBottomWidth);
 
 setup(); 
 //
