@@ -50,9 +50,7 @@ function setup() {
     window.addEventListener("DOMMouseScroll", mouseScroll, false);
      
     animationLoop();
-    alert("Run Setup");
     CheckEachBox();
-    alert("Passed Check Box");
 
 }
  
@@ -135,7 +133,6 @@ function animationLoop() {
 //
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
-    
     for (i = 0; i < MovingBoxElement.length; i++) {
 
            UpdateBoxes(MovingBoxElement[i]);
@@ -150,6 +147,8 @@ function updateboxes(ThisBox){
     var Height=ThisBox.height;
     var Bottom=Top-Height;
     var WindowHeight=window.innerHeight;
+
+    alert("Top of box is: "+Top);
 //check top location
     if (Top>(WindowHeight*.5)){
         //above half way set to minimum
