@@ -1,45 +1,48 @@
 
 
-var MovingBoxElement = document.getElementsByClassName('movingBox')
+var MidElements = document.getElementsByClassName("movingBoxMid");
+var LowElements = document.getElementsByClassName("movingBoxLow");
+var HighElements = document.getElementsByClassName("movingBoxHigh");
 
 
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
-	alert("CheckEachBox Entered");
 
-	for (i = 0; i < MovingBoxElement.length; i++) {
+	for (var i = 0; i < MidElements.length; i++) {
 
-           UpdateBoxes(MovingBoxElement[i]);
+           UpdateBoxes(MidElements[i]);
+    }
+
+    	for (var i = 0; i < LowElements.length; i++) {
+
+           UpdateBoxes(LowElements[i]);
+    }
+
+    	for (var i = 0; i < HighElements.length; i++) {
+
+           UpdateBoxes(HighElements[i]);
     }
 }
 
 
 function updateboxes(ThisBox){
 
-
 	var Top=ThisBox.offsetTop;
 	var Height=ThisBox.height;
 	var Bottom=Top-Height;
-	var WindowHeight=window.innerHeight;
 //check top location
 	if (Top>(WindowHeight*.5)){
 		//above half way set to minimum
-		ThisBox.style.borderTopWidth=1
+		ThisBox.className="movingBoxLow";
 
-	}else{
-       //adjust Thickness
-       ThisBox.style.borderTopWidth=5 //temp for debug test
-		
-	}
-//check bottom location and asjust
-		if (Bottom>(WindowHeight*.5)){
+	}else if (Bottom<(WindowHeight*.5)){
 
 		//adjust Thickness
-		 ThisBox.style.borderTopWidth=5//temp for debug test
+		ThisBox.className="movingBoxHigh";
 
 	}else{
        //Below half way set to minimum
-       ThisBox.style.borderTopWidth=1
+       ThisBox.className="movingBoxMid";
 		
 	}
 
