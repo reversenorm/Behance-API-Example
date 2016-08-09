@@ -140,6 +140,7 @@ function CheckEachBox(){
 
            UpdateBoxes(MovingBoxElement[i]);
     }
+    alert("Checked Boxes");
 }
 
 
@@ -150,7 +151,6 @@ function updateboxes(ThisBox){
     var Bottom=Top-Height;
     var WindowHeight=window.innerHeight;
 //check top location
-alert("Top "+Top+" Window Height "+WindowHeight);
     if (Top>(WindowHeight*.5)){
         //above half way set to minimum
         ThisBox.style.borderTopWidth=1
