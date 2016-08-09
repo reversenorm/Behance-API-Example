@@ -30,7 +30,6 @@ var MidElements = document.getElementsByClassName("movingBoxMid");
 var LowElements = document.getElementsByClassName("movingBoxLow");
 var HighElements = document.getElementsByClassName("movingBoxHigh");
 
-alert(MidElements[1].className);
 
 setup(); 
 //
@@ -111,7 +110,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();//Also Call the border animation
+        //CheckEachBox();//Also Call the border animation
 
     }
      
