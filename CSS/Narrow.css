@@ -1,0 +1,27 @@
+
+#Sunrise {
+
+    top:1300px;
+
+}
+
+
+/* mid level clouds here */
+#parallaxMain{
+   top:1925px;
+
+}
+
+/*ultimatelly totally transparent, this section houses the blocks of content 
+ported from other sites. Also will have near clouds image at base */
+#main{
+
+	height: 2000px;
+}
+
+
+#parallaxNear {
+
+    top:2900px;
+
+}
