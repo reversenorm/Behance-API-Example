@@ -137,48 +137,75 @@ function CheckEachBox(){
 
     for (var i = 0; i < MidElements.length; i++) {
 
-           UpdateBoxes(MidElements[i]);
+        var Top=MidElements[i].offsetTop;
+        var Height=MidElements[i].height;
+        var Bottom=Top-Height;
+
+        if (Top>(WindowHeight*.5)){
+        //above half way set to minimum
+        MidElements[i].className="movingBoxLow";
+         }else{
+       //Below half way set to minimum
+       MidElements[i].className="movingBoxMid";
+        }
+
+        if (Bottom<(WindowHeight*.5)){
+        //above half way set to minimum
+        MidElements[i].className="movingBoxHigh";
+         }else{
+       //Below half way set to minimum
+       MidElements[i].className="movingBoxMid";
+        }
+
+    }
+
     }
 
         for (var i = 0; i < LowElements.length; i++) {
+        var Top=LowElements[i].offsetTop;
+        var Height=LowElements[i].height;
+        var Bottom=Top-Height;
 
-           UpdateBoxes(LowElements[i]);
+        if (Top>(WindowHeight*.5)){
+        //above half way set to minimum
+        LowElements[i].className="movingBoxLow";
+         }else{
+       //Below half way set to minimum
+       LowElements[i].className="movingBoxMid";
+        }
+
+        if (Bottom<(WindowHeight*.5)){
+        //above half way set to minimum
+        LowElements[i].className="movingBoxHigh";
+         }else{
+       //Below half way set to minimum
+       LowElements[i].className="movingBoxMid";
+        }
     }
 
         for (var i = 0; i < HighElements.length; i++) {
 
-           UpdateBoxes(HighElements[i]);
-    }
-}
+                var Top=HighElements[i].offsetTop;
+        var Height=HighElements[i].height;
+        var Bottom=Top-Height;
 
-
-function updateboxes(ThisBox){
-
-    var Top=ThisBox.offsetTop;
-    var Height=ThisBox.height;
-    var Bottom=Top-Height;
-//check top location
-    if (Top>(WindowHeight*.5)){
+        if (Top>(WindowHeight*.5)){
         //above half way set to minimum
-        ThisBox.className="movingBoxLow";
-
-    }else{
+        HighElements[i].className="movingBoxLow";
+         }else{
        //Below half way set to minimum
-       ThisBox.className="movingBoxMid";
-        
-    }
+       HighElements[i].className="movingBoxMid";
+        }
 
-    if (Bottom>(WindowHeight*.5)){
-
-        //adjust Thickness
-        ThisBox.className="movingBoxHigh";
-
-    }else{
+        if (Bottom<(WindowHeight*.5)){
+        //above half way set to minimum
+        HighElements[i].className="movingBoxHigh";
+         }else{
        //Below half way set to minimum
-       ThisBox.className="movingBoxMid";
-        
+       HighElements[i].className="movingBoxMid";
+        }
     }
-
-
 }
+
+
 
