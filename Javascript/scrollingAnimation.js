@@ -136,8 +136,7 @@ function animationLoop() {
 function CheckEachBox(){
 
     MidElements[1].className="movingBoxHigh";
-    MidElements[2].className="movingBoxHigh";
-    MidElements[3].className="movingBoxHigh";
+
 
 
 
