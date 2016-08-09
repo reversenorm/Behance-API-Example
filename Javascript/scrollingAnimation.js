@@ -133,7 +133,9 @@ function animationLoop() {
 //
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
+
     for (var i = 0; i < MovingBoxElement.length; i++) {
+        alert(MovingBoxElement[i].style.borderTopWidth);
 
            UpdateBoxes(MovingBoxElement[i]);
         }
@@ -143,7 +145,6 @@ function CheckEachBox(){
 
 function UpdateBoxes(ThisBox){
 
-    alert(ThisBox.style.borderTopWidth);//are we getting this?
 
     var Top=ThisBox.offsetTop;
     var Height=ThisBox.height;
