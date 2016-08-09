@@ -110,7 +110,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();//Also Call the border animation
+        
         
     }
      
@@ -125,6 +125,8 @@ function animationLoop() {
             mouseWheelActive = false;
             mouseDelta = 0;
             
+            CheckEachBox();//Also Call the border animation
+            
         }
     }
          
@@ -138,7 +140,6 @@ function CheckEachBox(){
 
     for (var i = 0; i < MidElements.length; i++) {
 
-        if(MidElements[i]){
 
             if(MidElements[i].offsetTop>window.innerHeight*.5){
            MidElements[i].className="movingBoxLow"
@@ -148,11 +149,6 @@ function CheckEachBox(){
            MidElements[i].className="movingBoxHigh"
             }
 
-        }else{
-
-            return;
-
-        }
 
     }
 }
