@@ -93,6 +93,7 @@ function setTranslate3DTransform(element, yPosition) {
 }
  
 function animationLoop() {
+
     // adjust the image's position when scrolling
     if (scrolling) {
         setTranslate3DTransform(Layer_Far, 
@@ -104,8 +105,8 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-
         CheckEachBox();//this is in BorderAnimation.js but will piggy back on scroll event
+
     }
      
     // scroll up or down by 10 pixels when the mousewheel is used
