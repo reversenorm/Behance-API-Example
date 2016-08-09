@@ -135,8 +135,7 @@ function animationLoop() {
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
     for (i = 0; i < MovingBoxElement.length; i++) {
-
-             alert("Moving Box Element: "+MovingBoxElement[i]);
+        
            UpdateBoxes(MovingBoxElement[i]);
         }
     
