@@ -110,7 +110,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        //CheckEachBox();//Also Call the border animation
+        CheckEachBox();//Also Call the border animation
 
     }
      
@@ -135,13 +135,6 @@ function animationLoop() {
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
 
-    //when called let's just change all to class low.
-    MidElements[1].className="movingBoxLow";
-     MidElements[2].className="movingBoxLow";
-      MidElements[3].className="movingBoxLow";
-
-      alert("I did it?");
-/*
     for (var i = 0; i < MidElements.length; i++) {
 
         var $Top=MidElements[i].offsetTop;
@@ -212,8 +205,6 @@ function CheckEachBox(){
        HighElements[i].className="movingBoxMid";
         }
     }
-
-    */
 }
 
 
