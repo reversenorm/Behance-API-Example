@@ -30,9 +30,6 @@ var MidElements = document.getElementsByClassName("movingBoxMid");
 var LowElements = document.getElementsByClassName("movingBoxLow");
 var HighElements = document.getElementsByClassName("movingBoxHigh");
 
-alert(MidElements[1].className);
-alert(MidElements[2].className);
-alert(MidElements[3].className);
 
 setup(); 
 //
@@ -135,7 +132,7 @@ function animationLoop() {
 }
 
 //Border Animation Call
-/Call each element of the class and pass to the animation function
+//Call each element of the class and pass to the animation function
 function CheckEachBox(){
 
     for (var i = 0; i < MidElements.length; i++) {
@@ -158,8 +155,11 @@ function CheckEachBox(){
 function updateboxes(ThisBox){
 
     var Top=ThisBox.offsetTop;
+    alert(Top);
     var Height=ThisBox.height;
+    alert(Height);
     var Bottom=Top-Height;
+    alert(Bottom);
 //check top location
     if (Top>(WindowHeight*.5-20)){
         //above half way set to minimum
