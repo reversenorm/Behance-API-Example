@@ -71,8 +71,7 @@ ported from other sites. Also will have near clouds image at base */
     height: auto;
 }
 
-
-.movingBoxMid{
+.movingBox{
     display:block;
     height:450px;
     border: solid rgba(200, 115, 15, .75);
@@ -85,39 +84,7 @@ ported from other sites. Also will have near clouds image at base */
    -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
    box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
 
-border-width: 1px 1px 1px 1px;
+border-width: 2px 1px 2px 1px;
 
-}
-
-.movingBoxHigh{
-        display:block;
-    height:450px;
-    border: solid rgba(200, 115, 15, .75);
-    background-color: rgba(255, 255, 255, .10);
-    padding: 15px;
-    margin:20px;
-
-/*make the edges glow*/
-   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-
-    border-width: 1px 1px 10px 1px;
-}
-
-.movingBoxLow{
-        display:block;
-    height:450px;
-    border: solid rgba(200, 115, 15, .75);
-    background-color: rgba(255, 255, 255, .10);
-    padding: 15px;
-    margin:20px;
-
-/*make the edges glow*/
-   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-
-    border-width: 10px 1px 1px 1px;
 }
 

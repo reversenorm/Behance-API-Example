@@ -26,11 +26,6 @@ var mouseWheelActive = false;
 var count = 0;
 var mouseDelta = 0;
 
-var MidElements = document.getElementsByClassName("movingBoxMid");
-var LowElements = document.getElementsByClassName("movingBoxLow");
-var HighElements = document.getElementsByClassName("movingBoxHigh");
-
-
 setup(); 
 //
 // vendor prefix management
@@ -134,23 +129,6 @@ function animationLoop() {
 
 }
 
-//Border Animation Call
-//Call each element of the class and pass to the animation function
-function CheckEachBox(){
-
-    for (var i = 0; i < MidElements.length; i++) {
-
-        if(MidElements[i] && MidElements[i].offsetTop>window.innerHeight*.5){
-           MidElements[i].className="movingBoxLow";
-        }
-
-        if(MidElements[i] && MidElements[i].offsetTop<0){
-           MidElements[i].className="movingBoxHigh";
-        }
-
-    }
-
-}
 
 
 
