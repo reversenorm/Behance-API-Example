@@ -138,13 +138,13 @@ function CheckEachBox(){
 
     for (var i = 0; i < MidElements.length; i++) {
 
-        if(MidElements[i]==null){return}else{
+        if(MidElements[i]!=null){
 
             if(MidElements[i].offsetTop>window.innerHeight*.5){
            MidElements[i].className="movingBoxLow"
             }
 
-             if(MidElements[i].offsetTop<window.innerHeight*.5){
+             if(MidElements[i].offsetTop<0){
            MidElements[i].className="movingBoxHigh"
             }
 
