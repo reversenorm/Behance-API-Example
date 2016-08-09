@@ -105,7 +105,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();//this is in BorderAnimation.js but will piggy back on scroll event
+        
 
     }
      
