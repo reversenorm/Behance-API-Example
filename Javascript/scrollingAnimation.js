@@ -50,7 +50,9 @@ function setup() {
     window.addEventListener("DOMMouseScroll", mouseScroll, false);
      
     animationLoop();
+    alert("Run Setup");
     CheckEachBox();
+    alert("Passed Check Box");
 
 }
  
@@ -133,7 +135,7 @@ function animationLoop() {
 //
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
-    alert(MovingBoxElement);
+    
     for (i = 0; i < MovingBoxElement.length; i++) {
 
            UpdateBoxes(MovingBoxElement[i]);
