@@ -3,7 +3,7 @@ body {
     padding: 45px;
     background-color: #000000;
     color:#ffffff;
-     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /*This is the slowly moving background image. 
@@ -18,7 +18,7 @@ Not adding image on css to allow for easier changes*/
 }
 /*sets image on parallax far to fill screne. Need to add alt version for mobile/narrow screen*/
 #parallaxFar img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 /*carries slowly moving elements Like middle cloud layer and satellite or spaceship graphic*/
@@ -29,7 +29,7 @@ Not adding image on css to allow for easier changes*/
 }
 /* image settings for parallax mid*/
 #parallaxMid_Satellite img {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
