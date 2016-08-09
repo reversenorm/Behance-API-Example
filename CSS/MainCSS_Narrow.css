@@ -37,7 +37,7 @@ Not adding image on css to allow for easier changes*/
 #Sunrise {
     left: 0;
     position: fixed;
-    top:1000px;
+    top:1500px;
     z-index: -2;
 }
 /* image settings for parallax mid*/
@@ -46,9 +46,10 @@ Not adding image on css to allow for easier changes*/
     height: auto;
 }
 
+/* mid level clouds here */
 #parallaxMain{
    left: 0;
-   top:2000px;
+   top:1500px;
    position: fixed;
    z-index: -1;
 }
@@ -74,7 +75,7 @@ ported from other sites. Also will have near clouds image at base */
 #parallaxNear {
     position: fixed;
     left: 0;
-    top:3000px;
+    top:2500px;
     width: 100%;
     z-index: 1;
 }
