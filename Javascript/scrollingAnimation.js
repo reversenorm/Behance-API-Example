@@ -140,6 +140,10 @@ function CheckEachBox(){
             if(MidElements[i].offsetTop>window.innerHeight*.5){
            MidElements[i].className="movingBoxLow"
             }
+            
+            if(MidElements[i].offsetTop<0){
+           MidElements[i].className="movingBoxHigh"
+            }
     }
 }
 
