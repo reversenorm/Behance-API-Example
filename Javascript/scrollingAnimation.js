@@ -26,12 +26,6 @@ var mouseWheelActive = false;
 var count = 0;
 var mouseDelta = 0;
 
-
-var MovingBoxElement = document.getElementsByClassName("movingBox");
-
-alert("First Element Top "+MovingBoxElement[1].style.borderTopWidth);
-alert("First Element bottom"+MovingBoxElement[1].style.borderBottomWidth);
-
 setup(); 
 //
 // vendor prefix management
@@ -111,7 +105,6 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        CheckEachBox();//also update the movingBox boarders
 
     }
      
@@ -132,49 +125,4 @@ function animationLoop() {
 }
 
 //
-//Now call border animation
-//
-//Call each element of the class and pass to the animation function
-function CheckEachBox(){
 
-    for (var i = 0; i < MovingBoxElement.length; i++) {
-
-           UpdateBoxes(MovingBoxElement[i]);
-        }
-    
-}
-
-
-function UpdateBoxes(ThisBox){
-
-
-    var Top=ThisBox.offsetTop;
-    var Height=ThisBox.height;
-    var Bottom=Top-Height;
-    var WindowHeight=window.innerHeight;
-
-    ThisBox.style.borderTopWidth=1
-//check top location
-   /* if (Top>(WindowHeight*.5)){
-        //above half way set to minimum
-        ThisBox.style.borderTopWidth=1
-
-    }else{
-       //adjust Thickness
-       ThisBox.style.borderTopWidth=5 //temp for debug test
-        
-    }
-//check bottom location and asjust
-        if (Bottom>(WindowHeight*.5)){
-
-        //adjust Thickness
-         ThisBox.style.borderTopWidth=5//temp for debug test
-
-    }else{
-       //Below half way set to minimum
-       ThisBox.style.borderTopWidth=1
-        
-    }
-*/
-
-}
