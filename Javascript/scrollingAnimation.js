@@ -52,7 +52,6 @@ function setup() {
     window.addEventListener("DOMMouseScroll", mouseScroll, false);
      
     animationLoop();
-    CheckEachBox();
 
 }
  
@@ -111,7 +110,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near, 
                                 -1 * getScrollPosition() * Rate_Near);
         scrolling = false;
-        
+        CheckEachBox();
 
     }
      
@@ -146,12 +145,12 @@ function CheckEachBox(){
 
 function updateboxes(ThisBox){
 
-
     var Top=ThisBox.offsetTop;
     var Height=ThisBox.height;
     var Bottom=Top-Height;
     var WindowHeight=window.innerHeight;
 //check top location
+alert("Top "+Top+" Window Height "+WindowHeight);
     if (Top>(WindowHeight*.5)){
         //above half way set to minimum
         ThisBox.style.borderTopWidth=1
