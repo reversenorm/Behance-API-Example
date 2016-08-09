@@ -5,6 +5,7 @@ var MovingBoxElement = document.getElementsByClassName('movingBox')
 
 //Call each element of the class and pass to the animation function
 function CheckEachBox(){
+	alert("CheckEachBox Entered");
 
 	for (i = 0; i < MovingBoxElement.length; i++) {
 
@@ -14,6 +15,7 @@ function CheckEachBox(){
 
 
 function updateboxes(ThisBox){
+
 
 	var Top=ThisBox.offsetTop;
 	var Height=ThisBox.height;
