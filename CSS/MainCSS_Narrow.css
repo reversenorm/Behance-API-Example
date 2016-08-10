@@ -192,6 +192,13 @@ ported from other sites. Also will have near clouds image at base */
     color:#ffffff;
 }
 
+#aboutCloseButton{
+    position:relative;
+    float:right;
+    top:-5px;
+    
+}
+
 
 
 
