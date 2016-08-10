@@ -1,90 +1,100 @@
 <!DOCTYPE html>
-<html> 
+<html>
+
 <head>
-<meta content="en-us" http-equiv="Content-Language">
-<meta charset="utf-8">
-<meta content="A high performance parallax scrolling example." name="description">
-<meta content="Parallax Scrolling Example" name="title">
-<title>Jesse Phillips - Online Portfolio</title>
-<!-- import roboto font face from google !-->
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <meta content="en-us" http-equiv="Content-Language">
+    <meta charset="utf-8">
+    <meta content="A high performance parallax scrolling example." name="description">
+    <meta content="Parallax Scrolling Example" name="title">
+    <title>Jesse Phillips - Online Portfolio</title>
+    <!-- import roboto font face from google !-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
-<!-- Narrow first for css then Add elements for more complex arrangements !-->
-<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 650px)" href="reversenorm.github.io/CSS/MainCSS_Narrow.css" />
+    <!-- Narrow first for css then Add elements for more complex arrangements !-->
+    <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 650px)" href="reversenorm.github.io/CSS/MainCSS_Narrow.css" />
 
-<!-- Just updates the main height and top attributes for scrolling to line up, Main_CSS_Narrow.css holds the primary information!-->
-<link rel="stylesheet" media="screen and (min-width: 651px) and (max-width: 900px)" href="reversenorm.github.io/CSS/Medium.css" />
+    <!-- Just updates the main height and top attributes for scrolling to line up, Main_CSS_Narrow.css holds the primary information!-->
+    <link rel="stylesheet" media="screen and (min-width: 651px) and (max-width: 900px)" href="reversenorm.github.io/CSS/Medium.css" />
 
-<!-- Now for large size adjustments !-->
-<link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1240px)" href="reversenorm.github.io/CSS/Large.css" />
+    <!-- Now for large size adjustments !-->
+    <link rel="stylesheet" media="screen and (min-width: 901px) and (max-width: 1240px)" href="reversenorm.github.io/CSS/Large.css" />
 
-<!-- Now for large size adjustments !-->
-<link rel="stylesheet" media="screen and (min-width: 1241px) and (max-width: 2200px)" href="reversenorm.github.io/CSS/Extra_Large.css" />
+    <!-- Now for large size adjustments !-->
+    <link rel="stylesheet" media="screen and (min-width: 1241px) and (max-width: 2200px)" href="reversenorm.github.io/CSS/Extra_Large.css" />
 
 
 </head>
+
 <body>
-<div id="parallaxFar">
-    <img src="Images/Far.png">
-</div>
+    <div id="parallaxFar">
+        <img src="Images/Far.png">
+    </div>
 
-<div id="Satellite">
-<img src="Images/Satellite_Mid.png">
-</div>
+    <div id="Satellite">
+        <img src="Images/Satellite_Mid.png">
+    </div>
 
-<div id="Sunrise">
-<img src="Images/Sunrise_Mid.png">
-</div>
+    <div id="Sunrise">
+        <img src="Images/Sunrise_Mid.png">
+    </div>
 
-<div id="parallaxMain">
-<img src="Images/Main.png">
-</div>
+    <div id="parallaxMain">
+        <img src="Images/Main.png">
+    </div>
 
-<div id="main">
+    <div id="main">
 
-<br/>&nbsp;
-<div class="movingBox">
+        <br/>&nbsp;
+        <div class="movingBox">
+            <span id="Design">
 <h1>Behance Data Goes here</h1>
 <br/>
 Currently Under Consturction. But you know I don't really think anyone will be searching this until I start sharing my URL.
-</div><br/>&nbsp;
+</span>
+        </div><br/>&nbsp;
 
-<div class="movingBox">
+        <div class="movingBox">
+            <span id="Art">
 <h1>Deviant Art link up</h1>
 <br/>
 Just some are from my old Deviant page, but then again it has a lot of good stuff. Also means I might update it more if it also doubles as my portfolio page.
-</div><br/>&nbsp;
+</span>
+        </div><br/>&nbsp;
 
-<div class="movingBox">
+        <div class="movingBox">
+            <span id="Code">
 <h1>Git Hub Stuff</h1><br/>
 Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler examples and hopefully my pluto figure eight.
-</div><br/>&nbsp;
+</span>
+        </div><br/>&nbsp;
 
-</div> <!--end of main div !-->
+    </div>
+    <!--end of main div !-->
 
-<div id="parallaxNear">
-<img src="Images/Near.png">
-</div>
+    <div id="parallaxNear">
+        <img src="Images/Near.png">
+    </div>
 
-<!--Menu goes at the bottom because it is the topmost element!-->
+    <!--Menu goes at the bottom because it is the topmost element!-->
 
-<div id="menu">
-<ul>
-<li>Design</li>
-<li>Art</li>
-<li>Code</li>
-<li>About</li>
-</ul>
+    <div id="menu">
+        <ul>
+            <li><a href="#Design">Design</a></li>
+            <li><a href="#Art">Art</a></li>
+            <li><a href="#code">Code</a></li>
+            <li><a href="#about">About</a></li>
+            <!--this will call a javascript to reveal the about box!-->
+        </ul>
 
-<div id="about">
-About blurb goes here. <br/>
-Resume link and <br />
-<a href="mailto:jphillips01@gmail.com">jphillips01@gmail.com</a>
-</div>
-</div>
- 
-<script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
-<script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
+        <div id="about">
+            About blurb goes here. <br/> Resume link and <br />
+            <a href="mailto:jphillips01@gmail.com">jphillips01@gmail.com</a>
+        </div>
+    </div>
+
+    <script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
+    <script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
 
 </body>
+
 </html>

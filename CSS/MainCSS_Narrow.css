@@ -117,6 +117,7 @@ ported from other sites. Also will have near clouds image at base */
     list-style: none;
     font-weight: bold;
     color:#000000;
+    width:50px;
 /*make the edges glow*/
    -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
    -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
@@ -125,7 +126,9 @@ ported from other sites. Also will have near clouds image at base */
 
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
-    background-color: rgba(200, 115, 15, 1);
+    background-color: rgba(200, 115, 0, 1);
+
+    margin:20px;
 
 }
 
