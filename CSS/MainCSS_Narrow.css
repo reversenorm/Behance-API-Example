@@ -115,14 +115,12 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-#menu li {
-
-    list-style: none;
+#menu ul {
+    list-style-type: none;
     font-weight: bold;
 }
 
 #menu li a {
-
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
