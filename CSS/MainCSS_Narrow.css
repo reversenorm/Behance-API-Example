@@ -170,7 +170,7 @@ ported from other sites. Also will have near clouds image at base */
 
     position:relative;
     float:left;
-    display:block;
+    display:none;
     left:68px;
     top:-28px;
     width:250px;
@@ -186,7 +186,6 @@ ported from other sites. Also will have near clouds image at base */
 
    border-width: 2px 1px 2px 1px;
 
-   visibility:hidden;
 }
 
 #about a {
