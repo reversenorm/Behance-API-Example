@@ -185,7 +185,7 @@ ported from other sites. Also will have near clouds image at base */
    box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
 
    border-width: 2px 1px 2px 1px;
-   display: none;
+   visibility: visible;display;'';
 }
 
 #about a {
