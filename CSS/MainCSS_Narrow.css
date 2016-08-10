@@ -115,7 +115,7 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-#menu:before{
+.movingbox:before{
     -webkit-transform: skewY(-2deg);
   -moz-transform: skewY(-2deg);
   -ms-transform: skewY(-2deg);
@@ -123,7 +123,7 @@ ported from other sites. Also will have near clouds image at base */
   transform: skewY(-2deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
-    
+
 }
 
 #menu ul {
