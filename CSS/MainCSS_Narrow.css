@@ -115,7 +115,7 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-.menuItem{
+.menuItem:before{
 -webkit-transform: skewX(-20deg);
   -moz-transform: skewX(-20deg);
   -ms-transform: skewX(-20deg);
