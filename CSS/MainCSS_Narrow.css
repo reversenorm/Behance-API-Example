@@ -115,24 +115,21 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-.movingbox:before{
-    -webkit-transform: skewY(-2deg);
-  -moz-transform: skewY(-2deg);
-  -ms-transform: skewY(-2deg);
-  -o-transform: skewY(-2deg);
-  transform: skewY(-2deg);
+
+.menuItem:before {
+
+    -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
 
 }
 
-#menu ul {
-    list-style-type: none;
-    font-weight: bold;
-}
 
-
-#menu li a {
+.menuItem:after {
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
@@ -153,7 +150,7 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 
-#menu li a:hover {
+.menuItem:hover {
     background-color: rgba(255, 255, 255, .10);
     color: white;
     display: block;
