@@ -115,6 +115,17 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
+#menu:before{
+    -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+    
+}
+
 #menu ul {
     list-style-type: none;
     font-weight: bold;
@@ -141,11 +152,6 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-#menu li:after {
-    transform:skewX(-15deg);
-    -ms-transform:skewX(-15deg);
-    -webkit-transform:skewX(-15deg);
-}
 
 #menu li a:hover {
     background-color: rgba(255, 255, 255, .10);
