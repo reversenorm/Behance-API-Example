@@ -115,6 +115,7 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
+<<<<<<< HEAD
 
 .menuItem a:before {
 
@@ -123,9 +124,17 @@ ported from other sites. Also will have near clouds image at base */
   -ms-transform: skewX(-20deg);
   -o-transform: skewX(-20deg);
   transform: skewX(-20deg);
+=======
+#menu:before{
+    -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+>>>>>>> parent of 90970ab... test on other objects
   -webkit-backface-visibility: hidden;
   backface-visibility: initial;
-
+    
 }
 
 
