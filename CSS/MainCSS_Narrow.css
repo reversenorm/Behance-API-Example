@@ -160,9 +160,10 @@ ported from other sites. Also will have near clouds image at base */
 
     position:relative;
     float:left;
-    left:70px;
+    left:55px;
+    top:-15px;
     display:block;
-    width:150px;
+    width:250px;
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(255, 255, 255, .10);
     padding: 15px;
