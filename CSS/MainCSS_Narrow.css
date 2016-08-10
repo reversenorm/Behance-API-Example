@@ -103,8 +103,9 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 .menu{
-    display:block;
-    position:absolute;
+
+    position: relative;
+    display: inline-block;
     height:200px;
     width:10%
     left:-10;
