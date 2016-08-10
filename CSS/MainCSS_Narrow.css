@@ -109,13 +109,15 @@ ported from other sites. Also will have near clouds image at base */
     position:fixed;
     width:100%
     top:0px;
-    left:-21px;
+    left:0px;
     z-index:3;
 
 }
 
 
 #menu ul{
+    position:fixed;
+    left:-20px;
     list-style-type: none;
     font-weight: bold;
 }
@@ -127,7 +129,7 @@ ported from other sites. Also will have near clouds image at base */
 
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
-    margin:20px;
+    margin:10px;
 
     color:#000000;
     text-decoration: none;
