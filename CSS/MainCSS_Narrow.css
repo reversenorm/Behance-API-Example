@@ -115,10 +115,13 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-#menu li a {
+#menu li {
 
     list-style: none;
     font-weight: bold;
+}
+
+#menu li a {
 
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
@@ -128,7 +131,7 @@ ported from other sites. Also will have near clouds image at base */
     color:#000000;
     text-decoration: none;
     display: block;
-    width: 50px;
+    width: 70px;
     text-align: center;
 
     /*make the edges glow*/
@@ -143,7 +146,7 @@ ported from other sites. Also will have near clouds image at base */
     background-color: rgba(255, 255, 255, .10);
     color: white;
     display: block;
-    width: 50px;
+    width: 70px;
 }
 
 
