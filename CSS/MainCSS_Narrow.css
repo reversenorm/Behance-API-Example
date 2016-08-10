@@ -115,22 +115,14 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-#menu li{
+#menu li a {
+
     list-style: none;
     font-weight: bold;
-/*make the edges glow*/
-   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   border-width: 2px 1px 2px 1px;
-
-}
-
-#menu a {
 
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
-    background-color: rgba(200, 115, 0, 1);
+    background-color: rgba(200, 100, 0, 1);
     margin:20px;
 
     color:#000000;
@@ -138,6 +130,12 @@ ported from other sites. Also will have near clouds image at base */
     display: block;
     width: 50px;
     text-align: center;
+
+    /*make the edges glow*/
+   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   border-width: 2px 1px 2px 1px;
 
 }
 
