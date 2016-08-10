@@ -116,8 +116,6 @@ ported from other sites. Also will have near clouds image at base */
 
 
 #menu ul{
-    position:absolute;
-    left:-20px;
     list-style-type: none;
     font-weight: bold;
 }
@@ -129,7 +127,7 @@ ported from other sites. Also will have near clouds image at base */
 
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
-    margin:10px;
+    margin:10px 0px 0px 0px;
 
     color:#000000;
     text-decoration: none;
