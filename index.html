@@ -84,7 +84,7 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
             <li><a href="#Design">Design</a></li>
             <li><a href="#Art">Art</a></li>
             <li><a href="#Code">Code</a></li>
-            <li><a href="/" onclick="toggleDisplay();">About</a></li>
+            <li><a href="" onclick="toggleDisplay();">About</a></li>
             <!--this will call a javascript to reveal the about box!-->
         </ul>
 
@@ -98,15 +98,15 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
     <script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
 
     <script type="text/javascript">
-    function toggleDisplay() {
+    function toggleVisibility() {
         alert("Entered toggle function");
-    if(document.getElementById("about").style.display == "none" ) {
+    if(document.getElementById("about").style.visibility == "hidden" ) {
         alert("Off turning on");
-    document.getElementById("about").style.display = "block";
+    document.getElementById("about").style.visibility = "visible";
     }
     else {
          alert("on turning off");
-    document.getElementById("about").style.display = "none";
+    document.getElementById("about").style.visibility = "hidden";
     }
     </script>
 
