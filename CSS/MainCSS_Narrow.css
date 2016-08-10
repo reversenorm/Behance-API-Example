@@ -116,7 +116,7 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 
-.menuItem:before {
+.menuItem a:before {
 
     -webkit-transform: skewX(-20deg);
   -moz-transform: skewX(-20deg);
@@ -129,7 +129,7 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 
-.menuItem:after {
+.menuItem a:after {
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
@@ -150,7 +150,7 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 
-.menuItem:hover {
+.menuItem a:hover {
     background-color: rgba(255, 255, 255, .10);
     color: white;
     display: block;
