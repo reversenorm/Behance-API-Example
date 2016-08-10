@@ -7,6 +7,11 @@ body {
      font-size:11pt;
 }
 
+h1{
+    font-weight: 400;
+     font-size:15pt;
+}
+
 /*This is the slowly moving background image. 
 Should have sun and far limb of planet as image with transparent bg
 Not adding image on css to allow for easier changes*/
