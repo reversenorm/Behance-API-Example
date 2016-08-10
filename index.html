@@ -6,7 +6,8 @@
 <meta content="A high performance parallax scrolling example." name="description">
 <meta content="Parallax Scrolling Example" name="title">
 <title>Jesse Phillips - Online Portfolio</title>
-<link rel="stylesheet" href="css/narrow.css" />
+<!-- import roboto font face from google !-->
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
 
 <!-- Narrow first for css then Add elements for more complex arrangements !-->
 <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 650px)" href="reversenorm.github.io/CSS/MainCSS_Narrow.css" />
@@ -58,7 +59,8 @@ Just some are from my old Deviant page, but then again it has a lot of good stuf
 <h1>Git Hub Stuff</h1><br/>
 Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler examples and hopefully my pluto figure eight.
 </div><br/>&nbsp;
-</div>
+
+</div> <!--end of main div !-->
 
 <div id="parallaxNear">
 <img src="Images/Near.png">
@@ -66,14 +68,19 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
 
 <!--Menu goes at the bottom because it is the topmost element!-->
 
-<div class="menu">
+<div id="menu">
 <ul>
 <li>Design</li>
 <li>Art</li>
 <li>Code</li>
+<li>About</li>
 </ul>
+
+<div id="about">
 About blurb goes here. <br/>
-Resume link and <a email="jphillips01@gmail.com">jphillips01@gmail.com</a>
+Resume link and <br />
+<a href="mailto:jphillips01@gmail.com">jphillips01@gmail.com</a>
+</div>
 </div>
  
 <script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
