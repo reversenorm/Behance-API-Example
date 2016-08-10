@@ -103,17 +103,17 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 .menu{
-
-    position: relative;
-    display: inline-block;
+    display:block;
+    position:absolute;
     height:200px;
     width:10%
-    left:-10;
-    top:-10;
+    top:0px;
+    left:0px;
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(255, 255, 255, .10);
     padding: 15px;
     margin:20px;
+    z-index:3;
 
 /*make the edges glow*/
    -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
