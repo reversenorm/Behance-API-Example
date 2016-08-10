@@ -85,7 +85,7 @@ ported from other sites. Also will have near clouds image at base */
     height: auto;
 }
 
-.movingBox{
+.movingBox:before{
     display:block;
     height:450px;
     border: solid rgba(200, 115, 15, .75);
@@ -99,6 +99,16 @@ ported from other sites. Also will have near clouds image at base */
    box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
 
    border-width: 2px 1px 2px 1px;
+
+
+-webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;
+
 
 }
 
@@ -115,16 +125,6 @@ ported from other sites. Also will have near clouds image at base */
 
 }
 
-.menuItem{
--webkit-transform: skewX(-20deg);
-  -moz-transform: skewX(-20deg);
-  -ms-transform: skewX(-20deg);
-  -o-transform: skewX(-20deg);
-  transform: skewX(-20deg);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: initial;
-
-}
 
 #menu ul {
     list-style-type: none;
@@ -133,7 +133,7 @@ ported from other sites. Also will have near clouds image at base */
 
 
 
-#menu li .menuItem a {
+#menu li a {
 /*solid orange menu items*/
     border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
@@ -154,7 +154,7 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 
-#menu li .menuItem a:hover {
+#menu li a:hover {
     background-color: rgba(255, 255, 255, .10);
     color: white;
     display: block;
