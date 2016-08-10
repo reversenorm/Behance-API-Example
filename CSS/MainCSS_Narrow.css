@@ -119,7 +119,8 @@ ported from other sites. Also will have near clouds image at base */
     list-style-type: none;
     font-weight: bold;
     position:relative;
-    left:-50px;
+    left:-40px;
+    top:-10px;
 }
 
 
