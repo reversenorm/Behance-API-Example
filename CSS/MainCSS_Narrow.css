@@ -12,6 +12,10 @@ h1{
      font-size:15pt;
 }
 
+a{
+    background-color: rgba(200, 100, 0, 1);
+}
+
 /*This is the slowly moving background image. 
 Should have sun and far limb of planet as image with transparent bg
 Not adding image on css to allow for easier changes*/
