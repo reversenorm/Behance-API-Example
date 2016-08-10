@@ -108,9 +108,8 @@ ported from other sites. Also will have near clouds image at base */
     display:block;
     position:fixed;
     width:100%
-    height:50px;
     top:0px;
-    left:0px;
+    left:-21px;
     z-index:3;
 
 }
