@@ -116,8 +116,8 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 
-#menu ul {
-    list-style-type: none;
+#menu ul li{
+    list-style: none;
     font-weight: bold;
 }
 
