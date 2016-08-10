@@ -83,7 +83,7 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
             <li><a href="#Design">Design</a></li>
             <li><a href="#Art">Art</a></li>
             <li><a href="#Code">Code</a></li>
-            <li><a href="#" onclick="toggleVisibility();">About</a></li>
+            <li><a href="#" onclick="toggleVisibility("about");">About</a></li>
             <!--this will call a javascript to reveal the about box!-->
         </ul>
 
@@ -96,6 +96,14 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
     <script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
     <script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
 
+<script type="text/Javascript" >
+
+function toggleVisibility(about){
+    alert("this is just an alert passed id "+about);
+document.getElementById(about).style.visibility
+}
+
+</script>
 
 </body>
 
