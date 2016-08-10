@@ -3,7 +3,8 @@ body {
     background-color: #000000;
     color:#ffffff;
      font-family: "Roboto", Arial, sans-serif;
-     font-weight: lighter;
+     font-weight: 300;
+     font-size:11pt;
 }
 
 /*This is the slowly moving background image. 
@@ -117,7 +118,7 @@ ported from other sites. Also will have near clouds image at base */
 
 #menu ul{
     list-style-type: none;
-    font-weight: bold;
+    font-weight: 700;
     position:relative;
     left:-40px;
     top:-10px;
@@ -165,8 +166,9 @@ ported from other sites. Also will have near clouds image at base */
     display:block;
     width:250px;
     border: solid rgba(200, 115, 15, .75);
-    background-color: rgba(255, 255, 255, .10);
+    background-color: rgba(200, 100, 0, 1);
     padding: 15px;
+    color:#000000;
 
 /*make the edges glow*/
    -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
@@ -174,6 +176,10 @@ ported from other sites. Also will have near clouds image at base */
    box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
 
    border-width: 2px 1px 2px 1px;
+}
+
+#about a {
+    color:#ffffff;
 }
 
 
