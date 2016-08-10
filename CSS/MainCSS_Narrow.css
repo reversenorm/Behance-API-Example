@@ -4,6 +4,7 @@ body {
     color:#ffffff;
      font-family: "Roboto", Arial, sans-serif;
      font-weight: normal;
+     font-size:11px;
 }
 
 /*This is the slowly moving background image. 
@@ -160,8 +161,8 @@ ported from other sites. Also will have near clouds image at base */
 
     position:relative;
     float:left;
-    left:55px;
-    top:-15px;
+    left:65px;
+    top:-20px;
     display:block;
     width:250px;
     border: solid rgba(200, 115, 15, .75);
