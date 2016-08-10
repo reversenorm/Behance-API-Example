@@ -121,9 +121,9 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 #menu li {
-    transform:skewY(30deg);
-    -ms-transform:skewY(30deg);
-    -webkit-transform:skewY(30deg);
+    transform:skewX(30deg);
+    -ms-transform:skewX(30deg);
+    -webkit-transform:skewX(30deg);
 }
 
 #menu li a {
@@ -145,6 +145,9 @@ ported from other sites. Also will have near clouds image at base */
    border-width: 2px 1px 2px 1px;
 
    /*skew effect? */
+       transform:skewX(-30deg);
+    -ms-transform:skewX(-30deg);
+    -webkit-transform:skewX(-30deg);
 
 }
 
