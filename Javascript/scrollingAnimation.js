@@ -128,6 +128,18 @@ function animationLoop() {
 
 }
 
+alert("got to here");
+    function toggleVisibility() {
+        alert("Entered toggle function");
+    if(document.getElementById("about").style.visibility == "hidden" ) {
+        alert("Off turning on");
+    document.getElementById("about").style.visibility = "visible";
+    }
+    else {
+         alert("on turning off");
+    document.getElementById("about").style.visibility = "hidden";
+    }
+
 
 
 
