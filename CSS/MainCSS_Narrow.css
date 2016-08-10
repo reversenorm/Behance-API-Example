@@ -117,7 +117,7 @@ ported from other sites. Also will have near clouds image at base */
 
 
 #menu ul {
-    list-style-type: none;
+    list-style: none;
     font-weight: bold;
 }
 
@@ -131,6 +131,8 @@ ported from other sites. Also will have near clouds image at base */
 
     color:#000000;
     text-decoration: none;
+    list-style: none;
+    font-weight: bold;
     display: block;
     width: 70px;
     text-align: center;
