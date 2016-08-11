@@ -9,7 +9,7 @@ var userID  = 'jphillips01';
  
     function setPortfolioTemplate() {
         var projectData = JSON.parse(sessionStorage.getItem('behanceProject')),
-            getTemplate = $('#portfolio-template').html(),
+            getTemplate = $('#Behance-template').html(),
             template    = Handlebars.compile(getTemplate),
             result      = template(projectData);
         $('#portfolio').html(result);
