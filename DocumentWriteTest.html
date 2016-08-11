@@ -21,14 +21,9 @@
         console.log(json); // this will show the info it in firebug console
         });
 
-        function getJSONlocal (localPath){
-        	$.getJSON(localPath, function(json) {
-        		alert("function entered");
-         		return json;
-        	});
-        }
 
-        var BehanceUser = getJSONlocal("/BehanceJSON/jphillips01.json");
+        var BehanceUser = $.getJSON("/BehanceJSON/jphillips01.json");
+
         console.log(BehanceUser);
 
 
