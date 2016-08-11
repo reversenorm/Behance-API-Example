@@ -11,9 +11,18 @@
 
         document.write("5 + 6=");
         document.write(5+6);
+        document.write("Yay math!");
         document.write("<br /><img src='https://mir-s3-cdn-cf.behance.net/user/138/1235601.53b3b6ac6cf63.gif'> <br/>");
 
-        var BehanceData =JSON.parse("http://www.behance.net/v2/users/jphillips01/projects?api_key=bM1DZSpebEhtZlRUq9QKuUmF3PpdW595");
+        function Get(yourUrl){
+			var Httpreq = new XMLHttpRequest(); // a new request
+			Httpreq.open("GET",yourUrl,false);
+			Httpreq.send(null);
+			return Httpreq.responseText; 
+
+		var BehanceData = JSON.parse(Get("http://www.behance.net/v2/users/jphillips01/projects?api_key=bM1DZSpebEhtZlRUq9QKuUmF3PpdW595"));
+   		 }
+
         document.write(BehanceData);
     </script>
 <br />
