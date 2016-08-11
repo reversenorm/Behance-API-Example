@@ -2,23 +2,48 @@
 <html>
 
 <head>
-	<title>Document Write test</title>
+    <title>Document Write test</title>
 </head>
 
 <body>
 
-	<script>
+    <script>
+        var getJSON = function(url, callback) {
+            var xhr = new XMLHttpRequest();
+            xhr.open("get", url, true);
+            xhr.responseType = "json";
+            xhr.onload = function() {
+                var status = xhr.status;
+                if (status == 200) {
+                    callback(null, xhr.response);
+                } else {
+                    callback(status);
+                }
+            };
+            xhr.send();
+        };
+
+        var BehanceProjects = getJSON("https://www.behance.net/v2/users/jphillips01?api_key=bM1DZSpebEhtZlRUq9QKuUmF3PpdW595",
+            function(err, data) {
+                if (err != null) {
+                    alert("Something went wrong: " + err);
+                } else {
+                    alert("Your query count: " + data.query.count);
+                }
+            });
+
+        var project_data = JSON.parse(BehanceProjects);
 
 
+        document.write("This is a test to see if we can dynamically-ish add things with java <br />");
+        document.write("This also mmight be usefule with other projects like fizzbuz output. <br />");
+        document.write("9*9=");
+        document.write(9 * 9);
+        document.write("<img src='Images/Satellite_Mid.png'> <br />");
 
-		document.write("This is a test to see if we can dynamically-ish add things with java <br />");
-		document.write("This also mmight be usefule with other projects like fizzbuz output. <br />");
-		document.write("9*9=");
-		document.write(9*9);
-		document.write("<img src='Images/Satellite_Mid.png'> <br />");
-		
-		
-	</script>
+
+        document.write(project_data);
+    </script>
 
 </body>
 
