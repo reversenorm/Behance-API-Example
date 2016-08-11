@@ -23,32 +23,34 @@
 	            <ul class="Behance-list clearfix">
 	                {{#each projects}}
 	                <li class="Behance-item">
-	                    <div class="Behance-content">
-	                        <figure class="Behance-cover" title="{{this.name}}">
-	                            {{#if this.covers.[404]}}
-	                            <img class="Behance-image" src="{{this.covers.[404]}}" alt=""> 
-	                            {{else}} 
-	                            	{{#if this.covers.[230]}}
-	                            	<img class="Behance-image" src="{{this.covers.[230]}}" alt=""> 
-	                            	{{else}}
-	                            	<img class="Behance-image" src="{{this.covers.[202]}}" alt="">
-	                             	{{/if}} 
-	                            {{/if}}
-	                        </figure>
-	                        <h2 class="Behance-title">{{this.name}}</h2>
-	                        <div class="Behance-fields">
-	                            <ul class="field-list">
-	                                {{#each this.fields}}
-	                                <li class="field-item">{{this}}</li>
-	                                {{/each}}
-	                            </ul>
-	                        </div>
-	                    </div>
 	                </li>
 	                {{/each}}
 	            </ul>
 	        </script>
         </div>
+
+		<div class="Behance-content">
+                <figure class="Behance-cover" title="{{this.name}}">
+                    {{#if this.covers.[404]}}
+                    <img class="Behance-image" src="{{this.covers.[404]}}" alt=""> 
+                    {{else}} 
+                    	{{#if this.covers.[230]}}
+                    	<img class="Behance-image" src="{{this.covers.[230]}}" alt=""> 
+                    	{{else}}
+                    	<img class="Behance-image" src="{{this.covers.[202]}}" alt="">
+                     	{{/if}} 
+                    {{/if}}
+                </figure>
+                <h2 class="Behance-title">{{this.name}}</h2>
+                <div class="Behance-fields">
+                    <ul class="field-list">
+                        {{#each this.fields}}
+                        <li class="field-item">{{this}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+
     </div>
 
     <br/>
