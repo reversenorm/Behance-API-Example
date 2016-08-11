@@ -19,12 +19,11 @@
 
         $.getJSON(BehanceData, function(json) {
         console.log(json); // this will show the info it in firebug console
+        BehanceData=json;
         });
 
-
-        var BehanceUser = $.getJSON("/BehanceJSON/jphillips01.json");
-
-        console.log(BehanceUser);
+        console.log(BehanceData);
+        document.write(BehanceData[1]["name"]);
 
 
     </script>
