@@ -16,14 +16,15 @@
         document.write("<br /><img src='https://mir-s3-cdn-cf.behance.net/user/138/1235601.53b3b6ac6cf63.gif'> <br/>");
 
         var BehanceData = "/BehanceJSON/jphillips01_projects.json";
+        var $Projects= null;
 
         $.getJSON(BehanceData, function(json) {
         console.log(json); // this will show the info it in firebug console
-        BehanceData=json;
+        $Projects=json;
         });
 
-        console.log(BehanceData);
-        document.write(BehanceData[1]["name"]);
+        console.log($Projects);
+        document.write($Projects[1]["name"]);
 
 
     </script>
