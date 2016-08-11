@@ -17,8 +17,10 @@
 
         var BehanceData = "http://reversenorm.github.io/BehanceJSON/Jphillips01_projects.json";
 
+        $.getJSON(BehanceData, function(json) {
+        console.log(json); // this will show the info it in firebug console
+        });
 
-        document.write(BehanceData);
 
     </script>
 <br />
