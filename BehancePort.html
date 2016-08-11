@@ -3,27 +3,55 @@
 
 <head>
 
-<!--script libaries used in behance setup -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+    <!--script libaries used in behance setup -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.3.0/handlebars.min.js"></script>
+    <script src="reversenorm.github.io/Javascript/BehanceConnector.js"></script>
+
 
 </head>
 
 <body>
 
-<div id="content" class="content-area clearfix">
+    <div id="content" class="content-area clearfix">
 
-<!--this script takes the info passed fron the javascript and uses the handlebars script to build out the items in an unordered list according to the content passes-->
-<script id="portfolio-template" type="text/x-handlebars-template">
-    <ul class="portfolio-list clearfix">
-        {{#each projects}}
-        <li class="portfolio-item"></li>
-        {{/each}}
-    </ul>
-    </script>
+        <!--thissection uses script elements to the info passed fron the javascript and uses the handlebars script to build out the items in an unordered list according to the content passes-->
+        <script id="Behance-template" type="text/x-handlebars-template">
+            <ul class="Behance-list clearfix">
+                {{#each projects}}
+                <li class="Behance-item">
+                    <div class="Behance-content">
+                        <figure class="Behance-cover" title="{{this.name}}">
+                            {{#if this.covers.[404]}}
+                            <img class="Behance-image" src="{{this.covers.[404]}}" alt=""> 
+                            {{else}} 
+                            	{{#if this.covers.[230]}}
+                            	<img class="Behance-image" src="{{this.covers.[230]}}" alt=""> 
+                            	{{else}}
+                            	<img class="Behance-image" src="{{this.covers.[202]}}" alt="">
+                             	{{/if}} 
+                            {{/if}}
+                        </figure>
+                        <h2 class="Behance-title">{{this.name}}</h2>
+                        <div class="Behance-fields">
+                            <ul class="field-list">
+                                {{#each this.fields}}
+                                <li class="field-item">{{this}}</li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+    </div>
 
-    <!--End handle bars import -->
-
+    <br/>
+    <!--little footer, probably won't include this in the end but you know maybe-->
+    <div id="power" class="power-by">
+    <p>Powered by</p>
+    <p><a class="power-logo fi-social-behance" href="http://www.behance.net/" title="Behance" target="_blank">Behance</a></p>
 </div>
 
 
