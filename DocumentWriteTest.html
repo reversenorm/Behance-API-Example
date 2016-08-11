@@ -15,16 +15,10 @@
         document.write(5+6);
         document.write("<br /><img src='https://mir-s3-cdn-cf.behance.net/user/138/1235601.53b3b6ac6cf63.gif'> <br/>");
 
-        var BehanceData = "/BehanceJSON/jphillips01_projects.json";
-        var $Projects= null;
 
-        $.getJSON(BehanceData, function(json) {
-        console.log(json); // this will show the info it in firebug console
-        $Projects=json;
-        });
+        var BehanceData = require("/BehanceJSON/jphillips01_projects.json")
 
-        console.log($Projects);
-        document.write($Projects["Projects"][0]["name"]);
+        console.log(BehanceData);
 
 
     </script>
