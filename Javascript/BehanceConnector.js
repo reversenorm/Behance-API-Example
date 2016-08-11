@@ -4,6 +4,7 @@ var apiKey  = 'bM1DZSpebEhtZlRUq9QKuUmF3PpdW595';
 var userID  = 'jphillips01';
 
 (function() {
+    alert("Entering Function");
     var perPage = 12;
     var behanceProjectAPI = 'http://www.behance.net/v2/users/'+ userID +'/projects?callback=?&api_key=' + apiKey + '&per_page=' + perPage;
  
