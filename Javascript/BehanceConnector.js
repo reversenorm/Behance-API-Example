@@ -12,7 +12,7 @@ var userID  = 'jphillips01';
             getTemplate = $('#Behance-template').html(),
             template    = Handlebars.compile(getTemplate),
             result      = template(projectData);
-        $('#portfolio').html(result);
+        $('#BehancePortfolio').html(result);
     };
  
     if(sessionStorage.getItem('behanceProject')) {
