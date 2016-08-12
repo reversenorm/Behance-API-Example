@@ -37,12 +37,12 @@
 
 			function galleryBuilder(galleryId){
 
-					var galleryData = (function () {
+					var galleryData = (function (galleryId) {
 	    			var jason = null;
 	   		 		$.ajax({
 		        	'async': false,
 		        	'global': false,
-		        	'url':  "/BehanceJSON/BehanceGallery/"+4188775+".json",
+		        	'url':  "/BehanceJSON/BehanceGallery/"+galleryId+".json",
 		        	'dataType': "json",
 		        	'success': function (data) {
 		            json = data;
