@@ -118,7 +118,7 @@
 
 			for(var i=0; i<galleryData["project"]["modules"].length; i++){ //for each module item
 				if(galleryData["project"]["modules"][i]["type"]=="image"){//if it's an image
-				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"]["max_1200"]+"' align='center'>");
+				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"]["original"]+"' align='center'>");
 
 					if(galleryData["project"]["modules"][i]["caption_plain"]){//if there is a caption
 
