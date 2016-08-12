@@ -42,15 +42,13 @@
 
 		function galleryBuilder(galleryId){
 
-				var galleryData=jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
-	   
-			
+			var galleryData=jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
 
 			var htmlString="Left button <ul>";
 			var str="<!--Blank-->";
 			for(var i=0; i<galleryData["project"]["modules"].length; i++){
-				if(galleryData["project"]["modules"]["type"]=="image"){
-				str=galleryData["project"]["modules"]["caption_plain"]+"<br />";
+				if(galleryData["project"]["modules"][i]["type"]=="image"){
+					str=galleryData["project"]["modules"][i]["caption_plain"]+"<br />";
 				htmlString = htmlString.concat(str);
 				}
 
