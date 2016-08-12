@@ -35,15 +35,17 @@
 <br />
 
 <!-- simple change test-->
-<div id="PlacementDiv"><ul id="projectsList"></ul></div>
+<div id="PlacementDiv">
+	<ul id="projectsList">
 
-<script>
+		<script>
+			for (var i=0; i<BehanceData["projects"].length; i++ ){
+				document.write("<li><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</li>");
+			}
+		</script>
 
-	document.getElementById("projectsList").innerHTML = for (var i=0; i<BehanceData["projects"].length; i++ ){
-			"<li><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</li>";
-				};
-
-</script>
+	</ul>
+</div>
 
 
 </body>
