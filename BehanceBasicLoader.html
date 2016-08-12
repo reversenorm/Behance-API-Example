@@ -31,6 +31,10 @@
 			// document.write("This is the document.write method <br/>");
 			// document.write(BehanceData["projects"][2]["name"]);
 
+			function openGallery(galleryId){
+				alert("Later this will change and make visible the div for gallery with id:"+galleryId);
+			};
+
     </script>
 <br />
 <br />
@@ -41,7 +45,7 @@
 
 		<script>
 			for (var i=0; i<BehanceData["projects"].length; i++ ){
-				document.write("<li><a href='#b' onclick='"+openGallery(BehanceData["projects"][i]["id"])+"'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
+				document.write("<li><a href='#b' onclick='openGallery("+BehanceData["projects"][i]["id"]+")'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
 			}
 		</script>
 
@@ -53,11 +57,6 @@
 Need to create a string that stiches html together then pass that string to inner.html to place here.
 </div>
 
-<script>
-function openGallery(galleryId){
-				alert("Later this will change and make visible the div for gallery with id:"+galleryId);
-			};
-</script>
 
 
 </body>
