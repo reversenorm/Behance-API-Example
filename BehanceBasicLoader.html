@@ -94,7 +94,7 @@
 		};//end json loader
 
 		function openGallery(galleryId){
-			toggleAbout('overlay');
+			toggleLayer('overlay');
 			document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
 		};
 
@@ -165,7 +165,7 @@
 	</ul>
 </div><br /><br />
 
-<div id="overlay">
+<div id="overlay" onclick="toggleLayer('overlay');">
 	<div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
 
 	Need to create a string that stiches html together then pass that string to inner.html to place here.

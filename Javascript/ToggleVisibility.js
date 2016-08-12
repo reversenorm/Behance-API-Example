@@ -1,5 +1,5 @@
 
- function toggleAbout(PassedID) {
+ function toggleLayer(PassedID) {
     var x = document.getElementById(PassedID);
     if(x.style.display=="none" || x.style.display=="null" || x.style.display==""){
         x.style.display = "block";
