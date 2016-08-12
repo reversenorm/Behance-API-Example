@@ -32,7 +32,37 @@
 			// document.write(BehanceData["projects"][2]["name"]);
 
 			function openGallery(galleryId){
-				alert("Later this will change and make visible the div for gallery with id:"+galleryId);
+				document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
+			};
+
+			function galleryBuilder(galleryId){
+
+					var galleryData = (function () {
+	    			var jason = null;
+	   		 		$.ajax({
+		        	'async': false,
+		        	'global': false,
+		        	'url':  "/BehanceJSON/BehanceGallery/"+galleryId,
+		        	'dataType': "json",
+		        	'success': function (data) {
+		            json = data;
+	       			 }
+	   		 			});
+	   		 	return json;
+					})(); 
+
+				var htmlString="Left button <ul>";
+				var str="<!--Blank-->";
+				for(var i=0; i<galleryData["projects"]["modules"].length; i++){
+					if(galleryData["projects"]["modules"]["type"]=="image"){
+					str=galleryData["projects"]["modules"]["caption_plain"]+"<br />";
+					htmlString = htmlString.concat(str);
+					}
+
+				};
+ 				htmlString = htmlString.concat("</ul><br /> Right button");
+				return htmlString;
+
 			};
 
     </script>
@@ -46,13 +76,13 @@
 		<script>
 			for (var i=0; i<BehanceData["projects"].length; i++ ){
 				document.write("<li><a href='#b' onclick='openGallery("+BehanceData["projects"][i]["id"]+")'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
-			}
+			};
 		</script>
 
 	</ul>
 </div><br /><br />
 
-<div id="Gallery">Gallery data will go here using inner.html<br />
+<div id="behanceGallery">Gallery data will go here using inner.html<br />
 
 Need to create a string that stiches html together then pass that string to inner.html to place here.
 </div>
