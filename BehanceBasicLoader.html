@@ -17,6 +17,7 @@
 
     	function jsonLoader(filePath){}
     	var json = null;
+    		(function () {
 	   		 $.ajax({
 		        async: false,
 		        global: false,
@@ -27,7 +28,7 @@
 	        }
 	   		 });
 	   		 	return json;
-			}(); 
+			})(); 
 
 		};//end json loader
 
