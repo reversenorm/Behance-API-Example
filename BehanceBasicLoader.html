@@ -2,10 +2,48 @@
 <html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
 
 
 <head>
     <title>Behance Loader</title>
+<style>
+
+	#overlay {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  z-index: 9;
+	  border: solid rgba(0, 0, 0, .75);
+	  width:100%;
+	  display: none;
+	}
+
+	#behanceGallery {
+	  position: absolute;
+	  left: 0;
+	  width: 80%;
+	  z-index: 10;
+	  text-align: center;
+	  line-height: 0;
+	  font-weight: normal;
+	}
+
+	.glowEdges {
+    border: solid rgba(200, 115, 15, .75);
+     -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+
+   border-width: 2px 1px 2px 1px;
+
+
+}
+
+
+
+</style>
+
 </head>
 
 <body>
@@ -38,6 +76,7 @@
 
 		function openGallery(galleryId){
 			document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
+			toggleAbout('overlay');
 		};
 
 		function galleryBuilder(galleryId){
@@ -107,12 +146,12 @@
 	</ul>
 </div><br /><br />
 
-<div id="behanceGallery">Gallery data will go here using inner.html<br />
+<div id="overlay">
+	<div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
 
-Need to create a string that stiches html together then pass that string to inner.html to place here.
+	Need to create a string that stiches html together then pass that string to inner.html to place here.
+	</div>
 </div>
-
-
 
 </body>
 
