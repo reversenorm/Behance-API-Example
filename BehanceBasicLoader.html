@@ -16,13 +16,13 @@
         var BehanceData = jsonLoader("/BehanceJSON/jphillips01_projects.json")
 
     	function jsonLoader(filePath){}
-    	var jason = null;
+    	var json = null;
 	   		 $.ajax({
-		        'async': false,
-		        'global': false,
-		        'url':  filePath,
-		        'dataType': "json",
-		        'success': function (data) {
+		        async: false,
+		        global: false,
+		        url:  filePath,
+		        dataType: "json",
+		        success: function (data) {
 		            json = data;
 	        }
 	   		 });
