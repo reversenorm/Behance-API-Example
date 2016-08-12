@@ -42,7 +42,7 @@
 	   		 		$.ajax({
 		        	'async': false,
 		        	'global': false,
-		        	'url':  "/BehanceJSON/BehanceGallery/"+galleryId+".json",
+		        	'url':  "/BehanceJSON/BehanceGallery/"+4188775+".json",
 		        	'dataType': "json",
 		        	'success': function (data) {
 		            json = data;
@@ -77,7 +77,7 @@
 
 		<script>
 			for (var i=0; i<BehanceData["projects"].length; i++ ){
-				document.write("<li><a href='#b' onclick='openGallery("+BehanceData["projects"][i]["id"]+")'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
+				document.write("<li><a href='#b' onclick='openGallery("+BehanceData["projects"][i]["id"]+");'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
 			};
 		</script>
 
