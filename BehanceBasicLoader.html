@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<head>
+    <title>Document Write test</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+
+        var BehanceData = (function () {
+	    	var jason = null;
+	   		 $.ajax({
+		        'async': false,
+		        'global': false,
+		        'url':  "/BehanceJSON/jphillips01_projects.json",
+		        'dataType': "json",
+		        'success': function (data) {
+		            json = data;
+	        }
+	   		 });
+	   		 	return json;
+			})(); 
+
+			// console.log(BehanceData);
+			// document.write("This is the document.write method <br/>");
+			// document.write(BehanceData["projects"][2]["name"]);
+
+    </script>
+<br />
+<br />
+
+<!-- simple change test-->
+<div id="PlacementDiv"><ul id="projectsList"></ul></div>
+
+<script>
+
+	document.getElementById("projectsList").innerHTML = for (var i=0; i<BehanceData["projects"].length; i++ ){
+			"<li><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</li>";
+				};
+
+</script>
+
+
+</body>
+
+
+</html>
