@@ -13,23 +13,24 @@
     <script type="text/javascript">
 
 
-        var BehanceData = (function () {
+        var BehanceData = jsonLoader("/BehanceJSON/jphillips01_projects.json")
+
+        function jsonLoader(filePath){}
 	    	var jason = null;
 	   		 $.ajax({
 		        'async': false,
 		        'global': false,
-		        'url':  "/BehanceJSON/jphillips01_projects.json",
+		        'url':  filePath,
 		        'dataType': "json",
 		        'success': function (data) {
 		            json = data;
 	        }
 	   		 });
 	   		 	return json;
-			})(); 
+			}(); 
 
-			// console.log(BehanceData);
-			// document.write("This is the document.write method <br/>");
-			// document.write(BehanceData["projects"][2]["name"]);
+		}
+
 
 			function openGallery(galleryId){
 				document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
@@ -37,20 +38,8 @@
 
 			function galleryBuilder(galleryId){
 
-					var galleryData = (function (galleryId) {
-	    			var jason = null;
-	   		 		$.ajax({
-		        	'async': false,
-		        	'global': false,
-		        	'url':  "/BehanceJSON/BehanceGallery/"+galleryId+".json",
-		        	'dataType': "json",
-		        	'success': function (data) {
-		            json = data;
-	       			 }
-	   		 			});
-	   		 	return json;
-					})(); 
-
+					jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
+		   
 					return galleryData["project"]["name"];
 
 				// var htmlString="Left button <ul>";
