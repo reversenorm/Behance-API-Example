@@ -52,18 +52,35 @@
 				htmlString=htmlString.concat(galleryData["project"]["modules"][0]["text"]+"< br />");//add in description text from first module item if item is text.
 			}
 
+			htmlString=htmlString.concat("<a href='"+galleryData["project"]["url"]+"' target='_blank'>View on Behance.net</a>");//add in link to view on behance
+
 			htmlString=htmlString.concat("</div><div class='viewWindow'>Left button <ul>");//close gallery description div and open viewWindow div. Also open UL for each image w/ description
 
 
 
 			for(var i=0; i<galleryData["project"]["modules"].length; i++){ //for each module item
 				if(galleryData["project"]["modules"][i]["type"]=="image"){//if it's an image
-				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"]["original"]+"'><br />"+galleryData["project"]["modules"][i]["caption_plain"]+"</li>");
-				//add in a list element contaning the original sized image and caption below
-				}else if(galleryData["project"]["modules"][i]["type"]=="video"){
+				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"]["original"]+"'>");
 
-					htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["embed"]["original"]+"'><br />"+galleryData["project"]["modules"][i]["caption_plain"]+"</li>");
-					//add in list element with video embed and caption
+					if(galleryData["project"]["modules"][i]["caption_plain"]){//if there is a caption
+
+						htmlString = htmlString.concat("<br />"+galleryData["project"]["modules"][i]["caption_plain"]+"</li>"); //then add caption to html inside list element
+
+					}else{
+						htmlString = htmlString.concat("</li>");//if no caption just close after the image
+					}
+
+				}else if(galleryData["project"]["modules"][i]["type"]=="video"){//if the file is a video instead
+
+					htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["embed"]+"'>");
+					//add video embed link
+					if(galleryData["project"]["modules"][i]["caption_plain"]){//if there is a caption
+
+						htmlString = htmlString.concat("<br />"+galleryData["project"]["modules"][i]["caption_plain"]+"</li>"); //then add caption to html inside list element
+
+					}else{
+						htmlString = htmlString.concat("</li>");//if no caption just close after the image
+					}
 				}
 
 			};
