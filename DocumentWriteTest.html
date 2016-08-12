@@ -11,9 +11,6 @@
 
     <script type="text/javascript">
 
-        document.write("5 + 6=");
-        document.write(5+6);
-        document.write("<br /><img src='https://mir-s3-cdn-cf.behance.net/user/138/1235601.53b3b6ac6cf63.gif'> <br/>");
 
         var BehanceData = (function () {
 	    	var jason = null;
@@ -30,6 +27,7 @@
 			})(); 
 
 			console.log(BehanceData);
+			document.write("This is the document.write method <br/>");
 			document.write(BehanceData["projects"][2]["name"]);
 
 
@@ -42,7 +40,8 @@
 <div id="PlacementDiv">Behance Image goes here</div>
 
 <script>
-document.getElementById("PlacementDiv").innerHTML = "<img src='"+BehanceData["projects"][2]["covers"][404]+"'>";
+
+document.getElementById("PlacementDiv").innerHTML = "This is the .innerhtml method that targets a document id. <br /> <img src='"+BehanceData["projects"][2]["covers"][404]+"'>";
 </script>
 
 
