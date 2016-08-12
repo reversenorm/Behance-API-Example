@@ -15,8 +15,8 @@
 
         var BehanceData = jsonLoader("/BehanceJSON/jphillips01_projects.json")
 
-        function jsonLoader(filePath){}
-	    	var jason = null;
+    	function jsonLoader(filePath){}
+    	var jason = null;
 	   		 $.ajax({
 		        'async': false,
 		        'global': false,
@@ -29,32 +29,31 @@
 	   		 	return json;
 			}(); 
 
-		}
+		};//end json loader
 
+		function openGallery(galleryId){
+			document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
+		};
 
-			function openGallery(galleryId){
-				document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
-			};
+		function galleryBuilder(galleryId){
 
-			function galleryBuilder(galleryId){
+				var galleryData=jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
+	   
+				return galleryData["project"]["name"];
 
-					jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
-		   
-					return galleryData["project"]["name"];
+			// var htmlString="Left button <ul>";
+			// var str="<!--Blank-->";
+			// for(var i=0; i<galleryData["project"]["modules"].length; i++){
+			// 	if(galleryData["project"]["modules"]["type"]=="image"){
+			// 	str=galleryData["project"]["modules"]["caption_plain"]+"<br />";
+			// 	htmlString = htmlString.concat(str);
+			// 	}
 
-				// var htmlString="Left button <ul>";
-				// var str="<!--Blank-->";
-				// for(var i=0; i<galleryData["project"]["modules"].length; i++){
-				// 	if(galleryData["project"]["modules"]["type"]=="image"){
-				// 	str=galleryData["project"]["modules"]["caption_plain"]+"<br />";
-				// 	htmlString = htmlString.concat(str);
-				// 	}
+			// };
+			// 	htmlString = htmlString.concat("</ul><br /> Right button");
+			// return htmlString;
 
-				// };
- 			// 	htmlString = htmlString.concat("</ul><br /> Right button");
-				// return htmlString;
-
-			};
+		};
 
     </script>
 <br />
