@@ -3,8 +3,9 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
+
 <head>
-    <title>Document Write test</title>
+    <title>Behance Loader</title>
 </head>
 
 <body>
@@ -30,21 +31,30 @@
 			// document.write("This is the document.write method <br/>");
 			// document.write(BehanceData["projects"][2]["name"]);
 
+			function openGallery(galleryId){
+				alert("Later this will change and make visible the div for gallery with id:"+galleryId);
+			};
+
     </script>
 <br />
 <br />
 
 <!-- simple change test-->
-<div id="PlacementDiv">
+<div >
 	<ul id="projectsList">
 
 		<script>
 			for (var i=0; i<BehanceData["projects"].length; i++ ){
-				document.write("<li><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</li>");
+				document.write("<li><a href='#b' onclick='"+openGallery(BehanceData["projects"][i]["id"]);+"'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
 			}
 		</script>
 
 	</ul>
+</div><br /><br />
+
+<div id="Gallery">Gallery data will go here using inner.html<br />
+
+Need to create a string that stiches html together then pass that string to inner.html to place here.
 </div>
 
 
