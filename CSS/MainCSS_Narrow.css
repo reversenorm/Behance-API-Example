@@ -16,6 +16,17 @@ a{
     color: rgba(200, 100, 0, 1);
 }
 
+.glowEdges {
+    border: solid rgba(200, 115, 15, .75);
+     -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+
+   border-width: 2px 1px 2px 1px;
+
+
+}
+
 /*This is the slowly moving background image. 
 Should have sun and far limb of planet as image with transparent bg
 Not adding image on css to allow for easier changes*/
@@ -98,18 +109,9 @@ ported from other sites. Also will have near clouds image at base */
 .movingBox{
     display:block;
     height:400px;
-    border: solid rgba(200, 115, 15, .75);
     background-color: rgba(255, 255, 255, .10);
     padding: 15px;
     margin:20px;
-
-/*make the edges glow*/
-   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-
-   border-width: 2px 1px 2px 1px;
-   
 
 }
 
@@ -138,8 +140,6 @@ ported from other sites. Also will have near clouds image at base */
 
 #menu ul li a {
 /*solid orange menu items*/
-
-    border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
     margin:10px 0px 0px 0px;
 
@@ -149,13 +149,6 @@ ported from other sites. Also will have near clouds image at base */
     display: block;
     width: 70px;
     text-align: center;
-
-    /*make the edges glow*/
-    
-   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   border-width: 2px 1px 2px 1px;
 
 }
 
@@ -175,17 +168,9 @@ ported from other sites. Also will have near clouds image at base */
     left:68px;
     top:-28px;
     width:250px;
-    border: solid rgba(200, 115, 15, .75);
     background-color: rgba(200, 100, 0, 1);
     padding: 15px;
     color:#000000;
-
-/*make the edges glow*/
-   -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
-
-   border-width: 2px 1px 2px 1px;
 
 }
 
