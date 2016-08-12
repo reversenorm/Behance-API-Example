@@ -13,22 +13,26 @@
     <script type="text/javascript">
 
 
-        var BehanceData = jsonLoader("/BehanceJSON/jphillips01_projects.json");
+        var BehanceProjects = jsonLoader("/BehanceJSON/jphillips01_projects.json");
 
-    	function jsonLoader(filePath){}
-    	var json = null;
-    		(function () {
+   
+        function jsonLoader(filePath){
+
+			var BehanceData = (function () {
+	    	var jason = null;
 	   		 $.ajax({
-		        async: false,
-		        global: false,
-		        url:  filePath,
-		        dataType: "json",
-		        success: function (data) {
+		        'async': false,
+		        'global': false,
+		        'url':  filePath,
+		        'dataType': "json",
+		        'success': function (data) {
 		            json = data;
 	        }
 	   		 });
 	   		 	return json;
 			})(); 
+
+			return BehanceData;
 
 		};//end json loader
 
@@ -65,8 +69,8 @@
 	<ul id="projectsList">
 
 		<script>
-			for (var i=0; i<BehanceData["projects"].length; i++ ){
-				document.write("<li><a href='#b' onclick='openGallery("+BehanceData["projects"][i]["id"]+");'><img src='"+BehanceData["projects"][i]["covers"][202]+"'><br/>"+BehanceData["projects"][i]["name"]+"</a></li>");
+			for (var i=0; i<BehanceProjects["projects"].length; i++ ){
+				document.write("<li><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");
 			};
 		</script>
 
