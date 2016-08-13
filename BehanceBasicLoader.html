@@ -32,6 +32,15 @@
 
 	}
 
+	.closeX{
+		position:fixed;
+		display:block;
+		z-index:30;
+		top:0px;
+		right:-12%;
+
+	}
+
 	#behanceGallery {
 	  position: relative;
 	  width: 76%;
@@ -127,7 +136,7 @@
 
 			htmlString=htmlString.concat("<a href='"+galleryData["project"]["url"]+"' target='_blank'>View on Behance.net</a>");//add in link to view on behance
 
-			htmlString=htmlString.concat("</div><div class='viewWindow'>Left button <ul>");//close gallery description div and open viewWindow div. Also open UL for each image w/ description
+			htmlString=htmlString.concat("</div><div class='viewWindow'><ul>");//close gallery description div and open viewWindow div. Also open UL for each image w/ description
 
 
 
@@ -157,7 +166,7 @@
 				}
 
 			};
-				htmlString = htmlString.concat("</ul><br/> Right button</div>");
+				htmlString = htmlString.concat("</ul><br/></div>");
 				//close list and close viewWindow div
 			return htmlString;
 
@@ -188,6 +197,7 @@
 
 	Need to create a string that stiches html together then pass that string to inner.html to place here.
 	</div>
+	<div class="closeX"><a href="#c" onclick="toggleLayer('overlay');">[X]</a></div>
 </div>
 
 </body>
