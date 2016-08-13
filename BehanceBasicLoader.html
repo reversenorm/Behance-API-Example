@@ -36,8 +36,8 @@
 		position:fixed;
 		display:block;
 		z-index:30;
-		top:30px;
-		left:88%;
+		top:2%;
+		left:86%;
 
 	}
 
@@ -151,7 +151,7 @@
 			for(var i=0; i<galleryData["project"]["modules"].length; i++){ //for each module item
 				if(galleryData["project"]["modules"][i]["type"]=="image"){//if it's an image
 
-				htmlString = htmlString.concat("<li class='glowEdges'><img src='"+galleryData["project"]["modules"][i]["sizes"]["disp"]+"' align='center'>");
+				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"]["disp"]+"' align='center'>");
 
 					if(galleryData["project"]["modules"][i]["caption_plain"]){//if there is a caption
 
@@ -190,7 +190,7 @@
 	<ul >
 		<script>
 			for (var i=0; i<BehanceProjects["projects"].length; i++ ){
-				document.write("<li><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+				document.write("<li class='glowEdges'><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
 			};
 		</script>
 	</ul>
