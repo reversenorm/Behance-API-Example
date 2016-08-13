@@ -9,6 +9,10 @@
     <title>Behance Loader</title>
 <style>
 
+	body{
+		overflow:auto;
+	}
+
 	#overlay {
 	  position: fixed;
 	  overflow:hidden;
@@ -21,7 +25,7 @@
 	  display: none;
 	}
 
-	.closeMe{
+	.closeOverlay{
 		position: absolute;
 		top:0px;
 		left:0px;
@@ -29,6 +33,14 @@
 		height:100%;
 		z-index:10;
 		cursor:zoom-out;
+
+	}
+
+	.close_x{
+		position:relative;
+		float;right;
+		top:-15px;
+		right:-15px;
 
 	}
 
@@ -66,7 +78,6 @@
    box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
 
    border-width: 2px 1px 2px 1px;
-
 
 }
 
@@ -108,6 +119,10 @@
 
 		};//end json loader
 
+		function bodyNoScroll(){
+			document.body.style.overflow="hidden";
+		}
+
 		function openGallery(galleryId){
 			toggleLayer('overlay');
 			document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
@@ -117,7 +132,7 @@
 
 			var galleryData=jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
 
-			var htmlString="<div class='galleryDescription'>"//add in the gallery description section
+			var htmlString="<div class='closex'><a href='#d' onclick='toggleLayer('overlay');'>[X]</a></div><div class='galleryDescription'>"//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+galleryData["project"]["name"]+"</h1><br/>");//add gallery title
 
@@ -181,7 +196,7 @@
 </div><br /><br />
 
 <div id="overlay" >
-	<a href="#c" onclick="toggleLayer('overlay');">
+	<a href="#c" onclick="toggleLayer('overlay'); bodyNoScroll();">
 	<div class="closeMe"></div>
 	</a>
 	<div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
