@@ -32,6 +32,7 @@
 
 	#behanceGallery { /*The lit up part of the light box. Allows scrolling within it but fixed at 100% height*/
 	  position: relative;
+	  align-content: center;
 	  width: 76%;
 	  left:12%;
 	  z-index: 20;
@@ -66,7 +67,7 @@
 		position:relative;
 		float:left;
 		height:225px;
-		background-color: #ffffff;
+		background-color: rgba(255, 255, 255, .50);
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
