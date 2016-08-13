@@ -9,7 +9,7 @@ body {
 
 h1{
     font-weight: 400;
-     font-size:15pt;
+     font-size:20pt;
 }
 
 a{
@@ -30,7 +30,7 @@ a{
 .title{
     background-color: rgba(150, 150, 150, .15);
     padding: 5px 0px 5px 20px;
-    margin:25px 20px 0px 20px;
+    margin:40px 20px 0px 20px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -117,7 +117,7 @@ ported from other sites. Also will have near clouds image at base */
     height:400px;
     background-color: rgba(150, 150, 150, .15);
     padding: 15px;
-    margin:20px;
+    margin:4px 20px 0px 20px;
     overflow-y:scroll;
     overflow-x:hidden;
 
