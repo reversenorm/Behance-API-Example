@@ -29,9 +29,10 @@ a{
 
 .title{
     background-color: rgba(150, 150, 150, .15);
-    padding: 15px;
-    margin:20px;
-    border-radius: 20px 10px;
+    padding: 5px;
+    margin:20px 0px 0px 0px;
+    border-radius: 0px 20px 0px 0px;
+    width:68%;
 }
 
 /*This is the slowly moving background image. 
