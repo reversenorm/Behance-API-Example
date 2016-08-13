@@ -27,6 +27,10 @@ a{
 
 }
 
+.glowingEdges h1{
+    background-color: rgba(150, 150, 150, .15);
+}
+
 /*This is the slowly moving background image. 
 Should have sun and far limb of planet as image with transparent bg
 Not adding image on css to allow for easier changes*/
