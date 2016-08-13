@@ -71,14 +71,15 @@ function mouseScroll(e) {
         if (e.preventDefault) {
             e.preventDefault();
         }
-         
-        // deal with different browsers calculating the delta differently
-        if (e.wheelDelta) {
-            mouseDelta = e.wheelDelta / 60;
-        } else if (e.detail) {
-            mouseDelta = -e.detail / 6;
-        }
 
+    }
+
+    // deal with different browsers calculating the delta differently
+    //keep outside normal scroll check to prevent jerkeyness
+    if (e.wheelDelta) {
+        mouseDelta = e.wheelDelta / 60;
+    } else if (e.detail) {
+        mouseDelta = -e.detail / 6;
     }
 }
  
