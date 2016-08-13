@@ -125,11 +125,11 @@ function animationLoop() {
      
     // scroll up or down by 5 pixels when the mousewheel is used
     if (mouseWheelActive) {
-        window.scrollBy(0, -mouseDelta * 5);
+        window.scrollBy(0, -mouseDelta * 100);
         count++;
          
         // stop the scrolling after a few moments
-        if (count > 10) {
+        if (count > 20) {
             count = 0;
             mouseWheelActive = false;
             mouseDelta = 0;
