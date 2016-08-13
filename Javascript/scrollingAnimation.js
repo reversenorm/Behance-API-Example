@@ -53,18 +53,26 @@ function setup() {
 }
  
 function mouseScroll(e) {
-    mouseWheelActive = true;
+
+    var overDesign=("#Design").is(":hover");
+    var overArt=("#Art").is(":hover");
+    var overCode=("#Code").is(":hover");
+
+    if(!overDesign && !overArt && !overCode ){//if the cursor is not over design art or code, do fancy scrolling otherwise default scroll
+        mouseWheelActive = true;
+             
+        // cancel the default scroll behavior
+        if (e.preventDefault) {
+            e.preventDefault();
+        }
          
-    // cancel the default scroll behavior
-    // if (e.preventDefault) {
-    //     e.preventDefault();
-    // }
-     
-    // deal with different browsers calculating the delta differently
-    if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 60;
-    } else if (e.detail) {
-        mouseDelta = -e.detail / 6;
+        // deal with different browsers calculating the delta differently
+        if (e.wheelDelta) {
+            mouseDelta = e.wheelDelta / 60;
+        } else if (e.detail) {
+            mouseDelta = -e.detail / 6;
+        }
+
     }
 }
  
