@@ -9,7 +9,7 @@
     <title>Behance Loader</title>
 <style>
 
-	#overlay {
+	#overlay {/*Darkens background to create lightbox effect*/
 	  position: fixed;
 	  overflow:hidden;
 	  top: 0px;
@@ -21,7 +21,7 @@
 	  display: none;
 	}
 
-	.closeMe{
+	.closeMe{/*clickable div behind lightbox triggers toggleLayer('overlay') on click*/
 		position: absolute;
 		top:0px;
 		left:0px;
@@ -32,7 +32,7 @@
 
 	}
 
-	.closeX{
+	.closeX{/*also triggers toggleLayer('overlay') on click but is positioned [X] in the corner for those who look for an x to click*/
 		position:fixed;
 		display:block;
 		z-index:30;
@@ -41,7 +41,7 @@
 
 	}
 
-	#behanceGallery {
+	#behanceGallery { /*The lit up part of the light box. Allows scrolling within it but fixed at 100% height*/
 	  position: relative;
 	  width: 76%;
 	  left:12%;
@@ -50,9 +50,10 @@
 	  overflow:scroll;
 	  background-color: #ffffff;
 	  margin:20px;
+	  color:#000000;/*text color defined to over ride main css when inserted later */
 	}
 
-
+	/*alignment and styling of content loaded into gallery lightbox overlay*/
 	#behanceGallery h1{
 		text-align: center;
 	}
@@ -64,6 +65,12 @@
 	 	margin:20px 0px 0px 0px;
 	 }
 
+	 	.galleryDescription{
+		padding: 20px;
+	}
+
+
+	 /*Adds glowing edge effect to a box same as on mainCSS can be deleted on combind*/
 	.glowEdges {
     border: solid rgba(200, 115, 15, .75);
      -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
@@ -71,14 +78,10 @@
    box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
 
    border-width: 2px 1px 2px 1px;
-
-
-}
-
-	.galleryDescription{
-		padding: 20px;
 	}
-
+	/*
+	Begin list css for Design section
+	*/
 
 
 </style>
@@ -173,16 +176,14 @@
 <br />
 <br />
 
-<!-- simple change test-->
-<div >
-	<ul id="projectsList">
 
+<div id="Design"><!--this is equavalent to the Design ID on the index page and will replace the temporary content when combining elements-->
+	<ul >
 		<script>
 			for (var i=0; i<BehanceProjects["projects"].length; i++ ){
-				document.write("<li><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");
+				document.write("<li><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
 			};
 		</script>
-
 	</ul>
 </div><br /><br />
 
