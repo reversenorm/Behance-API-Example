@@ -39,7 +39,7 @@
 	  height:90%;
 	  overflow:scroll;
 	  background-color: #ffffff;
-	  margin:5%;
+	  margin:20px;
 	  color:#000000;/*text color defined to over ride main css when inserted later */
 	}
 
@@ -67,7 +67,7 @@
 		position:relative;
 		float:left;
 		height:175px;
-		background-color: rgba(115, 115, 115, .50);
+		background-color: rgba(50, 50, 50, 1);
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
