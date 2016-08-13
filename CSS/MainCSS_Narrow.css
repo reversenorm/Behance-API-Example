@@ -9,7 +9,7 @@ body {
 
 h1{
     font-weight: 400;
-     font-size:20pt;
+     font-size:15pt;
 }
 
 a{
@@ -30,7 +30,7 @@ a{
 .title{
     background-color: rgba(150, 150, 150, .15);
     padding: 5px 0px 5px 20px;
-    margin:40px 20px 0px 20px;
+    margin:40px 20px 5px 20px;
     border-radius: 20px 20px 0px 0px;
 }
 
