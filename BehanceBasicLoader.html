@@ -126,7 +126,6 @@
 
 		function openGallery(galleryId){
 			toggleLayer('overlay');
-			bodyNoScroll();
 			document.getElementById("behanceGallery").innerHTML=galleryBuilder(galleryId);
 		};
 
@@ -134,7 +133,7 @@
 
 			var galleryData=jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
 
-			var htmlString="<div class='closex'><a href='#c' onclick='"+"toggleLayer('overlay');"+"'>[X]</a></div><div class='galleryDescription'>"//add in the gallery description section
+			var htmlString="<div class='closex'><a href='#d' onclick='toggleLayer('overlay');'>[X]</a></div><div class='galleryDescription'>"//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+galleryData["project"]["name"]+"</h1><br/>");//add gallery title
 
@@ -198,7 +197,7 @@
 </div><br /><br />
 
 <div id="overlay" >
-	<a href="#c" onclick="toggleLayer('overlay');">
+	<a href="#c" onclick="toggleLayer('overlay'); bodyNoScroll();">
 	<div class="closeMe"></div>
 	</a>
 	<div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
