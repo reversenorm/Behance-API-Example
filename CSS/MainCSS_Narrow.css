@@ -107,7 +107,6 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 .movingBox{
-    display:block;
     height:400px;
     background-color: rgba(255, 255, 255, .10);
     padding: 15px;
