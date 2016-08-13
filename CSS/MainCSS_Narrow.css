@@ -111,6 +111,7 @@ ported from other sites. Also will have near clouds image at base */
     background-color: rgba(255, 255, 255, .10);
     padding: 15px;
     margin:20px;
+    overflow:scroll;
 
 }
 
@@ -183,11 +184,6 @@ ported from other sites. Also will have near clouds image at base */
     top:-15px;
     right:-15px;
 
-}
-
-#Design{
-
-    overflow:scroll;
 }
 
 
