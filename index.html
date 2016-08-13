@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <meta content="en-us" http-equiv="Content-Language">
-    <meta charset="utf-8">
-    <meta content="A high performance parallax scrolling example." name="description">
-    <meta content="Parallax Scrolling Example" name="title">
-    <title>Jesse Phillips - Online Portfolio</title>
+    <title>:::REVERSENORM::: Jesse Phillips - Online Portfolio</title>
+
+ <!-- Link CSS  --><!-- Link CSS  --><!-- Link CSS  --><!-- Link CSS  -->
     <!-- import roboto font face from google !-->
    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+   <!--Css to build both Design projects gallery and lightbox viewer-->
+   <link rel="stylesheet" type="text/css" href="reversenorm.github.io/CSS/Design_Section.css" />
 
     <!-- Narrow first for css then Add elements for more complex arrangements !-->
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 650px)" href="reversenorm.github.io/CSS/MainCSS_Narrow.css" />
@@ -21,6 +22,18 @@
 
     <!-- Now for large size adjustments !-->
     <link rel="stylesheet" media="screen and (min-width: 1241px) and (max-width: 2200px)" href="reversenorm.github.io/CSS/Extra_Large.css" />
+
+<!-- Link CSS  --><!-- Link CSS  --><!-- Link CSS  --><!-- Link CSS  -->
+
+<!-- Include Javascripts --><!-- Include Javascripts --><!-- Include Javascripts -->
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
+    <script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
+    <script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
+    <script src="reversenorm.github.io/Javascript/BehanceConnector.js"></script><!--Ports data from saved json files and builds lightbox gallery on click-->
+
+ <!-- Include Javascripts --><!-- Include Javascripts --><!-- Include Javascripts -->
 
 </head>
 
@@ -43,19 +56,18 @@
 
     <div id="main">
 
-        <br/>&nbsp;
+        <br/>&nbsp;<!--nudge from top edge-->
         <div class="movingBox glowEdges">
             <div id="Design">
-<h1>Behance Data Goes here</h1>
-<br/>
-Currently Under Consturction. But you know I don't really think anyone will be searching this until I start sharing my URL.<br/>
-<a href="http://reversenorm.com">Test link Home</a>
-<br />Nowa bunch of returns to see of overflow scroll works<br/>.
-<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.
-<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.
-<br/>.<br/>.<br/>.<br/>.<br/>.<br/>.<br /> you made it to the bottom of this window.
-</div>
-        </div><br/>&nbsp;
+            <ul >
+             <script>
+                for (var i=0; i<BehanceProjects["projects"].length; i++ ){
+                    document.write("<li class='glowEdges'><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+                };
+            </script>
+    </ul>
+
+            </div>
 
         <div class="movingBox glowEdges">
             <div id="Art">
@@ -63,7 +75,7 @@ Currently Under Consturction. But you know I don't really think anyone will be s
 <br/>
 Just some are from my old Deviant page, but then again it has a lot of good stuff. Also means I might update it more if it also doubles as my portfolio page.
 </div>
-        </div><br/>&nbsp;
+        </div>
 
         <div class="movingBox glowEdges">
             <div id="Code">
@@ -71,7 +83,7 @@ Just some are from my old Deviant page, but then again it has a lot of good stuf
 Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler examples and hopefully my pluto figure eight.
 			</div>
 </div>
-        </div><br/>&nbsp;
+        </div>
 
     </div>
     <!--end of main div !-->
@@ -98,11 +110,17 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
-    <script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
-    <script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
+    <!--This section for the overlay is hidden until called. .innerHtml used to dynamically-ish (GitHub does not support serverside so this is the work around) fill with data from behance and saved JSON-->
 
+    <div id="overlay" >
+    <a href="#c" onclick="toggleLayer('overlay');">
+    <div class="closeMe"></div>
+    </a>
+    <div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
+
+    Need to create a string that stiches html together then pass that string to inner.html to place here.
+    </div>
+</div>
 
 </body>
 
