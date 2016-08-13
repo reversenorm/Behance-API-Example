@@ -77,9 +77,9 @@ function mouseScroll(e) {
     // deal with different browsers calculating the delta differently
     //keep outside normal scroll check to prevent jerkeyness
     if (e.wheelDelta) {
-        mouseDelta = e.wheelDelta / 60;
+        mouseDelta = e.wheelDelta / 120;
     } else if (e.detail) {
-        mouseDelta = -e.detail / 6;
+        mouseDelta = -e.detail / 8;
     }
 }
  
