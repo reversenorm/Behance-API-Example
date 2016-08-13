@@ -30,7 +30,7 @@ a{
 .title{
     background-color: rgba(150, 150, 150, .15);
     padding: 5px 0px 5px 20px;
-    margin:0px 0px 0px 20px;
+    margin:0px 20px 0px 20px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -156,10 +156,10 @@ ported from other sites. Also will have near clouds image at base */
     text-decoration: none;
     font-weight: bold;
     display: block;
-    width: 70px;
+    width: 100px;
     text-align: center;
 
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 0px 5px 5px 0px;
 
 }
 
@@ -167,8 +167,6 @@ ported from other sites. Also will have near clouds image at base */
 #menu li a:hover {
     background-color: rgba(150, 150, 150, .15);
     color: white;
-    display: block;
-    width: 70px;
 }
 
 #about {
