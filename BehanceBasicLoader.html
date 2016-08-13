@@ -37,10 +37,10 @@
 	}
 
 	.close_x{
-		position:relative;
+		position:fixed;
 		float;right;
-		top:-15px;
-		right:-15px;
+		top:10px;
+		right:10px;
 
 	}
 
@@ -120,6 +120,7 @@
 		};//end json loader
 
 		function bodyNoScroll(){
+			alert("scroll stopped");
 			document.body.style.overflow="hidden";
 		}
 
@@ -188,7 +189,7 @@
 
 		<script>
 			for (var i=0; i<BehanceProjects["projects"].length; i++ ){
-				document.write("<li><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");
+				document.write("<li><a href='#c' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");
 			};
 		</script>
 
