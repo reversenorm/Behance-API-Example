@@ -54,11 +54,17 @@ function setup() {
  
 function mouseScroll(e) {
 
-    var overDesign=("#Design").is(":hover");
-    var overArt=("#Art").is(":hover");
-    var overCode=("#Code").is(":hover");
+    var overScrollable=[("#Design").is(":hover"), ("#Art").is(":hover"), ("#Code").is(":hover"), ("#behanceGallery").is(":hover")]
+    var normalScroll=false;
 
-    if(!overDesign && !overArt && !overCode ){//if the cursor is not over design art or code, do fancy scrolling otherwise default scroll
+    for(var i in overScrollable){
+             if(!overScrollable[i]){ //if all any are  not-false (aka true hovering above one)
+            var normalScroll = true
+         }
+        }
+
+
+    if(!normalScroll){//is normalScroll is not-false (not hovering over something relivent) proceede.
         mouseWheelActive = true;
              
         // cancel the default scroll behavior
