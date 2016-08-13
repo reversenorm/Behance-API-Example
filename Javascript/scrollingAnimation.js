@@ -54,7 +54,7 @@ function setup() {
  
 function mouseScroll(e) {
 
-    var overScrollable=[("#Design").is(":hover"), ("#Art").is(":hover"), ("#Code").is(":hover"), ("#overlay").is(":hover")]
+    var overScrollable=[("#Design").is(":hover"), ("#Art").is(":hover"), ("#Code").is(":hover")]
     var normalScroll=false;
 
     for(var i in overScrollable){

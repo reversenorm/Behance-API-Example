@@ -25,7 +25,7 @@
 		position:fixed;
 		display:block;
 		z-index:30;
-		top:4%;
+		top:10%;
 		left:86%;
 
 	}
@@ -36,10 +36,10 @@
 	  width: 76%;
 	  left:12%;
 	  z-index: 20;
-	  height:100%;
+	  height:90%;
 	  overflow:scroll;
 	  background-color: #ffffff;
-	  margin:20px;
+	  margin:5%;
 	  color:#000000;/*text color defined to over ride main css when inserted later */
 	}
 
@@ -66,8 +66,8 @@
 		text-align: center;
 		position:relative;
 		float:left;
-		height:225px;
-		background-color: rgba(255, 255, 255, .50);
+		height:175px;
+		background-color: rgba(115, 115, 115, .50);
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
