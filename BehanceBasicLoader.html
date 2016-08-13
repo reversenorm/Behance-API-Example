@@ -52,10 +52,6 @@
 	  margin:20px;
 	}
 
-	#behanceGallery img{
-		width:75%;
-		height:auto;
-	}
 
 	#behanceGallery h1{
 		text-align: center;
@@ -142,7 +138,14 @@
 
 			for(var i=0; i<galleryData["project"]["modules"].length; i++){ //for each module item
 				if(galleryData["project"]["modules"][i]["type"]=="image"){//if it's an image
-				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"]["original"]+"' align='center'>");
+						var imageSize="null";
+						if(galleryData["project"]["modules"][i]["sizes"]["max_1200"]){
+							imageSize="max_1200";
+						}else{
+							imageSize="original";
+						}
+
+				htmlString = htmlString.concat("<li><img src='"+galleryData["project"]["modules"][i]["sizes"][imageSize]+"' align='center'>");
 
 					if(galleryData["project"]["modules"][i]["caption_plain"]){//if there is a caption
 
