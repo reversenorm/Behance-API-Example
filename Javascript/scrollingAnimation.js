@@ -56,9 +56,9 @@ function mouseScroll(e) {
     mouseWheelActive = true;
          
     // cancel the default scroll behavior
-    if (e.preventDefault) {
-        e.preventDefault();
-    }
+    // if (e.preventDefault) {
+    //     e.preventDefault();
+    // }
      
     // deal with different browsers calculating the delta differently
     if (e.wheelDelta) {
