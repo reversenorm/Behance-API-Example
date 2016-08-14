@@ -170,17 +170,18 @@ ported from other sites. Also will have near clouds image at base */
 }
 
 #about {
-
+    
     position:relative;
     float:left;
     display:none;
-    left:68px;
-    top:-28px;
-    width:250px;
+    left:0px;
+    top:0px;
+    width:350px;
     background-color: rgba(200, 100, 0, 1);
     padding: 15px;
-    color:#000000;
-
+    color:#000000
+    margin:15px 0px 0px 0px;;
+    border-radius: 0px 5px 0px 0px;
 }
 
 #about a {
