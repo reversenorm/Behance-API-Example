@@ -108,13 +108,15 @@
 
     <script type="text/javascript">
 
-    	jQuery.getFeed({
-  		 url : "http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484",
-  		 success : function (feed) {
-      		console.log(feed);
-   			}
-		});
-       
+    	var deviantData=null;
+
+    	$.get("http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484", function (data) {
+	    
+    		deviantData=$.parseXML(data);
+    		console.log(deviantData);
+
+		    });
+		       
 
     </script>
 <br />
