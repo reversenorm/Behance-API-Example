@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
+
+
+<head>
+    <title>Deviant Art Loader</title>
+<style>
+
+	#overlay {/*Darkens background to create lightbox effect*/
+	  position: fixed;
+	  overflow:hidden;
+	  top: 0px;
+	  left: 0px;
+	  z-index: 9;
+	  background-color: rgba(0, 0, 0, .75);
+	  width:101%;
+	  height:101%;
+	  display: none;
+	}
+
+	.closeMe{/*clickable div behind lightbox triggers toggleLayer('overlay') on click*/
+		position: absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		z-index:10;
+		cursor:zoom-out;
+
+	}
+
+	.closeX{/*also triggers toggleLayer('overlay') on click but is positioned [X] in the corner for those who look for an x to click*/
+		position:fixed;
+		display:block;
+		z-index:30;
+		top:2%;
+		left:86%;
+
+	}
+
+	#deviantGallery { /*The lit up part of the light box. Allows scrolling within it but fixed at 100% height*/
+	  position: relative;
+	  width: 76%;
+	  left:12%;
+	  z-index: 20;
+	  height:100%;
+	  overflow:scroll;
+	  background-color: #ffffff;
+	  margin:20px;
+	  color:#000000;/*text color defined to over ride main css when inserted later */
+	}
+
+	/*alignment and styling of content loaded into gallery lightbox overlay*/
+	#deviantGallery h1{
+		text-align: center;
+	}
+	 #deviantGallery ul, #Art ul {
+	 	list-style-type: none;
+	 }
+
+	 #deviantGallery li {
+	 	margin:20px 0px 0px 0px;
+	 }
+
+	 	.galleryDescription{
+		padding: 20px;
+	}
+
+
+	 /*Adds glowing edge effect to a box same as on mainCSS can be deleted on combind*/
+	.glowEdges {
+    border: solid rgba(200, 115, 15, .75);
+     -webkit-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   -moz-box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+   box-shadow: 0px 0px 5px 2px rgba(255,100,0,0.5);
+
+   border-width: 2px 1px 2px 1px;
+	}
+
+	#Art{
+		overflow:scroll;
+	}
+
+
+	#Art li{
+		padding:10px 10px 5px 10px;
+		margin:15px;/*this is on all sides double between elements*/
+		width:20%;
+		text-align: center;
+		position:relative;
+		float:left;
+		height:225px;
+	}
+
+	#Art img {/*width flexibility for the linked display images*/
+		width:80%;
+		height:auto;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+    	jQuery.getFeed({
+  		 url : "http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484",
+  		 success : function (feed) {
+      		console.log(feed);
+   			}
+		});
+       
+
+    </script>
+<br />
+<br />
+
+
+<div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
+	<ul >
+		<script>
+
+		</script>
+	</ul>
+</div><br /><br />
+
+<div id="overlay" >
+	<a href="#d" onclick="toggleLayer('overlay');">
+	<div class="closeMe"></div>
+	</a>
+	<div id="deviantGallery" class="glowEdges">Gallery data will go here using inner.html<br />
+
+	Need to create a string that stiches html together then pass that string to inner.html to place here.
+	
+	</div>
+</div>
+
+</body>
+
+
+</html>
