@@ -2,11 +2,11 @@
 /*Range 1601px-2800px*/
 
 #Sunrise {
-    top:750px;
+    top:650px;
 }
 
 #parallaxMain{
-   top:2000px;
+   top:1975px;
 }
 
 #parallaxNear {
@@ -14,5 +14,5 @@
 }
 
 #main{
-	height: 2500px;
+	height: 2800px;
 }
