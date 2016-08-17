@@ -19,6 +19,7 @@
         var DeviantProjects = xhttp.open("GET", "http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484", true);
 
 		console.log(DeviantProjects);
+		console.log(DeviantProjects.getElementsByTagName("item")[0].childNodes[0].nodeValue);
 		
     </script>
 <br />
