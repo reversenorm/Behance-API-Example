@@ -16,6 +16,7 @@
 <body>
 
     <script type="text/javascript">
+        var xhttp = new XMLHttpRequest();
         var DeviantProjects = xhttp.open("GET", "http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484", true);
 
 		console.log(DeviantProjects);
@@ -26,11 +27,7 @@
 
 
 <div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
-	<ul >
-		<script>
-			console.log(DeviantProjects);
-		</script>
-	</ul>
+This is the art div.
 </div><br /><br />
 
 <div id="overlay" >
