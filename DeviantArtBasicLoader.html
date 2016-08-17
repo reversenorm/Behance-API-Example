@@ -16,17 +16,11 @@
 <body>
 
     <script type="text/javascript">
-                  	var DeviantData=null;
-    	var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-       if (xhttp.readyState == 4 && xhttp.status == 200) {
-           DeviantData=xhttp.responseText;
-        }
-       };
-  		xhttp.open("GET", "http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484", true);
- 		 xhttp.send();
-
- 		 console.log(DeviantData);
+     	var xhttp = new XMLHttpRequest();
+     	xhttp.open("GET", "http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484", true);
+ 	xhttp.send();
+         var DeviantData=xhttp.responseText;
+ 	console.log(DeviantData);
 		
     </script>
 <br />
