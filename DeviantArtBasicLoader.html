@@ -2,7 +2,6 @@
 <html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
 
 
 <head>
@@ -25,7 +24,7 @@
 				        'async': false,
 				        'global': false,
 				        'url':  filePath,
-				        'dataType': "XML",
+				        'dataType': "xml",
 				        'success': function (data) {
 				            XMLFile = data;
 			        }
@@ -41,7 +40,7 @@
 
 
 <div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
-
+This is are region.
 		<script>
 			console.log(DeviantProjects);
 		</script>
@@ -49,9 +48,7 @@
 </div><br /><br />
 
 <div id="overlay" >
-	<a href="#c" onclick="toggleLayer('overlay');">
-	<div class="closeMe"></div>
-	</a>
+
 	<div id="deviantArtGallery" class="glowEdges">Gallery data will go here using inner.html<br />
 
 	Need to create a string that stiches html together then pass that string to inner.html to place here.
