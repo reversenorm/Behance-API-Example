@@ -44,7 +44,9 @@ This is are region.
 		<script>
 			console.log(DeviantProjects);
 
-			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getAttributeName("title").nodeValue);
+			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getAttributeName("title")[0]);
+
+			document.write(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getAttributeName("title")[0]);
 
 
 		</script>
