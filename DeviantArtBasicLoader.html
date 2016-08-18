@@ -1,4 +1,4 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -22,7 +22,7 @@
 			var DeviantData = (function () {
 		    	var XMLFile = null;
 			   		 $.ajax({
-				        'async': false,
+				        'async': true,
 				        'global': false,
 				        'url':  filePath,
 				        'dataType': "XML",
@@ -41,11 +41,11 @@
 
 
 <div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
-	<ul >
+
 		<script>
 			console.log(DeviantProjects);
 		</script>
-	</ul>
+
 </div><br /><br />
 
 <div id="overlay" >
