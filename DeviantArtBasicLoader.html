@@ -50,7 +50,7 @@ This is are region.
 			document.write(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0].childNodes[0].nodeValue);
 
 
-			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('thumbnail')[2]);
+			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url'));
 	
 
 
