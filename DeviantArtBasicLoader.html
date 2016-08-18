@@ -1,65 +1,65 @@
 +<!DOCTYPE html>
- +<html>
- +
- +<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
- +<script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
- +
- +
- +<head>
- +    <title>Deviant Art Loader</title>
- +<style>
- +	/*Css insert here base from behance*/
- +</style>
- +
- +</head>
- +
- +<body>
- +
- +    <script type="text/javascript">
- +        var DeviantProjects = XMLLoader("http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484");
- +   
- +        function XMLLoader(filePath){
- +			var DeviantData = (function () {
- +		    	var XMLFile = null;
- +			   		 $.ajax({
- +				        'async': false,
- +				        'global': false,
- +				        'url':  filePath,
- +				        'dataType': "XML",
- +				        'success': function (data) {
- +				            XMLFile = data;
- +			        }
- +			   		 });
- +			   		 	return XMLFile;
- +					})(); 
- +			return DeviantData;
- +		};//end json loader
- +		
- +    </script>
- +<br />
- +<br />
- +
- +
- +<div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
- +	<ul >
- +		<script>
- +			console.log(DeviantProjects);
- +		</script>
- +	</ul>
- +</div><br /><br />
- +
- +<div id="overlay" >
- +	<a href="#c" onclick="toggleLayer('overlay');">
- +	<div class="closeMe"></div>
- +	</a>
- +	<div id="deviantArtGallery" class="glowEdges">Gallery data will go here using inner.html<br />
- +
- +	Need to create a string that stiches html together then pass that string to inner.html to place here.
- +	
- +	</div>
- +</div>
- +
- +</body>
- +
- +
- +</html> 
+<html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
+
+
+<head>
+    <title>Deviant Art Loader</title>
+<style>
+	/*Css insert here base from behance*/
+</style>
+
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var DeviantProjects = XMLLoader("http://backend.deviantart.com/rss.xml?type=deviation&q=gallery%3Areversenorm%2F60005484");
+   
+        function XMLLoader(filePath){
+			var DeviantData = (function () {
+		    	var XMLFile = null;
+			   		 $.ajax({
+				        'async': false,
+				        'global': false,
+				        'url':  filePath,
+				        'dataType': "XML",
+				        'success': function (data) {
+				            XMLFile = data;
+			        }
+			   		 });
+			   		 	return XMLFile;
+					})(); 
+			return DeviantData;
+		};//end json loader
+		
+    </script>
+<br />
+<br />
+
+
+<div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
+	<ul >
+		<script>
+			console.log(DeviantProjects);
+		</script>
+	</ul>
+</div><br /><br />
+
+<div id="overlay" >
+	<a href="#c" onclick="toggleLayer('overlay');">
+	<div class="closeMe"></div>
+	</a>
+	<div id="deviantArtGallery" class="glowEdges">Gallery data will go here using inner.html<br />
+
+	Need to create a string that stiches html together then pass that string to inner.html to place here.
+	
+	</div>
+</div>
+
+</body>
+
+
+</html> 
