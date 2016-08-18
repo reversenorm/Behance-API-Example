@@ -52,8 +52,11 @@ This is are region.
 
 			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url'));
 
-			document.write("<img src='"+DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[0].getAttribute('url')+"'>");
+			document.write("<img src='"+DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url')+"'>");
 
+			document.write("<img src='"+DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url')+"'>");
+
+			document.write("<a href="+eviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("link")[0].childNodes[0].nodeValue+">Link to deviant art</a>");
 	
 
 
