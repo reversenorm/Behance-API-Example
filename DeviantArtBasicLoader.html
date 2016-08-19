@@ -33,6 +33,19 @@
 					})(); 
 			return DeviantData;
 		};//end json loader
+
+		
+		var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+		
+		var DeviantThumbURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url');
+
+		var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
+
+		var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("link")[0].childNodes[0].nodeValue
+
+		var i=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length;
+
+		console.log(i);
 		
     </script>
 <br />
@@ -40,25 +53,8 @@
 
 
 <div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
-This is are region.
 		<script>
-			console.log(DeviantProjects);
-
-			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0]);
-
 			
-			document.write(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0].childNodes[0].nodeValue);
-
-
-			console.log(DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url'));
-
-			document.write("<img src='"+DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url')+"'>");
-
-			document.write("<img src='"+DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url')+"'>");
-
-			document.write("<a href="+DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("link")[0].childNodes[0].nodeValue+">Link to deviant art</a>");
-	
-
 
 		</script>
 
