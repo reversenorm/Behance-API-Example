@@ -21,7 +21,7 @@
 			var DeviantData = (function () {
 		    	var XMLFile = null;
 			   		 $.ajax({
-				        'async': true,
+				        'async': false,
 				        'global': false,
 				        'url':  filePath,
 				        'dataType': "xml",
@@ -35,17 +35,6 @@
 		};//end json loader
 
 
-		var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-
-		var DeviantThumbURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url');
-
-		var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
-
-		var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("link")[0].childNodes[0].nodeValue
-
-		var i=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length;
-
-		console.log(i);
 		
     </script>
 <br />
@@ -53,6 +42,26 @@
 
 
 <div id="Art"><!--this is equavalent to the Art ID on the index page and will replace the temporary content when combining elements-->
+<ul>
+	<script>
+
+			for (var i=0; i<DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length; i++ ){
+
+				var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+				var DeviantThumbURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url');
+
+				//var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
+
+				var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("link")[0].childNodes[0].nodeValue
+
+				document.write("<li class='glowEdges'><a href='#"+DeviantTitle+"' onclick='openGallery("+DeviantTitle+");'><img src='"+DeviantThumbURL+"'><br/>"+BDeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+			
+			}
+
+
+	</script>
+</ul>
 		
 </div><br /><br />
 <div id="overlay" >
