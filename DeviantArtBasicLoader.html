@@ -47,13 +47,13 @@
 
 			for (var i=0; i<DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length; i++ ){
 
-				var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+				var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
-				var DeviantThumbURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url');
+				var DeviantThumbURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url');
 
-				//var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
+				//var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
 
-				var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[0].getElementsByTagName("link")[0].childNodes[0].nodeValue
+				var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("link")[0].childNodes[0].nodeValue
 
 				document.write("<li class='glowEdges'><a href='#"+DeviantTitle+"' onclick='openGallery("+DeviantTitle+");'><img src='"+DeviantThumbURL+"'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
 			
