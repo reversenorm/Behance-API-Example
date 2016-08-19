@@ -63,12 +63,12 @@
 			var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
 
 
-			var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("link")[0].childNodes[0].nodeValue
+			var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("link")[0].childNodes[0].nodeValue;
 
 			var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
 
-			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+");'>PREVIOUS</a></div><div class='liveDeviationTitle'>"//add in the gallery description section
+			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+");'>PREVIOUS</a></div><div class='liveDeviationTitle'>";//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+DeviantTitle+"</h1><br/></div>");//add title to lightbox display and close LiveDeviationTitle div
 
