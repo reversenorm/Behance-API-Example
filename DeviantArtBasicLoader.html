@@ -2,6 +2,7 @@
 <html>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
 
 
 <head>
@@ -32,7 +33,50 @@
 			   		 	return XMLFile;
 					})(); 
 			return DeviantData;
-		};//end json loader
+		};//end XML loader
+
+
+		function openDeviation(DeviationNumber, FromThumb){
+			if(FromThumb=="FromThumb"){//If we come from a thumb toggle the overlay otherwise just build the next image
+			toggleLayer('overlay');
+			};
+			document.getElementById("behanceGallery").innerHTML=DeviationGalleryBuilder(DeviationNumber);
+		};
+
+		function DeviationGalleryBuilder(DeviationNumber){
+
+			//Handle next and previous identifiers so they will click trhough
+			var NextDeviation=DeviationNumber+1;
+
+			var PerviousDeviation=DeviationNumber-1;
+
+			if (NextDeviation>DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length;){ NextDeviation=0;};
+
+			if (PerviousDeviation<0){PerviousDeviation=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length;};
+
+			//end previous and next identification
+
+			var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
+
+
+			var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("link")[0].childNodes[0].nodeValue
+
+			var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+
+			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+");'>PREVIOUS</a></div><div class='liveDeviationTitle'>"//add in the gallery description section
+
+			htmlString=htmlString.concat("<h1>"+DeviantTitle+"</h1><br/></div>");//add title to lightbox display and close LiveDeviationTitle div
+
+			//add the main image and put it in a div tag with a link out to deviant art page
+			htmlString=htmlString.concat("<div class='liveDeviation'><a href='"+DeviantImageSiteURL+"' target='_blank'><img src='"+DeviantThumbURL+"'></a></div>");
+
+
+			htmlString = htmlString.concat("</div><div id='NextArrow'><a href='#"+NextDeviation+"' onclick='openDeviation("+NextDeviation+");'>NEXT</a></div>");//close LiveDeivation Div and add nextDeviation button link
+
+			return htmlString;
+
+				}
 
 
 		
@@ -53,9 +97,9 @@
 
 				//var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
 
-				var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("link")[0].childNodes[0].nodeValue
+				//var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
 
-				document.write("<li class='glowEdges'><a href='#"+DeviantTitle+"' onclick='openGallery("+DeviantTitle+");'><img src='"+DeviantThumbURL+"'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+				document.write("<li class='glowEdges'><a href='#"+i+"' onclick='openDeviation("+i+"FromThumb"+");'><img src='"+DeviantThumbURL+"'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
 			
 			}
 
@@ -66,10 +110,8 @@
 </div><br /><br />
 <div id="overlay" >
 
-	<div id="deviantArtGallery" class="glowEdges">Gallery data will go here using inner.html<br />
+	<div id="deviantArtGallery" class="glowEdges">
 
-	Need to create a string that stiches html together then pass that string to inner.html to place here.
-	
 	</div>
 </div>
 
