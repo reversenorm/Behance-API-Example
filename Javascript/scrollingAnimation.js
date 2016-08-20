@@ -23,6 +23,15 @@ var Layer_Near = document.querySelector("#parallaxNear");
 var Rate_Near = 1.75;
 
 
+
+//set position of scrollable elements relative to window height.
+varMainHeight=document.querySelector("#main").clientHeight;
+
+
+Layer_Mid_Sunrise.style.top = (varMainHeight-Layer_Mid_Sunrise.clientHeight-50)*Rate_Mid_Sunrise+"px";
+Layer_Main.style.top = (varMainHeight-Layer_Main.clientHeight-50)*Rate_Main+"px";
+Layer_Near.style.top = (varMainHeight-Layer_Near.clientHeight-50)*Rate_Near+"px";
+
  
 var scrolling = false;
 var mouseWheelActive = false;
@@ -31,16 +40,6 @@ var count = 0;
 var mouseDelta = 0;
 
 setup(); 
-
-
-//set position of scrollable elements relative to window height.
-varMainHeight=document.querySelector("#main").clientHeight;
-
-
-Layer_Mid_Sunrise.style.top = (varMainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise+"px";
-Layer_Main.style.top = (varMainHeight-Layer_Main.clientHeight)*Rate_Main+"px";
-Layer_Near.style.top = (varMainHeight-Layer_Near.clientHeight)*Rate_Near+"px";
-
 
 //
 // vendor prefix management
