@@ -34,7 +34,7 @@ a{
 
 }
 
-.title:after{
+.title:before {
     -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
