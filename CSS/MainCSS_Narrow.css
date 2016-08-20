@@ -64,9 +64,9 @@ Not adding image on css to allow for easier changes*/
 }
 
 #Sunrise {
+    position: fixed;
     left: 0px;
     bottom:0px;
-    position: fixed;
     width: 100%;
     top:1000px;
     z-index: -2;
@@ -79,9 +79,9 @@ Not adding image on css to allow for easier changes*/
 
 /* mid level clouds here */
 #parallaxMain{
-   left: 0px;
-    bottom:0px;
    position: fixed;
+    left: 0px;
+    bottom:0px;
    width: 100%;
    top:1500px;
    z-index: -1;
