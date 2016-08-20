@@ -96,6 +96,7 @@ ported from other sites. Also will have near clouds image at base */
 	position:absolute;
     left: 15%;
     width:75%;
+    height:2000px;
     z-index: 0;
     /*background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
 }
@@ -114,11 +115,6 @@ ported from other sites. Also will have near clouds image at base */
     height: auto;
 }
 
-#FooterSpace{
-    position:relative;
-display:block;
-height:800px;
-}
 
 .movingBox{
     height:400px;
