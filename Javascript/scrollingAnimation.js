@@ -23,12 +23,10 @@ var Layer_Near = document.querySelector("#parallaxNear");
 var Rate_Near = 1.75;
 
 //set position of scrollable elements relative to window height.
-Layer_Mid_Sunrise.style.top = Rate_Mid_Sunrise*window.innerHeight+525+"px";
-Layer_Main.style.top = Rate_Main*window.innerHeight+1200+"px";
-Layer_Near.style.top = Rate_Near*window.innerHeight+1800+"px";
+Layer_Mid_Sunrise.style.top = Rate_Mid_Sunrise*window.innerHeight+window.innerHeight+"px";
+Layer_Main.style.top = Rate_Main*window.innerHeight+window.innerHeight+"px";
+Layer_Near.style.top = Rate_Near*window.innerHeight+window.innerHeight+"px";
 
-alert(window.innerHeight);
-alert(Layer_Mid_Sunrise.style.top);
  
 var scrolling = false;
 var mouseWheelActive = false;
