@@ -114,6 +114,12 @@ ported from other sites. Also will have near clouds image at base */
     height: auto;
 }
 
+#FooterSpace{
+display:block;
+height:800px;
+
+}
+
 .movingBox{
     height:400px;
     background-color: rgba(150, 150, 150, .15);
