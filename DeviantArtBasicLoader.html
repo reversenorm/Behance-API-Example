@@ -122,7 +122,7 @@
 
 			for (var i=0; i<DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length; i++ ){
 				
-				var FromThumb="FromThumb";
+				var $FromThumb="FromThumb";
 
 				var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
@@ -132,8 +132,9 @@
 
 				//var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
 
-				document.write("<li class='glowEdges'><a href='#"+i+"' onclick='openDeviation("+i+", "+FromThumb+");'><img src='"+DeviantThumbURL+"'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
-			
+				document.write("<li class='glowEdges'><a href='#"+i+"' onclick='openDeviation("+i+", "+$FromThumb+");'><img src='"+DeviantThumbURL+"'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+				
+				
 			};
 
 
