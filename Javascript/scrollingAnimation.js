@@ -123,8 +123,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near,  -1 * getScrollPosition() * Rate_Near);
 
         scrolling = false;
-
-        console.log(getScrollPosition());
+        console.log(document.documentElement.scrollTop);
         
     }
      
