@@ -26,9 +26,9 @@ var Rate_Near = 1.75;
 varMainHeight=document.querySelector("#main").clientHeight;
 
 
-Layer_Mid_Sunrise.style.top = (varMainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise+"px";
-Layer_Main.style.top = (varMainHeight-Layer_Main.clientHeight)*Rate_Main+"px";
-Layer_Near.style.top = (varMainHeight-Layer_Near.clientHeight)*Rate_Near+"px";
+Layer_Mid_Sunrise.style.top = (varMainHeight-Layer_Mid_Sunrise.clientHeight)+"px";
+Layer_Main.style.top = (varMainHeight-Layer_Main.clientHeight)+"px";
+Layer_Near.style.top = (varMainHeight-Layer_Near.clientHeight)+"px";
 
 
 
