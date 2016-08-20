@@ -80,7 +80,7 @@ Not adding image on css to allow for easier changes*/
    left: 0;
    top:160%;
    position: fixed;
-   width: 100%;
+   width: 150%;
    z-index: -1;
 }
 
@@ -96,7 +96,6 @@ ported from other sites. Also will have near clouds image at base */
 	position:absolute;
     left: 15%;
     width:75%;
-	height: 210%;
     z-index: 0;
     /*background-color: rgba(0, 0, 0, .20); /*alpha 50% for testing*/
 }
@@ -105,7 +104,7 @@ ported from other sites. Also will have near clouds image at base */
 #parallaxNear {
     position: fixed;
     left: 0;
-    top:200%;
+    top:250%;
     width: 100%;
     z-index: 1;
 }
