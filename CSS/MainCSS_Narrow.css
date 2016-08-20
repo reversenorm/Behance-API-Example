@@ -32,9 +32,7 @@ a{
     padding: 5px 0px 5px 20px;
     margin:40px 20px 12px 20px;
 
-}
 
-.title:before {
     -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
@@ -76,6 +74,7 @@ Not adding image on css to allow for easier changes*/
     left: 0;
     position: fixed;
     width: 100%;
+    top:800px;
     z-index: -2;
 }
 /* image settings for parallax mid*/
@@ -89,6 +88,7 @@ Not adding image on css to allow for easier changes*/
    left: 0;
    position: fixed;
    width: 100%;
+   top:1300px;
    z-index: -1;
 }
 
@@ -120,6 +120,7 @@ ported from other sites. Also will have near clouds image at base */
     position: fixed;
     left: 0;
     width: 100%;
+    top:2300px;
     z-index: 1;
 }
 
