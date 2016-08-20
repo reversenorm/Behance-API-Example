@@ -99,8 +99,10 @@ function setScrolling() {
 function getScrollPosition() {
     if (document.documentElement.scrollTop == 0) {
         return document.body.scrollTop;
+        console.log(document.body.scrollTop);
     } else {
         return document.documentElement.scrollTop;
+        
     }
 }
  
@@ -123,7 +125,7 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near,  -1 * getScrollPosition() * Rate_Near);
 
         scrolling = false;
-        console.log(document.documentElement.scrollTop);
+
         
     }
      
