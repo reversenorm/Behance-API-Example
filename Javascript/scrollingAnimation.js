@@ -23,9 +23,6 @@ var Layer_Near = document.querySelector("#parallaxNear");
 var Rate_Near = 1.75;
 
 //set position of scrollable elements relative to window height.
-Layer_Mid_Sunrise.style.top = Rate_Mid_Sunrise*window.innerHeight+window.innerHeight+"px";
-Layer_Main.style.top = Rate_Main*window.innerHeight+window.innerHeight+"px";
-Layer_Near.style.top = Rate_Near*window.innerHeight+window.innerHeight+"px";
 
  
 var scrolling = false;
@@ -126,6 +123,8 @@ function animationLoop() {
         setTranslate3DTransform(Layer_Near,  -1 * getScrollPosition() * Rate_Near);
 
         scrolling = false;
+
+        console.log(getScrollPosition());
         
     }
      
@@ -139,6 +138,8 @@ function animationLoop() {
             count = 0;
             mouseWheelActive = false;
             mouseDelta = 0;
+
+
  
             
         }
