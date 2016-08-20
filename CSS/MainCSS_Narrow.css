@@ -81,7 +81,7 @@ Not adding image on css to allow for easier changes*/
    left: 0;
    position: fixed;
    width: 100%;
-   top:800px;
+   top:1500px;
    z-index: -1;
 }
 
@@ -113,7 +113,7 @@ ported from other sites. Also will have near clouds image at base */
     position: fixed;
     left: 0;
     width: 100%;
-    top:800px;
+    top:2000px;
     z-index: 1;
 }
 
