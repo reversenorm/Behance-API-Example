@@ -27,6 +27,7 @@ Layer_Mid_Sunrise.style.bottom = Rate_Mid_Sunrise*window.innerHeight+300+"px";
 Layer_Main.style.bottom = Rate_Main*window.innerHeight+300+"px";
 Layer_Near.style.bottom = Rate_Near*window.innerHeight+300+"px";
 
+alert(window.innerHeight);
 alert(Layer_Mid_Sunrise.style.bottom);
  
 var scrolling = false;
