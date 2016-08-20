@@ -1,18 +1,19 @@
 
 /*Range 1601px-2800px*/
 
+
 #Sunrise {
-    top:650px;
+    top:0px;
 }
 
 #parallaxMain{
-   top:2200px;
+   top:0px;
 }
 
 #parallaxNear {
-    top:3225px;
+    top:0px;
 }
 
-#main{
-	height: 2800px;
+#FooterSpace{
+	height: 400px;
 }
