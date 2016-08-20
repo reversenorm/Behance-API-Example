@@ -23,6 +23,11 @@ var Layer_Near = document.querySelector("#parallaxNear");
 var Rate_Near = 1.75;
 
 //set position of scrollable elements relative to window height.
+Layer_Mid_Sunrise.style.bottom=document.querySelector("#main").clientHeight;
+Layer_Main.style.bottom=document.querySelector("#main").clientHeight;
+Layer_Near.style.bottom=document.querySelector("#main").clientHeight;
+
+
 
  
 var scrolling = false;
