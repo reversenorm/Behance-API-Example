@@ -66,7 +66,7 @@ Not adding image on css to allow for easier changes*/
     left: 0;
     position: fixed;
     width: 100%;
-    top:80%;
+    top:100%;
     z-index: -2;
 }
 /* image settings for parallax mid*/
@@ -80,7 +80,7 @@ Not adding image on css to allow for easier changes*/
    left: 0;
    top:160%;
    position: fixed;
-   width: 150%;
+   width: 250%;
    z-index: -1;
 }
 
@@ -103,7 +103,7 @@ ported from other sites. Also will have near clouds image at base */
 #FooterSpace{
     display:block;
     position:relative;
-    height:800px;
+    height:350px;
 
 }
 
@@ -111,7 +111,7 @@ ported from other sites. Also will have near clouds image at base */
 #parallaxNear {
     position: fixed;
     left: 0;
-    top:450%;
+    top:500%;
     width: 100%;
     z-index: 1;
 }
