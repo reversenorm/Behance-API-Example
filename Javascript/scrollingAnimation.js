@@ -25,7 +25,7 @@ var Rate_Near = 1.75;
 //set position of scrollable elements relative to window height.
 varMainHeight=document.querySelector("#main").clientHeight;
 
-Layer_Mid_Sunrise.style.bottom=varMainHeight+"px";
+Layer_Mid_Sunrise.style.bottom=Rate_Far*varMainHeight+"px";
 Layer_Main.style.bottom=varMainHeight+"px";
 Layer_Near.style.bottom=varMainHeight+"px";
 
