@@ -99,10 +99,11 @@ function setScrolling() {
 function getScrollPosition() {
     if (document.documentElement.scrollTop == 0) {
         return document.body.scrollTop;
-        console.log(document.body.scrollTop);
+        var test=document.body.scrollTop;
+        console.log(test);
     } else {
         return document.documentElement.scrollTop;
-        
+
     }
 }
  
