@@ -31,6 +31,13 @@ a{
     background-color: rgba(150, 150, 150, .15);
     padding: 5px 0px 5px 20px;
     margin:40px 20px 12px 20px;
+
+    -webkit-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: skew(-45deg);
+  -ms-transform: skew(-45deg);
+  transform: skew(-45deg);
 }
 
 /*This is the slowly moving background image. 
