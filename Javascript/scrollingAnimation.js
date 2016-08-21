@@ -27,7 +27,7 @@ var Rate_Near = 1.75;
 
 var MainHeight=document.querySelector("#main").clientHeight;
 
-Layer_Mid_Sunrise.style[transformProperty]=translate3d("0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise + "px" + ", 0px");
+Layer_Mid_Sunrise.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise + "px" + ", 0px)";
 
 
  
