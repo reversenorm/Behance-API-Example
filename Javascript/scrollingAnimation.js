@@ -23,12 +23,11 @@ var Layer_Near = document.querySelector("#parallaxNear");
 var Rate_Near = 1.75;
 
    //set position of scrollable elements relative to window height.
-//  varMainHeight=document.querySelector("#main").clientHeight;
 
 
-// Layer_Mid_Sunrise.style.top = (varMainHeight-Layer_Mid_Sunrise.clientHeight-50)*Rate_Mid_Sunrise+"px";
-// Layer_Main.style.top = (varMainHeight-Layer_Main.clientHeight-50)*Rate_Main+"px";
-// Layer_Near.style.top = (varMainHeight-Layer_Near.clientHeight-100)*Rate_Near+"px";
+var MainHeight=document.querySelector("#main").clientHeight;
+
+Layer_Mid_Sunrise.style[transformProperty]=translate3d("0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise + "px" + ", 0px");
 
 
  
@@ -110,7 +109,7 @@ function getScrollPosition() {
 // A performant way to shift our image up or down
 //
 function setTranslate3DTransform(element, yPosition) {
-    var value = "translate3d(0px" + ", " + yPosition + "px" + ", 0)";
+    var value = "translate3d(0px" + ", " + yPosition + "px" + ", 0px)";
     element.style[transformProperty] = value;
 }
  
