@@ -65,25 +65,18 @@ function setup() {
  
 function mouseScroll(e) {
 
-    var overScrollable=[ document.querySelector("#Design").hover(), document.querySelector("#Art").hover(), document.querySelector("#Code").hover() ]
-    var normalScroll=false;
 
-    for(var i in overScrollable){
-             if(!overScrollable[i]){ //if all any are  not-false (aka true hovering above one)
-            var normalScroll = true
-         }
-        }
-
-
-    if(!normalScroll){//is normalScroll is not-false (not hovering over something relivent) proceede.
-        mouseWheelActive = true;
-             
+    $("Design").hover(function(){
+    //nothing special
+    }, function(){
+      
         // cancel the default scroll behavior
         if (e.preventDefault) {
             e.preventDefault();
         }
+    });
 
-    }
+
 
     // deal with different browsers calculating the delta differently
     //keep outside normal scroll check to prevent jerkeyness
