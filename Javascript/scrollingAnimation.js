@@ -27,9 +27,9 @@ var Rate_Near = 1.75;
 function positionScrollingImages(){//call this after the near field image is loaded.
 var MainHeight=document.querySelector("#main").clientHeight;
 
-Layer_Mid_Sunrise.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise + "px" + ", 0px)";
-Layer_Main.style[transformProperty]="translate3d(0px" + ", " + ((MainHeight-Layer_Main.clientHeight)*Rate_Main+50) + "px" + ", 0px)";
-Layer_Near.style[transformProperty]="translate3d(0px" + ", " + ((MainHeight-Layer_Near.clientHeight)*Rate_Near-150) + "px" + ", 0px)";
+Layer_Mid_Sunrise.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight+50)*Rate_Mid_Sunrise + "px" + ", 0px)";
+Layer_Main.style[transformProperty]="translate3d(0px" + ", " + ((MainHeight-Layer_Main.clientHeight+50)*Rate_Main) + "px" + ", 0px)";
+Layer_Near.style[transformProperty]="translate3d(0px" + ", " + ((MainHeight-Layer_Near.clientHeight)*Rate_Near) + "px" + ", 0px)";
   
 }
  
