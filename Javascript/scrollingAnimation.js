@@ -24,11 +24,16 @@ var Rate_Near = 1.75;
 
   //set position of scrollable elements relative to window height.
 function  PositionScrollingImages(){
-var MainHeight=document.querySelector("#main").clientHeight;
+var WindowWidth=window.innerWidth;
+
+document.querySelector("#FooterSpace").style["height"]=(WindowWidth/2)+"px";//footer half the width of the window for scaling
+
+var MainHeight=document.querySelector("#main").clientHeight;//do this after footer change to get accureate height
 
 Layer_Mid_Sunrise.style["top"]=(MainHeight-Layer_Mid_Sunrise.clientHeight+50)*Rate_Mid_Sunrise + "px";
 Layer_Main.style["top"]=(MainHeight-Layer_Main.clientHeight+50)*Rate_Main + "px";
 Layer_Near.style["top"]=(MainHeight-Layer_Near.clientHeight)*Rate_Near + "px";
+
 
 }
 
