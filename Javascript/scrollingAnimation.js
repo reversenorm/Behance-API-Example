@@ -27,8 +27,8 @@ function  PositionScrollingImages(){
 var MainHeight=document.querySelector("#main").clientHeight;
 
 Layer_Mid_Sunrise.style["top"]=(MainHeight-Layer_Mid_Sunrise.clientHeight+50)*Rate_Mid_Sunrise + "px";
-Layer_Main.style["top"]=(MainHeight-Layer_Main.clientHeight+50)*Rate_Main) + "px";
-Layer_Near.style["top"]=(MainHeight-Layer_Near.clientHeight)*Rate_Near) + "px";
+Layer_Main.style["top"]=(MainHeight-Layer_Main.clientHeight+50)*Rate_Main + "px";
+Layer_Near.style["top"]=(MainHeight-Layer_Near.clientHeight)*Rate_Near + "px";
 
 }
 
