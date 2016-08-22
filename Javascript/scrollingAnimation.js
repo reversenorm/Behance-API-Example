@@ -26,9 +26,9 @@ var Rate_Near = 1.75;
 function  PositionScrollingImages(){
 var MainHeight=document.querySelector("#main").clientHeight;
 
-Layer_Mid_Sunrise.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight+50)*Rate_Mid_Sunrise + "px" + ", 0px)";
-Layer_Main.style[transformProperty]="translate3d(0px" + ", " + ((MainHeight-Layer_Main.clientHeight+50)*Rate_Main) + "px" + ", 0px)";
-Layer_Near.style[transformProperty]="translate3d(0px" + ", " + ((MainHeight-Layer_Near.clientHeight)*Rate_Near) + "px" + ", 0px)";
+Layer_Mid_Sunrise.style["top"]=(MainHeight-Layer_Mid_Sunrise.clientHeight+50)*Rate_Mid_Sunrise + "px";
+Layer_Main.style["top"]=(MainHeight-Layer_Main.clientHeight+50)*Rate_Main) + "px";
+Layer_Near.style["top"]=(MainHeight-Layer_Near.clientHeight)*Rate_Near) + "px";
 
 }
 
