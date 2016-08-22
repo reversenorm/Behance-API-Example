@@ -24,14 +24,14 @@ var Rate_Near = 1.75;
 
    //set position of scrollable elements relative to window height.
 
-
+function positionScrollingImages(){//call this after the near field image is loaded.
 var MainHeight=document.querySelector("#main").clientHeight;
 
 Layer_Mid_Sunrise.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise + "px" + ", 0px)";
-Layer_Main.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Main.clientHeight+50)*Rate_Main + "px" + ", 0px)";
-Layer_Near.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Near.clientHeight-100)*Rate_Near + "px" + ", 0px)";
-
-
+Layer_Main.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Main.clientHeight+150)*Rate_Main + "px" + ", 0px)";
+Layer_Near.style[transformProperty]="translate3d(0px" + ", " + (MainHeight-Layer_Near.clientHeight-250)*Rate_Near + "px" + ", 0px)";
+  
+}
  
 var scrolling = false;
 var mouseWheelActive = false;
