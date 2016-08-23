@@ -78,16 +78,13 @@
 
 			if (NextDeviation>DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length){ 
 				NextDeviation=0;
-				alert("Next is "+NextDeviation);
 			};
 
 			if (PerviousDeviation<0){
 				PerviousDeviation=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length;
-				alert("Previous is "+PerviousDeviation);
 				
 			};
 			
-
 			//end previous and next identification
 
 			var DeviantImageURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'content')[0].getAttribute('url');
@@ -98,7 +95,7 @@
 			var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
 
-			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+", "+null+");'>PREVIOUS</a></div><div class='liveDeviationTitle'>";//add in the gallery description section
+			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+45+", "+null+");'>PREVIOUS</a></div><div class='liveDeviationTitle'>";//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+DeviantTitle+"</h1><br/></div>");//add title to lightbox display and close LiveDeviationTitle div
 
@@ -106,7 +103,7 @@
 			htmlString=htmlString.concat("<div class='liveDeviation'><a href='"+DeviantImageSiteURL+"' target='_blank'><img src='"+DeviantImageURL+"'></a></div>");
 
 
-			htmlString = htmlString.concat("</div><div id='NextArrow'><a href='#"+NextDeviation+"' onclick='openDeviation("+NextDeviation+", "+null+");'>NEXT</a></div>");//close LiveDeivation Div and add nextDeviation button link
+			htmlString = htmlString.concat("</div><div id='NextArrow'><a href='#"+NextDeviation+"' onclick='openDeviation("+0+", "+null+");'>NEXT</a></div>");//close LiveDeivation Div and add nextDeviation button link
 
 			return htmlString;
 
