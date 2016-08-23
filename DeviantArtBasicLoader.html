@@ -44,6 +44,11 @@
 
 	}
 
+	#liveDeviation img{
+		width:80%;
+
+	}
+
 </style>
 
 </head>
@@ -108,7 +113,7 @@
 			htmlString=htmlString.concat("<h1>"+DeviantTitle+"</h1><br/></div>");//add title to lightbox display and close LiveDeviationTitle div
 
 			//add the main image and put it in a div tag with a link out to deviant art page
-			htmlString=htmlString.concat("<div class='liveDeviation'><a href='"+DeviantImageSiteURL+"' target='_blank'><img src='"+DeviantImageURL+"' width='80%'></a></div>");
+			htmlString=htmlString.concat("<div class='liveDeviation'><a href='"+DeviantImageSiteURL+"' target='_blank'><img src='"+DeviantImageURL+"'></a></div>");
 
 
 			htmlString = htmlString.concat("</div><div id='NextArrow'><a href='#"+NextDeviation+"' onclick='openDeviation("+NextDeviation+", "+null+");'>NEXT</a></div>");//close LiveDeivation Div and add nextDeviation button link
