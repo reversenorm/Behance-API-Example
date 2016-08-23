@@ -40,11 +40,11 @@
     </div>
 
     <div id="Sunrise">
-        <img src="Images/Sunrise_Mid.png">
+        <img src="Images/Sunrise_Mid.png" onload="PositionScrollingImages('Sunrise');">
     </div>
 
     <div id="parallaxMain">
-        <img src="Images/Main.png">
+        <img src="Images/Main.png" onload="PositionScrollingImages('Clouds');">
     </div>
 
     <div id="main">
@@ -88,7 +88,7 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
     <!--end of main div !-->
 
     <div id="parallaxNear">
-        <img src="Images/Near.png">
+        <img src="Images/Near.png" onload="PositionScrollingImages('Near');">
     </div>
 
     <!--Menu goes at the bottom because it is the topmost element!-->
@@ -124,14 +124,6 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
     <script src="reversenorm.github.io/Javascript/scrollingAnimation.js"></script>
     <script src="reversenorm.github.io/Javascript/ToggleVisibility.js"></script>
     
-    <script>
-
-    //wait until page has loaded to run positioning.
-    window.onload = PositionScrollingImages();
-
-    </script>
-
-
 </body>
 
 </html>

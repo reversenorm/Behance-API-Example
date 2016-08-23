@@ -23,16 +23,23 @@ var Layer_Near = document.querySelector("#parallaxNear");
 var Rate_Near = 1.75;
 
   //set position of scrollable elements relative to window height.
-function  PositionScrollingImages(){
+function  PositionScrollingImages(WhichImage){
+    alert(WhichImage);
 var WindowWidth=window.innerWidth;
 
 document.querySelector("#FooterSpace").style["height"]=(WindowWidth/2)+"px";//footer half the width of the window for scaling
 
 var MainHeight=document.querySelector("#main").clientHeight;//do this after footer change to get accureate height
 
+if(WhichImage="Sunrise"){
 Layer_Mid_Sunrise.style["top"]=(MainHeight-Layer_Mid_Sunrise.clientHeight)*Rate_Mid_Sunrise + "px";
+};
+if(WhichImage="Clouds"){
 Layer_Main.style["top"]=(MainHeight-Layer_Main.clientHeight+100)*Rate_Main + "px";
+};
+if(WhichImage="Near"){
 Layer_Near.style["top"]=(MainHeight-Layer_Near.clientHeight-50)*Rate_Near + "px";
+};
 
 
 }
