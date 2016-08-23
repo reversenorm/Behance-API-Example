@@ -28,7 +28,6 @@ a{
 }
 
 .title:before{
-    margin: 0 0 0 -20px;
     -webkit-transform: skew(20deg);
        -moz-transform: skew(20deg);
          -o-transform: skew(20deg);
