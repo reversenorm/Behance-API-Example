@@ -28,6 +28,7 @@ a{
 }
 
 .title:before{
+    transform:skew(20deg);
     -webkit-transform: skew(20deg);
        -moz-transform: skew(20deg);
          -o-transform: skew(20deg);
@@ -35,7 +36,7 @@ a{
 
 }
 
-.title:after{
+.title{
     background-color: rgba(150, 150, 150, .15);
     padding: 5px 0px 5px 20px;
     margin:40px 20px 12px 20px;
