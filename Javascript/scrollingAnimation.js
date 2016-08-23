@@ -24,7 +24,7 @@ var Rate_Near = 1.75;
 
   //set position of scrollable elements relative to window height.
 function  PositionScrollingImages(WhichImage){
-    alert(WhichImage);
+
 var WindowWidth=window.innerWidth;
 
 document.querySelector("#FooterSpace").style["height"]=(WindowWidth/2)+"px";//footer half the width of the window for scaling
