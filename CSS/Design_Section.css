@@ -72,8 +72,6 @@
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
-		width: auto; 
-		height: auto; 
-		max-width: 250px; 
-		max-height: 200px;
+		width:80%;
+		height:auto;
 	}
