@@ -31,7 +31,7 @@ a{
 
 
 .title{
-    background-color: rgba(200, 115, 15, .30);
+    background-color: rgba(200, 115, 15, .15);
     padding: 5px 0px 5px 20px;
     margin:40px 20px 12px 20px;
 
@@ -168,7 +168,7 @@ ported from other sites. Also will have near clouds image at base */
 
 .movingBox{
     height:400px;
-    background-color: rgba(200, 115, 15, .30);
+    background-color: rgba(200, 115, 15, .15);
     padding: 15px;
     margin:4px 20px 0px 20px;
     overflow-y:scroll;
@@ -217,7 +217,7 @@ ported from other sites. Also will have near clouds image at base */
 
 
 #menu li a:hover {
-    background-color: rgba(200, 115, 15, .30);
+    background-color: rgba(200, 115, 15, .15);
     color: white;
 }
 
