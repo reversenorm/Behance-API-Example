@@ -31,7 +31,7 @@ a{
 
 
 .title{
-    background-color: rgba(150, 150, 150, .30);
+    background-color: rgba(200, 115, 15, .30);
     padding: 5px 0px 5px 20px;
     margin:40px 20px 12px 20px;
 
@@ -217,7 +217,7 @@ ported from other sites. Also will have near clouds image at base */
 
 
 #menu li a:hover {
-    background-color: rgba(150, 150, 150, .15);
+    background-color: rgba(200, 115, 15, .30);
     color: white;
 }
 
