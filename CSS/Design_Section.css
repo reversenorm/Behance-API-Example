@@ -74,7 +74,7 @@
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
-		width:90%;
-		height:auto;
+		width:auto;
+		height:80%;
 	}
 
