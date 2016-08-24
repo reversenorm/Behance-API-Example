@@ -58,7 +58,7 @@ a{
     -moz-transform: rotate(-54deg); 
     -o-transform: rotate(-54deg); 
     transform: rotate(-54deg);
-    height:103px;/*hypotenuse of 50px and 100px legs*/
+    height:106px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
  	/*add glowing edge but just to one side and offset to right of shape only*/
