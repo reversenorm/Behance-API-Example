@@ -61,10 +61,10 @@
 
 	#Design li{
 		padding:10px 10px 5px 10px;
-		margin:15px;/*this is on all sides double between elements*/
+		margin:30px;/*this is on all sides double between elements*/
 		text-align: center;
 		position:relative;
-		float:left;
+		float:right;
 		width: auto; 
 		height: auto; 
 		max-width: 250px; 
