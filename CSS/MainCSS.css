@@ -51,7 +51,7 @@ a{
 	position:relative;
 	float:left;
 	left:390px;/*position just inside edge of clipping mask*/
-	top:6px;
+	top:-200px;
 
 	-ms-transform: rotate(-55deg); /* IE 9 */
     -webkit-transform: rotate(-55deg); /* Safari */
