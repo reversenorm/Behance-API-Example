@@ -64,11 +64,10 @@
 		margin:15px;/*this is on all sides double between elements*/
 		text-align: center;
 		position:relative;
-		float:bottom;
+		float:left;
 		width: auto; 
-		height: auto; 
+		height: 250; 
 		max-width: 250px; 
-		max-height: 200px;
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
