@@ -51,13 +51,13 @@ a{
 	position:relative;
 	left:298px;/*position just inside edge of clipping mask*/
 
-	-ms-transform: rotate(-20deg); /* IE 9 */
-    -webkit-transform: rotate(-20deg); /* Safari */
-    -moz-transform: rotate(-20deg); 
-    -o-transform: rotate(-20deg); 
-    transform: rotate(-20deg);
+	-ms-transform: rotate(300deg); /* IE 9 */
+    -webkit-transform: rotate(300deg); /* Safari */
+    -moz-transform: rotate(300deg); 
+    -o-transform: rotate(300deg); 
+    transform: rotate(300deg);
     height:55px;
-    width:1px;
+    width:0px;
 
  	/*add glowing edge but just to one side*/
     border: solid rgba(200, 115, 15, .75);
