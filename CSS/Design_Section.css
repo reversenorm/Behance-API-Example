@@ -65,7 +65,7 @@
 		text-align: center;
 		position:relative;
 		float:left;
-		width: 20%; 
+		width: auto; 
 		height: auto; 
 		max-width: 250px; 
 		max-height: 350px;
