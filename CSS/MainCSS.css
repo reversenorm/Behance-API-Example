@@ -36,7 +36,7 @@ a{
     margin:40px 20px 12px 20px;
 
     width: 400px;
-	height: 31px;
+	height: 36px;
 
     clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
     -webkit-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
@@ -52,12 +52,12 @@ a{
 	left:325px;/*position just inside edge of clipping mask*/
 	top:-75px;
 
-	-ms-transform: rotate(-25.6deg); /* IE 9 */
-    -webkit-transform: rotate(-25.6deg); /* Safari */
-    -moz-transform: rotate(-25.6deg); 
-    -o-transform: rotate(-25.6deg); 
-    transform: rotate(-25.6deg);
-    height:112px;/*hypotenuse of 50px and 100px legs*/
+	-ms-transform: rotate(-19.5deg); /* IE 9 */
+    -webkit-transform: rotate(-19.5deg); /* Safari */
+    -moz-transform: rotate(-19.5deg); 
+    -o-transform: rotate(-19.5deg); 
+    transform: rotate(-19.5deg);
+    height:106px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
  	/*add glowing edge but just to one side*/
