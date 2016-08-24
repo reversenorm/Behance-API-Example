@@ -51,13 +51,13 @@ a{
 	position:relative;
 	float:left;
 	left:340px;/*position just inside edge of clipping mask*/
-	top:-72px;
+	top:0px;
 
-	-ms-transform: rotate(-50deg); /* IE 9 */
-    -webkit-transform: rotate(-450deg); /* Safari */
-    -moz-transform: rotate(-50deg); 
-    -o-transform: rotate(-50deg); 
-    transform: rotate(-50deg);
+	-ms-transform: rotate(-52deg); /* IE 9 */
+    -webkit-transform: rotate(-52deg); /* Safari */
+    -moz-transform: rotate(-52deg); 
+    -o-transform: rotate(-52deg); 
+    transform: rotate(-52deg);
     height:90px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
