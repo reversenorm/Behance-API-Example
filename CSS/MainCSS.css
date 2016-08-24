@@ -52,11 +52,11 @@ a{
 	left:325px;/*position just inside edge of clipping mask*/
 	top:-75px;
 
-	-ms-transform: rotate(-30deg); /* IE 9 */
-    -webkit-transform: rotate(-30deg); /* Safari */
-    -moz-transform: rotate(-30deg); 
-    -o-transform: rotate(-30deg); 
-    transform: rotate(-30deg);
+	-ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Safari */
+    -moz-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
     height:106px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
