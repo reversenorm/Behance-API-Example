@@ -49,14 +49,15 @@ a{
 .titleEdge{
 
 	position:relative;
+	float:left;
 	left:340px;/*position just inside edge of clipping mask*/
 	top:-72px;
 
-	-ms-transform: rotate(-47deg); /* IE 9 */
-    -webkit-transform: rotate(-47deg); /* Safari */
-    -moz-transform: rotate(-47deg); 
-    -o-transform: rotate(-47deg); 
-    transform: rotate(-47deg);
+	-ms-transform: rotate(-50deg); /* IE 9 */
+    -webkit-transform: rotate(-450deg); /* Safari */
+    -moz-transform: rotate(-50deg); 
+    -o-transform: rotate(-50deg); 
+    transform: rotate(-50deg);
     height:90px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
