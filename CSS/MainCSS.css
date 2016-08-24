@@ -49,24 +49,24 @@ a{
 .titleEdge{
 
 	position:relative;
-	left:350px;/*position just inside edge of clipping mask*/
+	left:345px;/*position just inside edge of clipping mask*/
 	top:-75px;
 
-	-ms-transform: rotate(-45deg); /* IE 9 */
-    -webkit-transform: rotate(-45deg); /* Safari */
-    -moz-transform: rotate(-45deg); 
-    -o-transform: rotate(-45deg); 
-    transform: rotate(-45deg);
-    height:90px;/*hypotenuse of 50px and 100px legs*/
+	-ms-transform: rotate(-42deg); /* IE 9 */
+    -webkit-transform: rotate(-42deg); /* Safari */
+    -moz-transform: rotate(-42deg); 
+    -o-transform: rotate(-42deg); 
+    transform: rotate(-42deg);
+    height:93px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
  	/*add glowing edge but just to one side and offset to right of shape only*/
     border: solid rgba(200, 115, 15, .75);
-     -webkit-box-shadow: 5px 0px 5px 2px rgba(255,100,0,0.5);
-   -moz-box-shadow: 5px 0px 5px 2px rgba(255,100,0,0.5);
-   -ms-box-shadow: 5px 0px 5px 2px rgba(255,100,0,0.5);
-   -o-box-shadow: 5px 0px 5px 2px rgba(255,100,0,0.5);
-   box-shadow: 5px 0px 5px 2px rgba(255,100,0,0.5);
+     -webkit-box-shadow: 2px 0px 5px 2px rgba(255,100,0,0.5);
+   -moz-box-shadow: 2px 0px 5px 2px rgba(255,100,0,0.5);
+   -ms-box-shadow: 2px 0px 5px 2px rgba(255,100,0,0.5);
+   -o-box-shadow: 2px 0px 5px 2px rgba(255,100,0,0.5);
+   box-shadow: 2px 0px 5px 2px rgba(255,100,0,0.5);
 
    /*slightly thicker border width to accomodate transform effect*/
    border-width: 0px 3px 0px 0px;
