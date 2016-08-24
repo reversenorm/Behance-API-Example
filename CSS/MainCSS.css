@@ -211,6 +211,13 @@ ported from other sites. Also will have near clouds image at base */
     display: block;
     width: 100px;
     text-align: center;
+    
+    /*add angled edge to buttons*/
+    clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
+    -webkit-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
+    -moz-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
+    -ms-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
+    -o-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
 
 
 }
