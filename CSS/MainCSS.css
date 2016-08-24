@@ -48,12 +48,13 @@ a{
 
 .titleEdge{
 
-	-ms-transform: rotate(20deg); /* IE 9 */
-    -webkit-transform: rotate(20deg); /* Safari */
-    -moz-transform: rotate(20deg); 
-    -o-transform: rotate(20deg); 
-    transform: rotate(20deg);
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    -moz-transform: rotate(-20deg); 
+    -o-transform: rotate(-20deg); 
+    transform: rotate(-20deg);
     height:55px;
+    width:1px;
 
 }
 
