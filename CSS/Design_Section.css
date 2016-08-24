@@ -65,14 +65,11 @@
 		text-align: center;
 		position:relative;
 		float:left;
-		
+	}
+
+	#Design img {/*width flexibility for the linked display images*/
 		width: auto; 
 		height: auto; 
 		max-width: 250px; 
 		max-height: 250px;
-	}
-
-	#Design img {/*width flexibility for the linked display images*/
-		width:175;
-		height:auto;
 	}
