@@ -65,9 +65,10 @@
 		text-align: center;
 		position:relative;
 		float:left;
-		width: auto; 
+		width: 20%; 
 		height: 300px; 
-		max-width: 350px; 
+		max-width: 350px;
+		min-width:150px;
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
