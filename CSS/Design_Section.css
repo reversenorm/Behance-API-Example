@@ -61,7 +61,7 @@
 
 	#Design li{
 		padding:10px 10px 5px 10px;
-		margin:30px;/*this is on all sides double between elements*/
+		margin:15px;/*this is on all sides double between elements*/
 		text-align: center;
 		position:relative;
 		float:left;
@@ -74,4 +74,11 @@
 	#Design img {/*width flexibility for the linked display images*/
 		width:80%;
 		height:auto;
+	}
+	
+	#Design a {
+		width: auto; 
+		height: auto; 
+		max-width: 225px;	
+	
 	}
