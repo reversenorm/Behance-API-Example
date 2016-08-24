@@ -51,14 +51,14 @@ a{
 	position:relative;
 	float:left;
 	left:390px;/*position just inside edge of clipping mask*/
-	top:-100px;
+	top:-98px;
 
 	-ms-transform: rotate(-55deg); /* IE 9 */
     -webkit-transform: rotate(-55deg); /* Safari */
     -moz-transform: rotate(-55deg); 
     -o-transform: rotate(-55deg); 
     transform: rotate(-55deg);
-    height:106px;/*hypotenuse of 50px and 100px legs*/
+    height:107px;/*hypotenuse of 50px and 100px legs*/
     width:0px;
 
  	/*add glowing edge but just to one side and offset to right of shape only*/
