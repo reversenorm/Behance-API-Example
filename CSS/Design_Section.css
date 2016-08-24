@@ -67,11 +67,11 @@
 		float:left;
 		width: auto; 
 		height: 300px; 
-		max-width: 250px; 
+		max-width: 350px; 
 	}
 
 	#Design img {/*width flexibility for the linked display images*/
-		width:200px;
+		width:80%;
 		height:auto;
 	}
 
