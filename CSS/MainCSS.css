@@ -239,7 +239,7 @@ ported from other sites. Also will have near clouds image at base */
     -moz-transform: rotate(-40deg); 
     -o-transform: rotate(-40deg); 
     transform: rotate(-40deg);
-    height:30px;/*hypotenuse */
+    height:27px;/*hypotenuse */
     width:0px;
 
  	/*add glowing edge but just to one side and offset to right of shape only*/
