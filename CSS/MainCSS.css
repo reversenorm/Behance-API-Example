@@ -219,6 +219,8 @@ ported from other sites. Also will have near clouds image at base */
     -ms-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
     -o-clip-path: polygon(0% 100%, 100% 100%, 75% 0%, 0% 0%);
 
+    margin:-10px 0px 0px 0px;
+
 
 }
 
@@ -265,7 +267,7 @@ ported from other sites. Also will have near clouds image at base */
     width:300%;/*Greater than 100% because position relative.*/
     background-color: rgba(200, 100, 0, 1);
     padding: 15px;
-    margin:15px 0px 0px 0px;
+    margin:-10px 0px 0px 0px;
 }
 
 #about a {
