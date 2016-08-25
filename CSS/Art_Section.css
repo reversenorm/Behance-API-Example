@@ -51,9 +51,6 @@
 	}
 	
 	
-	#Art{
-		overflow:scroll;
-	}
 	#Art li{
 		padding:10px 10px 5px 10px;
 		margin:5px;/*this is on all sides double between elements*/
