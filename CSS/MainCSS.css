@@ -228,6 +228,34 @@ ported from other sites. Also will have near clouds image at base */
     color: white;
 }
 
+.menuEdge{
+
+	position:relative;
+	float:left;
+	left:100px;/*position just inside edge of clipping mask*/
+	top:0px;
+
+	-ms-transform: rotate(-55deg); /* IE 9 */
+    -webkit-transform: rotate(-55deg); /* Safari */
+    -moz-transform: rotate(-55deg); 
+    -o-transform: rotate(-55deg); 
+    transform: rotate(-55deg);
+    height:50px;/*hypotenuse */
+    width:0px;
+
+ 	/*add glowing edge but just to one side and offset to right of shape only*/
+    border: solid rgba(200, 115, 15, .75);
+     -webkit-box-shadow: 2px 2px 3px 1px rgba(255,100,0,0.5);
+   -moz-box-shadow: 2px 2px 3px 1px rgba(255,100,0,0.5);
+   -ms-box-shadow: 2px 2px 3px 1px rgba(255,100,0,0.5);
+   -o-box-shadow: 2px 2px 3px 1px rgba(255,100,0,0.5);
+   box-shadow: 2px 2px 3px 1px rgba(255,100,0,0.5);
+
+   /*slightly thicker border width to accomodate transform effect*/
+   border-width: 0px 3px 0px 0px;
+
+}
+
 #about {
     color:#000000;
     position:relative;
