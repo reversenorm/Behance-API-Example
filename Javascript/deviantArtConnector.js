@@ -19,7 +19,8 @@ var DeviantProjects = XMLLoader("http://backend.deviantart.com/rss.xml?type=devi
 
 		function openDeviation(DeviationNumber, FromThumb){
 			if(FromThumb=="FromThumb"){//If we come from a thumb toggle the overlay otherwise just build the next image
-			toggleLayer('overlay');
+			toggleLayer('overlay');//turn on overlay
+			toggleLayer('deviantArtGallery');//then turn on the specific gallery
 			};
 			document.getElementById("deviantArtGallery").innerHTML=DeviationGalleryBuilder(DeviationNumber);
 		};
@@ -50,7 +51,7 @@ var DeviantProjects = XMLLoader("http://backend.deviantart.com/rss.xml?type=devi
 			var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
 
-			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+", "+null+");'>PREVIOUS</a></div><div id='liveDeviation' ><div id='liveDeviationTitle'>";//add in the gallery description section
+			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("deviantArtGallery"); toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+", "+null+");'>PREVIOUS</a></div><div id='liveDeviation' ><div id='liveDeviationTitle'>";//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+DeviantTitle+"</h1><br/></div>");//add title to lightbox display and close LiveDeviationTitle div
 

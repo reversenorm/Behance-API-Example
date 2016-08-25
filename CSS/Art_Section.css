@@ -9,6 +9,9 @@
 	  background-color: #ffffff;
 	  margin:20px;
 	  text-align: center;
+	  color:#000000;/*text color defined to override main css when inserted later */
+
+	  display: none;
 
 	}
 	
@@ -53,13 +56,13 @@
 	}
 	#Art li{
 		padding:10px 10px 5px 10px;
-		margin:15px;/*this is on all sides double between elements*/
+		margin:5px;/*this is on all sides double between elements*/
 		text-align: center;
 		position:relative;
 		float:left;
 		list-style-type: none;
 
-		width: 200px; 
+		width: 175px; 
 		height: 300px; 
 		
 

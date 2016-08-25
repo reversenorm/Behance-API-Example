@@ -8,3 +8,8 @@
     }
     
  }
+
+ function toggleOffAllGalleries() {
+        document.getElementById("deviantArtGallery").style.display = "none";
+        document.getElementById("behanceGallery").style.display = "none";
+ }
