@@ -174,7 +174,7 @@
 			var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[DeviationNumber].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 
 
-			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+", "+null+");'>PREVIOUS</a></div><div id='liveDeviation' class='glowEdges'><div id='liveDeviationTitle'>";//add in the gallery description section
+			var htmlString="<div class='closeX'><a href='#d' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div id='PreviousArrow'><a href='#"+PerviousDeviation+"' onclick='openDeviation("+PerviousDeviation+", "+null+");'>PREVIOUS</a></div><div id='liveDeviation' ><div id='liveDeviationTitle'>";//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+DeviantTitle+"</h1><br/></div>");//add title to lightbox display and close LiveDeviationTitle div
 
@@ -211,7 +211,7 @@
 
 				//var DeviantImageSiteURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("link")[0].childNodes[0].nodeValue;
 
-				document.write("<li class='glowEdges'><a href='#"+i+"' onclick='openDeviation("+i+", "+IsFromThumb+");'><img src='"+DeviantThumbURL+"' class='glowEdges'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+				document.write("<li><a href='#"+i+"' onclick='openDeviation("+i+", "+IsFromThumb+");'><img src='"+DeviantThumbURL+"' class='glowEdges'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
 				
 				
 			};
