@@ -279,14 +279,14 @@ ported from other sites. Also will have near clouds image at base */
 
 	position:relative;
 	left:93px;/*position just inside edge of clipping mask*/
-	top:-24px;
+	top:-22px;
 
 	-ms-transform: rotate(-40deg); /* IE 9 */
     -webkit-transform: rotate(-40deg); /* Safari */
     -moz-transform: rotate(-40deg); 
     -o-transform: rotate(-40deg); 
     transform: rotate(-40deg);
-    height:27px;/*hypotenuse */
+    height:26px;/*hypotenuse */
     width:0px;
 
  	/*add glowing edge but just to one side and offset to right of shape only*/
