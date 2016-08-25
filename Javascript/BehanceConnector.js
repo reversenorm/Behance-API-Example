@@ -32,7 +32,7 @@
 
 			var galleryData=jsonLoader("/BehanceJSON/BehanceGallery/"+galleryId+".json");
 
-			var htmlString="<div class='closeX'><a href='#c' onclick="+'toggleOffAllGalleries(); '+' toggleLayer("overlay");'+"align='right'>[X]</a></div><div class='galleryDescription'>"//add in the gallery description section
+			var htmlString="<div class='closeX'><a href='#c' onclick="+'toggleOffAllGalleries();'+"align='right'>[X]</a></div><div class='galleryDescription'>"//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+galleryData["project"]["name"]+"</h1><br/>");//add gallery title
 

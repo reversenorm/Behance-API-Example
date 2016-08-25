@@ -12,4 +12,7 @@
  function toggleOffAllGalleries() {
         document.getElementById("deviantArtGallery").style.display = "none";
         document.getElementById("behanceGallery").style.display = "none";
+
+
+        document.getElementById("overlay").style.display = "none";
  }
