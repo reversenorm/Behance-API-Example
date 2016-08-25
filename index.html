@@ -11,11 +11,11 @@
    <!--Css to build both Design projects gallery and lightbox viewer-->
    <link rel="stylesheet" type="text/css" href="reversenorm.github.io/CSS/Design_Section.css" />
 
+   <!--Css to build both Art gallery and lightbox viewer for DeviantArt images-->
+   <link rel="stylesheet" type="text/css" href="reversenorm.github.io/CSS/Design_Section.css" />
+
     <!-- Narrow first for css then Add elements for more complex arrangements !-->
     <link rel="stylesheet" type="text/css" href="reversenorm.github.io/CSS/MainCSS.css" />
-
-
-
 
 
 <!-- Link CSS  --><!-- Link CSS  --><!-- Link CSS  --><!-- Link CSS  -->
@@ -25,6 +25,7 @@
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="reversenorm.github.io/Javascript/prefixfree.min.js"></script>
     <script src="reversenorm.github.io/Javascript/BehanceConnector.js"></script><!--Ports data from saved json files and builds lightbox gallery on click-->
+    <script src="reversenorm.github.io/Javascript/deviantArtConnector.js"></script><!--Ports data from deviantart site directly using RSS XML feed-->
  
  <!-- Include Javascripts --><!-- Include Javascripts --><!-- Include Javascripts -->
 
@@ -65,10 +66,26 @@
     <div class="title glowEdges" id="ArtTitle"><h1>Art</h1></div><div class="titleEdge"></div>
         <div class="movingBox glowEdges">
             <div id="Art">
-<h1>Deviant Art link up</h1>
-<br/>
-Just some are from my old Deviant page, but then again it has a lot of good stuff. Also means I might update it more if it also doubles as my portfolio page.
-</div>
+                <ul>
+                    <script>
+
+                            for (var i=0; i<DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item").length; i++ ){
+                                
+                                var IsFromThumb='"FromThumb"';
+
+                                var DeviantTitle=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+                                var DeviantThumbURL=DeviantProjects.getElementsByTagName("channel")[0].getElementsByTagName("item")[i].getElementsByTagNameNS('http://search.yahoo.com/mrss/', 'thumbnail')[2].getAttribute('url');
+
+                                document.write("<li><a href='#"+i+"' onclick='openDeviation("+i+", "+IsFromThumb+");'><img src='"+DeviantThumbURL+"' class='glowEdges'><br/>"+DeviantTitle+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
+                                
+                                
+                            };
+
+
+                    </script>
+                </ul>
+            </div>
         </div>
 <div class="title glowEdges" id="CodeTitle"><h1>Code</h1></div><div class="titleEdge"></div>
         <div class="movingBox glowEdges">
@@ -116,9 +133,10 @@ Not sure exactly what will be here, but I expect to do a fizzbuzz, some Eueler e
     <a href="#c" onclick="toggleLayer('overlay');">
     <div class="closeMe"></div>
     </a>
-    <div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
+    <div id="behanceGallery" class="glowEdges">Behance gallery data will go here using inner.html<br />
 
-    Need to create a string that stiches html together then pass that string to inner.html to place here.
+    </div>
+    <div id="deviantArtGallery" class="glowEdges">Deviant Art gallery data will go here using inner.html
     </div>
 </div>
 
