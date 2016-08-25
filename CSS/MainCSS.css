@@ -230,7 +230,7 @@ ported from other sites. Also will have near clouds image at base */
 
 .menuEdge{
 
-	position:fixed;
+	position:inherit;
 	float:left;
 	left:50px;/*position just inside edge of clipping mask*/
 	top:0px;
