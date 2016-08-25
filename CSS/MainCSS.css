@@ -50,7 +50,7 @@ a{
 
 	position:relative;
 	float:left;
-	left:390px;/*position just inside edge of clipping mask*/
+	left:390px;
 	top:-98px;
 
 	-ms-transform: rotate(-55deg); /* IE 9 */
@@ -232,8 +232,8 @@ ported from other sites. Also will have near clouds image at base */
 
 	position:inherit;
 	float:left;
-	left:50px;/*position just inside edge of clipping mask*/
-	top:0px;
+	left:148px;/*position just inside edge of clipping mask*/
+	top:-30px;
 
 	-ms-transform: rotate(-40deg); /* IE 9 */
     -webkit-transform: rotate(-40deg); /* Safari */
