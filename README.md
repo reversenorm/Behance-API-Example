@@ -1,4 +1,4 @@
-This repository is a simple demonstration of how I imported data from my http://www.Behance.net personal account using exclusively Javascript so I could house it on my GITHUB HTML page. PHP would have been a better tool but I'm working under the limitations of GitHub Pages which does not support server side commands. The full demonstration of this functionality can be found on http://technecreative.com under the Design Section.
+This repository is a simple demonstration of how I imported data from my http://www.Behance.net personal account using exclusively Javascript so I could house it on my GITHUB HTML page. PHP would have been a better tool but I'm working under the limitations of GitHub Pages which does not support server side commands. The full demonstration of this functionality can be found on http://technecreative.com under the Design Section or as a stand alone at http://technecreative.com/BehanceBasicLoader.html.
 
 The first thing you must do to impliment the the use of any Behance data is to register your website or app with behance at: https://www.behance.net/dev/
 
