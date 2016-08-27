@@ -108,19 +108,23 @@
 
     <script type="text/javascript">
 
-
+	//define the variables that will hold the JSON from Behance Later
         var BehanceProjects = null;
         var galleryData=null;
 
+	//call the JSON loader passing the Behance API url including your apiKey
+	//your url should look like "http://behance.net/v2/users/{YOUR USERNAME}/projects?api_key={YOUR API KEY}&per_page=25&callback=?"
+	//the Per page is default at 12 and limited to 25, if you have more than 25 projects you will need to add a page 2
+	//the &callback=? is critical. Behance uses this trick to get around the same origin policy issues. Without this you will not get a reply
         jsonLoader("http://behance.net/v2/users/jphillips01/projects?api_key=bM1DZSpebEhtZlRUq9QKuUmF3PpdW595&per_page=25&callback=?", 'projects');
-
    
         function jsonLoader(filePath, nextStep){
 			   		 $.ajax({
 				        'global': false,
 				        'url':  filePath,
 				        'dataType': "json",
-				        'success': function (data) {
+				        'success': function (data) {//since we have two kinds of JSONs for the projects as a collection and the data inside the projcet (gallery)
+				        			//to keep from making multiple load functions just pass the kind we need as nextStep variable and then set global variable
 				        	if (nextStep=="projects"){
 				            BehanceProjects = data;
 				        	}
@@ -129,13 +133,13 @@
 				        	}
 
 				        },
-					complete: function() {
+					complete: function() {//This is necessiary to keep from skipping ahead before the Behance Website has a chance to return valid data
 						if (nextStep=="projects"){
-							loadThumbs();
+							loadThumbs();//builds the thumbnails on the main page
 						}
 						if (nextStep=="gallery"){
 							console.log(galleryData);
-							galleryBuilder();
+							galleryBuilder();//builds the specific project data into a gallery to view.
 
 						}
 					}
@@ -146,12 +150,15 @@
 
 		function openGallery(galleryId){
 			toggleLayer('overlay');
+			//this calls the specific project from behance based on the ID
+			//your url should look like this "http://www.behance.net/v2/projects/{YOUR GALLERY ID}?api_key={YOUR API KEY}&callback=?"
+			//again the callback=? is required, but not you do not need to specify the user as the project ID's are unique on Behance
 			jsonLoader("http://www.behance.net/v2/projects/"+galleryId+"?api_key=bM1DZSpebEhtZlRUq9QKuUmF3PpdW595&callback=?", "gallery");//load the current gallery into galleryData on complete go to gallery builder
 		};
 
 		function galleryBuilder(galleryId){
-
-
+			//This is mostly building a long string with the relevant data and using .innerHTML to load it into the window
+			//I've left this in so you can see examples of traversing the JSON framework to pull out useful inormation like img url's and names
 			var htmlString="<div class='closeX'><a href='#c' onclick="+'toggleLayer("overlay");'+"align='right'>[X]</a></div><div class='galleryDescription'>";//add in the gallery description section
 
 			htmlString=htmlString.concat("<h1>"+galleryData["project"]["name"]+"</h1><br/>");//add gallery title
@@ -200,6 +207,7 @@
 		};
 
 		function loadThumbs(){
+			//this reads through the list of projects and creates a list item with the thumb and title that calls a link to pop up a lightbox style display
 				var thumblist="<ul>";
 				for (var i=0; i<BehanceProjects["projects"].length; i++ ){
 					thumblist=thumblist.concat("<li class='glowEdges'><a href='#b' onclick='openGallery("+BehanceProjects["projects"][i]["id"]+");'><img src='"+BehanceProjects["projects"][i]["covers"][202]+"'><br/>"+BehanceProjects["projects"][i]["name"]+"</a></li>");//create a list element with each project's cover image and title. link the whole thing with and on click pass to generate and reveal the content of the project.
@@ -216,7 +224,7 @@
 <br />
 
 
-<div id="Design"><!--this is equavalent to the Design ID on the index page and will replace the temporary content when combining elements-->
+<div id="Design"><!--this is where the thumbnails load into-->
 	<ul >
 		<li>
 		</li>
@@ -229,7 +237,7 @@
 	</a>
 	<div id="behanceGallery" class="glowEdges">Gallery data will go here using inner.html<br />
 
-	Need to create a string that stiches html together then pass that string to inner.html to place here.
+	String that stiches html together then pass that string to inner.html to place gallery here.
 	
 	</div>
 </div>
