@@ -15,7 +15,7 @@ http://www.behance.net/v2/projects/{project_id}?api_key={the_api_key}&callback=?
 
 These each respond with a JSON file. Also the callback=? is required to function. If you type the URL without it into your browser you will see the JSON file just fine but if you call the URL from an outside domain you will recieve an error because of the same-origin policy (https://en.wikipedia.org/wiki/Same-origin_policy). The workaround Behance has imlemented on their back end uses the callback=? as a wrapper. 
 
-Additionally Behance limits the number of these kinds of requests serverside, about 150 per hour. So if you have a very high traffic site or if you have a lotof intensive calls you may need another method. 
+Additionally Behance limits the number of these kinds of requests serverside, about 150 per hour. So if you have a very high traffic site or if you have a lot of intensive calls you may need another method. 
 
 It's also useful to get JSON View from https://jsonview.com/ this will allow you to simly paste the URL into your browser and easily view the JSON data from the Behance Website.
 
